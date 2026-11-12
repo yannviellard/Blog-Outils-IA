@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "wiki-fiche": {
+      "source": "./plugins/wiki-fiche",
+      "resolved": "/Users/yannviellard/Developement/Blog Tools IA/plugins/wiki-fiche",
+      "commit": "local",
+      "installedAt": "2026-11-12T09:54:41.423Z"
+    }
+  }
+}

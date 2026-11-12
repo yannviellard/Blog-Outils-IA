@@ -1,0 +1,43 @@
+{
+  "name": "wiki-fiche",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plugin local Quartz pour AI Tools Wiki : encadré « Fiche » en français et titre de page unique",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "peerDependencies": {
+    "preact": "^10.0.0",
+    "@quartz-community/utils": "^1.0.0"
+  },
+  "quartz": {
+    "name": "wiki-fiche",
+    "displayName": "Fiche du wiki",
+    "category": [
+      "transformer",
+      "component"
+    ],
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 15,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "Fiche": {
+        "displayName": "Fiche",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 15
+      }
+    }
+  }
+}
