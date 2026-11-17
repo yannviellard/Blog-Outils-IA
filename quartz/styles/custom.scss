@@ -1,3 +1,10 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Vue graphique de la colonne de droite : 400 px de haut au lieu de 250. La largeur
+// reste celle de la colonne ; l'icône en haut à droite du cadre (ou Ctrl/Cmd + G)
+// ouvre le graphe complet en grand.
+.graph > .graph-outer {
+  height: 400px;
+}

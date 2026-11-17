@@ -167,6 +167,12 @@ plugins:
       priority: 50
   - source: "@quartz-community/graph"
     enabled: true
+    options:
+      # Noms des pages visibles dès qu'on zoome dans le graphe (molette ou pincement) ;
+      # par défaut (1), ils n'apparaissent qu'à fort grossissement. Hauteur du cadre :
+      # quartz/styles/custom.scss.
+      localGraph:
+        opacityScale: 3
     layout:
       position: right
       priority: 10
