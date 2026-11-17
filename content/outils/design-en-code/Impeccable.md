@@ -14,9 +14,9 @@ depot: "https://github.com/pbakaus/impeccable"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 108078
-forks: 6425
-etoiles_releve: 2026-11-11
+etoiles: 111023
+forks: 6639
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -74,7 +74,7 @@ Son approche repose sur trois couches complémentaires :
 |Maturité|★★★☆☆|
 |Popularité|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 108 078 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 111 023 au 16 novembre 2026._
 
 **Commentaire :** les notes reposent sur la structure du dépôt et sur les comparatifs de skills de design (voir [[#Avis indépendants|les avis indépendants]]), qui le placent souvent parmi les skills de meilleure qualité pour corriger l'aspect générique des interfaces produites par IA. Aucune évaluation indépendante ne chiffre l'amélioration visuelle obtenue ; sa popularité mesure l'attention portée au projet.
 

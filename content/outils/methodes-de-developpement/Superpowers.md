@@ -15,9 +15,9 @@ depot: "https://github.com/obra/superpowers"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-03
-etoiles: 316106
-forks: 28122
-etoiles_releve: 2026-11-11
+etoiles: 318267
+forks: 28369
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -80,7 +80,7 @@ Le projet est initialement conçu pour Claude Code mais supporte désormais plus
 |Intégration coding agents|★★★★★|
 |Simplicité d'utilisation|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 316 106 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 318 267 au 16 novembre 2026._
 
 **Commentaire :** projet très largement adopté (voir la note Popularité ; disponible dans la marketplace officielle de Claude Code), avec une méthodologie clairement documentée et un workflow cohérent. Cette popularité mesure l'attention, pas l'effet sur la qualité du code : aucune mesure indépendante citée ici ne chiffre le gain, d'où des notes de maturité et de qualité méthodologique à ★★★★☆. Sa principale contrepartie est le caractère relativement prescriptif du processus : certaines tâches simples ne nécessitent pas l'ensemble du cycle brainstorming → planification → TDD → sous-agents → revue. Voir [[#Avis indépendants|les avis indépendants]].
 

@@ -13,9 +13,9 @@ depot: "https://github.com/cloudflare/agentic-inbox"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-04-17
-etoiles: 8654
-forks: 1132
-etoiles_releve: 2026-11-11
+etoiles: 8772
+forks: 1155
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 2
@@ -67,7 +67,7 @@ Le projet expose aussi un serveur MCP à l'URL `/mcp`, permettant à des agents 
 |Maturité|★★☆☆☆|
 |Popularité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 8 654 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 8 772 au 16 novembre 2026._
 
 ### Points forts
 

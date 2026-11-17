@@ -25,6 +25,7 @@ modified:
 ---
 
 <!-- Métadonnées : valeurs autorisées et définitions dans [[Taxonomie]].
+title : nom exact du produit (casse et ponctuation de l'éditeur, ex. shadcn/ui), repris à l'identique dans le titre « # … » de la fiche ; le site Quartz affiche le title et masque ce « # … ».
 format : un seul parmi agent, skill, collection, plugin, serveur-mcp, cli, api, bibliotheque, application, plateforme.
 famille : pas de champ ; la fiche est créée dans le dossier de sa famille, outils/<identifiant>/ (ex. outils/agents-de-developpement/).
 tags : 1 à 3 tags metier/… (pages métier où l'outil figure) et 0 à 4 tags theme/… ; aucun autre tag.

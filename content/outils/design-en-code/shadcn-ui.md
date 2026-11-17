@@ -13,9 +13,9 @@ depot: "https://github.com/shadcn-ui/ui"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 127910
-forks: 11343
-etoiles_releve: 2026-11-11
+etoiles: 128291
+forks: 11395
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 5
 note_maturite: 4
@@ -71,7 +71,7 @@ Le dépôt embarque désormais un dossier `skills/` avec une **skill officielle 
 |Maturité|★★★★☆|
 |Popularité|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 127 910 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 128 291 au 16 novembre 2026._
 
 ### Points forts
 

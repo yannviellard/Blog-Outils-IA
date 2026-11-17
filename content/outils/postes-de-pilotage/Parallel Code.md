@@ -13,9 +13,9 @@ depot: "https://github.com/johannesjo/parallel-code"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 1086
-forks: 149
-etoiles_releve: 2026-11-11
+etoiles: 1091
+forks: 151
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 3
 note_maturite: 2
@@ -57,7 +57,7 @@ Le projet est gratuit, sans compte, sans serveur de l'éditeur et sous MIT. Il f
 |Maturité|★★☆☆☆|
 |Popularité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 1 086 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 1 091 au 16 novembre 2026._
 
 ### Points forts
 
@@ -81,7 +81,7 @@ Le projet est gratuit, sans compte, sans serveur de l'éditeur et sous MIT. Il f
 
 ## Relations
 
-- **Alternative à :** [[Superset]], [[Conductor]], [[Claude Squad]]
+- **Alternative à :** [[Paradev]], [[Conductor]], [[Claude Squad]]
 - **S'intègre avec :** [[Claude Code]], [[OpenAI Codex]], Gemini CLI, Copilot CLI, Docker
 - **Utilise :** Git worktrees, terminaux locaux, GitHub CLI
 

@@ -42,7 +42,7 @@ Notes sur le barème du [[Comparatif global des outils]] : Documentation, Préci
 |[[LLM Council]]|★★★☆☆|★★★★☆|★☆☆☆☆|**8**|★★★☆☆|README + SKILL.md, fiche honnête ; 3 commits, aucune release.|
 |[[AI Berkshire]]|★★★★☆|★★★☆☆|★★☆☆☆|**9**|★★★★☆|Doc abondante ; performances publiées par le mainteneur ; backtesting absent.|
 |[[Claude for Financial Services]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★★☆|README Anthropic complet ; sources de l'éditeur ; fonctions en research preview.|
-|[[Claude for Legal]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★☆☆|README complet ; recul court ; orienté droit américain.|
+|[[Claude for Legal]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★★☆|README complet ; recul court ; orienté droit américain.|
 |[[Small Business]]|★★★★☆|★★★★☆|★★★☆☆|**11**|—|Doc Anthropic ; garde-fous décrits par l'éditeur ; récent.|
 
 ## Critères propres à la famille

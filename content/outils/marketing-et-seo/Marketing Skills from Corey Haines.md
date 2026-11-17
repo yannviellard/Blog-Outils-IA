@@ -13,9 +13,9 @@ depot: "https://github.com/coreyhaines31/marketingskills"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 59710
-forks: 8720
-etoiles_releve: 2026-11-11
+etoiles: 60675
+forks: 8847
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -81,7 +81,7 @@ Le projet a connu une croissance extrêmement rapide depuis sa création en janv
 |Popularité|★★★★☆|
 |Portabilité multi-agents|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 59 710 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 60 675 au 16 novembre 2026._
 
 **Commentaire :** le projet est l'une des bibliothèques les plus souvent recommandées par les praticiens pour les skills marketing destinés aux agents de code (l'adoption figure dans le tableau d'en-tête mais n'est pas notée : elle ne mesure pas la qualité). Les notes de qualité des workflows et de cohérence reposent sur la structure du dépôt, sans évaluation indépendante des résultats produits. Sa principale qualité n'est pas seulement le nombre de skills, mais leur **composition autour d'un contexte marketing partagé** et leurs références croisées. Le dépôt suit l'Agent Skills specification et fonctionne avec plusieurs agents, dont Claude Code et Codex.
 

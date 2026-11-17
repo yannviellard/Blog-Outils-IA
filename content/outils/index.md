@@ -21,7 +21,7 @@ Agents complets qui lisent un dépôt, modifient le code et exécutent des comma
 
 Applications et terminaux qui font travailler plusieurs agents en parallèle, chacun sur sa branche, avec un point de revue commun.
 
-[[Claude Squad]] · [[cmux]] · [[Conductor]] · [[Parallel Code]] · [[Superset]] · [[Warp]]
+[[Claude Squad]] · [[cmux]] · [[Conductor]] · [[Paradev]] · [[Parallel Code]] · [[Warp]]
 
 ### [[outils/methodes-de-developpement/index|Méthodes de développement]]
 

@@ -14,9 +14,9 @@ depot: "https://github.com/xbtlin/ai-berkshire"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-04
-etoiles: 17095
-forks: 2513
-etoiles_releve: 2026-11-11
+etoiles: 17151
+forks: 2526
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -73,7 +73,7 @@ Le projet se distingue surtout par son approche **multi-agent** : certains workf
 |Popularité|★★★★☆|
 |Réutilisabilité des patterns|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 17 095 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 17 151 au 16 novembre 2026._
 
 **Commentaire :** projet particulièrement intéressant pour son architecture de recherche plutôt que pour son domaine financier. La séparation **skills → agents → tools**, la recherche parallèle et la vérification indépendante constituent des patterns facilement transposables à d'autres systèmes d'agents. La documentation est abondante et le projet est activement maintenu, avec plus de 1 300 commits et une activité importante sur les issues et pull requests. Les notes de vérification des données et de maturité sont prudentes : les mécanismes de vérification sont ceux du projet, sans validation indépendante, le backtesting historique n'est pas encore livré et le recul indépendant reste faible (la plupart des contenus reprennent le dépôt ou son positionnement ; voir [[#Avis indépendants|les avis indépendants]]).
 

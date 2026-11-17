@@ -14,9 +14,9 @@ depot: "https://github.com/Panniantong/Agent-Reach"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-08
-etoiles: 111070
-forks: 9946
-etoiles_releve: 2026-11-11
+etoiles: 112172
+forks: 10054
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -71,7 +71,7 @@ Les agents utilisent ensuite directement les outils sous-jacents (`gh`, `yt-dlp`
 |Couverture Internet|★★★★☆|
 |Stabilité des intégrations|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 111 070 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 112 172 au 16 novembre 2026._
 
 **Commentaire :** l'architecture est particulièrement pertinente pour un environnement d'agents car Agent Reach externalise volontairement les intégrations vers des outils spécialisés et prévoit leur remplacement. Cette approche réduit le couplage, mais signifie également que la fiabilité dépend fortement de services tiers, de changements de plateformes et parfois de cookies ou de mécanismes anti-bot. Le projet est actif : son historique comporte plusieurs migrations de backends et releases destinées à retirer des intégrations devenues fragiles, ce qui justifie une maturité moyenne et une couverture nominale (les plateformes listées ne sont pas toutes opérationnelles en permanence). Les retours indépendants rappellent qu'Agent Reach n'est pas une API de données garantie.
 

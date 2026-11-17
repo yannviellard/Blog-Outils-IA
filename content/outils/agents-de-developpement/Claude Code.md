@@ -14,9 +14,9 @@ depot: "https://github.com/anthropics/claude-code"
 licence: "Propriétaire (Anthropic Commercial Terms)"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 155282
-forks: 24909
-etoiles_releve: 2026-11-11
+etoiles: 155840
+forks: 25017
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 4
@@ -91,7 +91,7 @@ Claude Code est inclus dans les abonnements payants Claude (Pro à 20 $/mois, Ma
 |Maturité|★★★★☆|
 |Popularité|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 155 282 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 155 840 au 16 novembre 2026._
 
 ### Points forts
 

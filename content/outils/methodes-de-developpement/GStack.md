@@ -15,9 +15,9 @@ depot: "https://github.com/garrytan/gstack"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 141203
-forks: 20841
-etoiles_releve: 2026-11-11
+etoiles: 141752
+forks: 20935
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -75,7 +75,7 @@ Son approche est fortement structurée et opinionated. Chaque rôle correspond �
 |Popularité|★★★★★|
 |Légèreté / consommation de tokens|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 141 203 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 141 752 au 16 novembre 2026._
 
 **Commentaire :** gstack est particulièrement complet et couvre des étapes souvent peu structurées dans les workflows Claude Code, notamment la réflexion produit, la revue UX, la QA dans un navigateur réel et la préparation de release. En contrepartie, son caractère très opinionated et son nombre élevé de skills rendent le workflow plus lourd que des frameworks centrés uniquement sur l'ingénierie. Des utilisateurs signalent notamment une consommation de tokens supérieure et une complexité plus importante que Superpowers.
 

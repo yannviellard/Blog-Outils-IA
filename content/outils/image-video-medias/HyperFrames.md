@@ -13,9 +13,9 @@ depot: "https://github.com/heygen-com/hyperframes"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 82684
-forks: 7644
-etoiles_releve: 2026-11-11
+etoiles: 84945
+forks: 7866
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -77,7 +77,7 @@ Son positionnement distinctif est donc moins celui d'un simple moteur vidéo que
 |Maturité|★★☆☆☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 82 684 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 84 945 au 16 novembre 2026._
 
 **Commentaire :** projet très actif, publié par HeyGen (éditeur de vidéo IA) et présenté comme déjà utilisé en production chez HeyGen, avec une architecture relativement complète : core, engine, producer, CLI, Studio, SDK, player, rendering distribué et Skills. Le dépôt comptait plus de 4 600 commits au 22 septembre 2026 et continue de recevoir des releases très fréquentes.
 

@@ -29,7 +29,7 @@ Un **worktree** (arbre de travail) est une copie de travail rattachée à un dé
 
 ## Dans le wiki
 
-- Un worktree par tâche : [[Superset]], [[Conductor]], [[Parallel Code]], [[Claude Squad]].
+- Un worktree par tâche : [[Paradev]], [[Conductor]], [[Parallel Code]], [[Claude Squad]].
 - Terminaux qui laissent l'organisation Git à l'utilisateur : [[cmux]], [[Warp]].
 
 ## Sources

@@ -15,16 +15,16 @@ depot: "https://github.com/firecrawl/firecrawl"
 licence: "AGPL-3.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 200827
-forks: 10554
-etoiles_releve: 2026-11-11
+etoiles: 202189
+forks: 10600
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 4
 note_popularite: 5
 memo: "[[Firecrawl mémo]]"
 avis_maj: 2026-09-24
-modified: 2026-11-12
+modified: 2026-11-15
 ---
 
 # Firecrawl
@@ -76,7 +76,7 @@ Le projet est open source sous **AGPL-3.0**, avec une version Cloud proposant de
 |Self-hosting|★★★☆☆|
 |Simplicité d'utilisation|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 200 827 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 202 189 au 16 novembre 2026._
 
 **Commentaire :** projet établi et très actif (plus de 6 000 commits et plusieurs centaines de contributeurs ; sa popularité mesure surtout l'attention). L'écosystème s'est étendu au-delà du scraping traditionnel vers Search, Interact, Agent, MCP, CLI et Skills. Les sources de cette fiche sont toutes celles de l'éditeur ; les retours indépendants (voir [[#Avis indépendants|les avis indépendants]]) le décrivent comme un excellent choix par défaut pour intégrer rapidement le web à un agent, avec des réserves sur le coût à volume élevé, les sites difficiles et l'écart entre auto-hébergement et cloud, d'où la note de maturité et de self-hosting plus prudente.
 
@@ -119,6 +119,8 @@ La documentation est particulièrement développée pour les workflows agentique
 ## Relations
 
 - **Alternative à :** Crawl4AI (open source local et très configurable), Apify (marketplace d'acteurs et infrastructure de scraping plus large) et solutions sur mesure développées avec [[Playwright]] + parsers
+    
+- **Complémentaire de :** [[Perplexity MCP]] (réponses sourcées ; Firecrawl extrait ensuite les pages citées)
     
 - **S'intègre avec :** Claude Code · Cursor · Codex · OpenCode · Windsurf · n8n · LangChain · LangGraph · LlamaIndex · Vercel AI SDK
     
@@ -164,4 +166,4 @@ Excellent choix par défaut pour ajouter rapidement le web à un agent ; à comp
 - [Site officiel](https://www.firecrawl.dev/)
 - [Dépôt officiel](https://github.com/firecrawl/firecrawl)
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 15 novembre 2026_

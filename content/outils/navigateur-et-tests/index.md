@@ -35,7 +35,7 @@ Notes sur le barème du [[Comparatif global des outils]] : Documentation, Préci
 
 |Outil|Documentation|Précision|Maturité|Total /15|Popularité|Justification|
 |---|:-:|:-:|:-:|:-:|:-:|---|
-|[[Playwright]]|★★★★★|★★★★★|★★★★★|**15**|★★★★☆|Doc de référence ; affirmations largement confirmées ; projet établi (2020+).|
+|[[Playwright]]|★★★★★|★★★★★|★★★★★|**15**|★★★★★|Doc de référence ; affirmations largement confirmées ; projet établi (2020+).|
 |[[Agent Browser]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★★☆|README détaillé ; propriétés de sécurité décrites par le projet ; jeune.|
 |[[Chrome DevTools MCP]]|★★★★☆|★★★★☆|★★★★☆|**12**|★★★★☆|Doc officielle, périmètre net ; éditeur établi, évolution rapide.|
 |[[OpenCLI]]|★★★★☆|★★★☆☆|★★☆☆☆|**9**|★★★★☆|Doc riche ; politique de sécurité promise non livrée ; ~6 mois, comptes bannis.|

@@ -12,9 +12,9 @@ depot: "https://github.com/OpenClaudia/openclaudia-skills"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-04
-etoiles: 737
-forks: 63
-etoiles_releve: 2026-11-11
+etoiles: 741
+forks: 66
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 3
 note_maturite: 2
@@ -73,7 +73,7 @@ Le projet se distingue d'un SaaS marketing traditionnel par son approche **local
 |Intégration Claude Code / Codex|★★★★☆|
 |Pertinence pour un workflow Growth|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 737 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 741 au 16 novembre 2026._
 
 **Commentaire :** OpenClaudia propose une couverture large pour un projet open source récent. Le dépôt compte plus de 120 commits depuis sa création en février 2026, 3 contributeurs, avec une licence MIT et une architecture basée sur des skills indépendantes. Les notes de maturité, d'intégration et de pertinence ont été abaissées : le site affiche des témoignages positifs et une comparaison publiée par le projet lui-même, mais les essais indépendants détaillés sont rares et ne permettent pas d'établir la qualité de chaque skill (voir [[#Avis indépendants|les avis indépendants]]).
 

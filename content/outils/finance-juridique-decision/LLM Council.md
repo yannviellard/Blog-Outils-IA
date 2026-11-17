@@ -13,9 +13,9 @@ depot: "https://github.com/aiwithremy/claude-skills-llm-council"
 licence: "Non spécifiée"
 statut: disponible
 derniere_maj: 2026-04-26
-etoiles: 2999
-forks: 260
-etoiles_releve: 2026-11-11
+etoiles: 3089
+forks: 273
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 4
 note_maturite: 1
@@ -69,7 +69,7 @@ Le projet est volontairement minimal : le repository contient principalement `RE
 |Simplicité d'intégration|★★★★★|
 |Utilité pour la prise de décision|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 2 999 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 3 089 au 16 novembre 2026._
 
 **Commentaire :** bonne démonstration d'un workflow multi-agents obtenu avec une simple `SKILL.md`. Le processus est bien structuré : les cinq perspectives sont conçues pour créer des tensions complémentaires, le peer review est anonymisé et le chairman peut retenir l'avis minoritaire lorsqu'il estime son raisonnement supérieur. La clarté du workflow est excellente, mais l'utilité réelle pour la qualité des décisions n'est mesurée par aucune évaluation : les notes d'utilité, de robustesse et de diversité sont donc prudentes (voir [[#Avis indépendants|les avis indépendants]]).
 

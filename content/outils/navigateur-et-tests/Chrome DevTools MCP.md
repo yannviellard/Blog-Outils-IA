@@ -14,9 +14,9 @@ depot: "https://github.com/ChromeDevTools/chrome-devtools-mcp"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 55100
-forks: 4586
-etoiles_releve: 2026-11-11
+etoiles: 57338
+forks: 4834
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 4
@@ -75,7 +75,7 @@ Son positionnement est donc principalement celui d'un **outil de feedback runtim
 |Performance analysis|★★★★★|
 |Sécurité / isolation|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 55 100 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 57 338 au 16 novembre 2026._
 
 **Commentaire :** projet officiel de l'équipe Chrome DevTools, très actif et avec une adoption importante. Les notes « Tests E2E » (★★) et « Sécurité / isolation » (★★★) sont cohérentes avec les limites ci-dessous (pas de remplacement de Playwright, surface d'accès importante). Voir aussi [[#Avis indépendants|les avis indépendants]]. La version 1.9.0 publiée le 8 septembre 2026 ajoute notamment des options de sécurité autour de l'exécution JavaScript, le cookie debugging, la configuration des filesystem roots et un package Agent Plugins 1.0.
 

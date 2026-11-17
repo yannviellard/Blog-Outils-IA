@@ -13,9 +13,9 @@ depot: "https://github.com/Graphify-Labs/graphify"
 licence: "Apache-2.0 / MIT"
 statut: disponible
 derniere_maj: 2026-11-10
-etoiles: 146011
-forks: 13986
-etoiles_releve: 2026-11-11
+etoiles: 148663
+forks: 14263
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -74,7 +74,7 @@ Le projet fournit une `/graphify` skill compatible avec de nombreux coding agent
 | Stabilité de l'architecture | ★★★☆☆ |
 | Intégration MCP | ★★★★★ |
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 146 011 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 148 663 au 16 novembre 2026._
 
 **Commentaire :** Graphify propose une architecture particulièrement intéressante pour les agents de développement : le graphe est persistant, interrogeable et conserve la provenance des relations. Le parsing du code est local et déterministe, tandis que les traitements sémantiques peuvent utiliser un LLM pour les documents et médias. Le projet est cependant en évolution très rapide : la branche active est `v8`, le dépôt compte plus de 1 800 commits et reste soumis à de nombreuses évolutions et corrections.
 

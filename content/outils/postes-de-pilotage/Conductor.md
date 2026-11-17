@@ -71,11 +71,11 @@ L'application locale est gratuite sur Mac. Les offres payantes ajoutent workspac
 
 ### Qualité
 
-**Commentaire :** choix pertinent pour une équipe qui veut un workflow PR explicite et une interface plus guidée que [[Superset]] ; les critiques les plus sévères visent d'anciennes versions, mais le coût de configuration demeure. La valeur dépend fortement de la qualité de `.conductor/settings.toml`.
+**Commentaire :** choix pertinent pour une équipe qui veut un workflow PR explicite et une interface plus guidée que [[Paradev]] ; les critiques les plus sévères visent d'anciennes versions, mais le coût de configuration demeure. La valeur dépend fortement de la qualité de `.conductor/settings.toml`.
 
 ## Relations
 
-- **Alternative à :** [[Superset]], [[Parallel Code]], [[Claude Squad]]
+- **Alternative à :** [[Paradev]], [[Parallel Code]], [[Claude Squad]]
 - **S'intègre avec :** [[Claude Code]], [[OpenAI Codex]], [[OpenCode]], Cursor, GitHub, Linear
 - **Utilise :** Git worktrees, branches, scripts de cycle de vie
 
@@ -85,7 +85,7 @@ _Synthèse des retours publiés, mise à jour le 10 octobre 2026._
 
 ### Synthèse
 
-Les utilisateurs favorables citent surtout l'interface, la création automatique des worktrees et le parcours de revue. Certains continuent d'utiliser Conductor au quotidien après avoir essayé [[Superset]] et [[cmux]], ce qui suggère que son approche guidée répond bien au besoin « une tâche, un workspace, une PR ».
+Les utilisateurs favorables citent surtout l'interface, la création automatique des worktrees et le parcours de revue. Certains continuent d'utiliser Conductor au quotidien après avoir essayé [[Paradev]] et [[cmux]], ce qui suggère que son approche guidée répond bien au besoin « une tâche, un workspace, une PR ».
 
 Les critiques historiques sont concrètes : lenteur, réinstallation de dépendances, `.env` non recopié, collisions de worktrees et comportement légèrement différent des CLI natives. La documentation actuelle répond à une partie de ces points avec les fichiers à copier, scripts de setup, plages de ports et réglages locaux ; elle ne supprime cependant pas le coût de configuration.
 

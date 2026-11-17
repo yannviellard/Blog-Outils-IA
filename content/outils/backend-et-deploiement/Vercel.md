@@ -13,9 +13,9 @@ depot: "https://github.com/vercel/vercel"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-10-27
-etoiles: 16567
-forks: 3913
-etoiles_releve: 2026-11-11
+etoiles: 16603
+forks: 3916
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 5
@@ -81,7 +81,7 @@ Le workflow central est **Git → Build → Preview → Production** : un reposi
 |Maturité|★★★★★|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 16 567 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 16 603 au 16 novembre 2026._
 
 **Commentaire :** Vercel excelle lorsqu'on souhaite passer rapidement d'un repository Git à une application web déployée sans gérer directement les serveurs, le réseau ou une grande partie de la chaîne CI/CD. Son modèle est particulièrement adapté aux applications frontend modernes et aux architectures serverless/managed. En contrepartie, l'abstraction de l'infrastructure réduit le contrôle par rapport à un déploiement directement sur AWS, Kubernetes ou des VM.
 

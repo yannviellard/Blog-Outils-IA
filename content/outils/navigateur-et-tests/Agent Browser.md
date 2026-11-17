@@ -13,9 +13,9 @@ depot: "https://github.com/vercel-labs/agent-browser"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 49700
-forks: 3476
-etoiles_releve: 2026-11-11
+etoiles: 51808
+forks: 3627
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -75,7 +75,7 @@ La gestion de l'authentification est particulièrement développée : réutilisa
 |Maturité|★★★☆☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 49 700 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 51 808 au 16 novembre 2026._
 
 ### Points forts
 

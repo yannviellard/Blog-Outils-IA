@@ -14,9 +14,9 @@ depot: "https://github.com/anthropics/financial-services"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-10-28
-etoiles: 41226
-forks: 5742
-etoiles_releve: 2026-11-11
+etoiles: 41335
+forks: 5758
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -78,7 +78,7 @@ Voir aussi : la section [[#Avis indépendants|Avis indépendants]] pour une synt
 |Réutilisabilité hors finance|★★★★☆|
 |Intérêt pour les workflows financiers|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 41 226 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 41 335 au 16 novembre 2026._
 
 **Commentaire :** projet particulièrement intéressant comme **référence d'architecture agentique et de conception de skills**, au-delà de son domaine financier. La séparation entre agents, skills, commandes et connecteurs est claire et permet de réutiliser ou d'adapter des composants sans installer toute la stack. Le dépôt est officiellement maintenu par Anthropic et présente déjà une architecture relativement complète, mais certaines fonctionnalités reposent sur des fournisseurs de données externes nécessitant des abonnements ou des clés API.
 

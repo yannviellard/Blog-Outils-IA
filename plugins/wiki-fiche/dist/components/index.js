@@ -2,7 +2,7 @@
 // frontmatter que le panneau de Quartz montrerait avec leurs clés brutes.
 //   - fiche outil (type: outil) : format, éditeur, statut, licence, site, dépôt,
 //     notes et total /15, popularité, mémo, avis, métiers et thèmes ;
-//   - mémo (type: memo) : lien vers la fiche de l'outil ;
+//   - mémo (type: memo) : lien vers la fiche de l'outil et vers le PDF ;
 //   - autre page avec des tags : métiers et thèmes.
 // Les libellés des tags viennent des pages de content/tags/.
 
@@ -115,7 +115,12 @@ function lignesTags(slug, allFiles, tags) {
   ]
 }
 
-function ficheOutil(slug, fm, allFiles) {
+// Lien vers le mémo PDF (infos posées par le transformateur, dist/index.js).
+function lienPdf(slug, memoPdf, texte) {
+  return h("a", { href: resolveRelative(slug, memoPdf.pdf), class: "internal" }, texte)
+}
+
+function ficheOutil(slug, fm, allFiles, memoPdf) {
   const dossier = slug.slice(0, slug.lastIndexOf("/"))
   const famille = allFiles.find((f) => f.slug === `${dossier}/index`)
   const memo = cibleWikilink(fm.memo) ? trouverParNom(allFiles, cibleWikilink(fm.memo)) : null
@@ -163,7 +168,11 @@ function ficheOutil(slug, fm, allFiles) {
         )
       : null,
     ligne("Popularité", popularite),
-    ligne("Mémo", memo ? lienInterne(slug, memo) : null),
+    ligne(
+      "Mémo",
+      memo ? lienInterne(slug, memo) : null,
+      memo && memoPdf ? [" · ", lienPdf(slug, memoPdf, "PDF"), ` (${memoPdf.description})`] : null,
+    ),
     ligne(
       "Avis",
       fm.avis_maj
@@ -174,10 +183,14 @@ function ficheOutil(slug, fm, allFiles) {
   ]
 }
 
-function ficheMemo(slug, fm, allFiles) {
+function ficheMemo(slug, fm, allFiles, memoPdf) {
   const nom = cibleWikilink(fm.fiche)
   const fiche = nom ? trouverParNom(allFiles, nom) : null
-  return [ligne("Fiche", fiche ? lienInterne(slug, fiche) : nom), ...lignesTags(slug, allFiles, fm.tags)]
+  return [
+    ligne("Fiche", fiche ? lienInterne(slug, fiche) : nom),
+    ligne("PDF", memoPdf ? [lienPdf(slug, memoPdf, "Télécharger"), ` (${memoPdf.description})`] : null),
+    ...lignesTags(slug, allFiles, fm.tags),
+  ]
 }
 
 const style = `
@@ -201,14 +214,15 @@ const style = `
 .fiche-ligne:last-child {
   border-bottom: none;
 }
-/* Sélecteurs renforcés : le thème de Quartz met une marge sur « html[saved-theme] body dd ». */
-html body .fiche .fiche-ligne dt {
-  margin: 0;
+/* « !important » : Quartz range ce CSS dans la couche « quartz-base », qui perd face
+   au thème (« html[saved-theme] body dd » ajoute une marge de 40 px à gauche). */
+.fiche dt {
+  margin: 0 !important;
   color: var(--gray);
   font-weight: 600;
 }
-html body .fiche .fiche-ligne dd {
-  margin: 0;
+.fiche dd {
+  margin: 0 !important;
   color: var(--darkgray);
 }
 .fiche-etoiles {
@@ -236,6 +250,14 @@ html body .fiche .fiche-ligne dd {
   background-color: var(--highlight);
   font-size: 0.88rem;
 }
+/* Aperçu du mémo PDF (section « Mémo pratique », insérée par le transformateur) */
+img.memo-apercu {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+}
 @media all and (max-width: 600px) {
   .fiche-ligne {
     grid-template-columns: 1fr;
@@ -250,8 +272,8 @@ function FicheConstructeur() {
     const slug = fileData?.slug ?? ""
     const fichiers = allFiles ?? []
     let lignes
-    if (fm.type === "outil") lignes = ficheOutil(slug, fm, fichiers)
-    else if (fm.type === "memo") lignes = ficheMemo(slug, fm, fichiers)
+    if (fm.type === "outil") lignes = ficheOutil(slug, fm, fichiers, fileData.memoPdf)
+    else if (fm.type === "memo") lignes = ficheMemo(slug, fm, fichiers, fileData.memoPdf)
     else lignes = lignesTags(slug, fichiers, fm.tags)
     lignes = lignes.filter(Boolean)
     if (lignes.length === 0) return null

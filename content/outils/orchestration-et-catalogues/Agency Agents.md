@@ -14,9 +14,9 @@ depot: "https://github.com/msitarzewski/agency-agents"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-09
-etoiles: 167746
-forks: 27210
-etoiles_releve: 2026-11-11
+etoiles: 168657
+forks: 27382
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 3
 note_maturite: 3
@@ -73,7 +73,7 @@ Le dépôt est très actif : le mainteneur indiquait en juin 2026 plus de 230 ag
 |Orchestration native|★★☆☆☆|
 |Maintenabilité d'une sélection d'agents|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 167 746 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 168 657 au 16 novembre 2026._
 
 **Commentaire :** projet très riche et actif, mais dont la valeur vient principalement de la qualité et de la diversité des définitions d'agents, qui n'est pas évaluée de façon indépendante (note de qualité des prompts à ★★★☆☆, maturité à ★★★☆☆ en l'absence de releases formelles). Il ne constitue pas à lui seul un framework d'orchestration multi-agent complet. La qualité peut également varier selon les agents, car le catalogue est fortement communautaire. Une discussion du dépôt soulève notamment la question de la provenance et de la validation des profils spécialisés.
 

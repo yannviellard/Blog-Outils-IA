@@ -14,9 +14,9 @@ depot: "https://github.com/MemPalace/mempalace"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 60521
-forks: 7663
-etoiles_releve: 2026-11-11
+etoiles: 60572
+forks: 7674
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 2
 note_maturite: 2
@@ -81,7 +81,7 @@ Le projet est **local-first** : les données et embeddings peuvent rester sur la
 |Simplicité d'installation|★★★☆☆|
 |Fiabilité opérationnelle|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 60 521 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 60 572 au 16 novembre 2026._
 
 **Commentaire :** MemPalace est devenu un projet techniquement ambitieux et très actif, avec une intégration de plus en plus poussée des agents et de Claude Code. La documentation et les mécanismes d'installation se sont nettement améliorés, mais l'historique du projet montre encore de nombreux problèmes liés aux hooks, aux versions, aux environnements Python et à la concurrence d'accès à la base. Les releases récentes corrigent une partie importante de ces problèmes, mais plusieurs issues de fiabilité restent ouvertes.
 

@@ -14,9 +14,9 @@ depot: "https://github.com/OthmanAdi/planning-with-files"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-10
-etoiles: 28008
-forks: 2309
-etoiles_releve: 2026-11-11
+etoiles: 28088
+forks: 2317
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -86,7 +86,7 @@ Le projet prend aujourd'hui en charge de nombreux environnements, notamment **Cl
 |Robustesse|★★★★☆|
 |Légèreté|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 28 008 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 28 088 au 16 novembre 2026._
 
 **Commentaire :** projet actif et largement adopté. Le concept reste extrêmement simple — utiliser des fichiers Markdown comme mémoire de travail — mais l'implémentation est devenue relativement sophistiquée avec hooks, récupération de session, plans parallèles, completion gates, contrôles d'intégrité et intégrations multi-agents. Le dépôt compte 56 contributeurs au 22 septembre 2026.
 

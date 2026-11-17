@@ -14,7 +14,7 @@ configuration:
     - _modeles
     - .obsidian
     - private
-    - "Sans titre.canvas"
+    - "Sans titre*.canvas"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true

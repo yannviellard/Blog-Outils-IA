@@ -13,9 +13,9 @@ depot: "https://github.com/Yeachan-Heo/oh-my-claudecode"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 40764
-forks: 3641
-etoiles_releve: 2026-11-11
+etoiles: 40853
+forks: 3648
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -76,7 +76,7 @@ OMC propose également une CLI (`omc`) et un plugin Claude Code distinct. Il peu
 |Orchestration multi-agents|★★★★☆|
 |Simplicité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 40 764 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 40 853 au 16 novembre 2026._
 
 **Commentaire :** projet très riche et fortement actif, avec une architecture désormais structurée autour des agents, skills, hooks et états persistants. La documentation est abondante, mais la quantité de fonctionnalités et de modes rend l'ensemble sensiblement plus complexe qu'un simple ensemble de skills. Les nombreuses releases et corrections montrent également un projet encore en évolution rapide. La release 5.4.0 publiée le 11 septembre 2026 comportait notamment 5 nouvelles fonctionnalités et 10 corrections.
 

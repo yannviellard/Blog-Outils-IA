@@ -16,14 +16,14 @@ Une cartographie raisonnée des agents IA, applications, skills, frameworks et s
 
 Partir du besoin de son équipe, puis consulter les outils recommandés et leur point d'attention.
 
-|Métier|Pour|
-|---|---|
-|[[Direction et gouvernance]]|Stratégie, décision, finances, organisation des processus.|
-|[[Ingénierie et développement]]|Concevoir, coder, tester, sécuriser, déployer et maintenir les applications.|
-|[[Produit et design]]|Besoins utilisateurs, prototypes, cohérence de l'interface.|
-|[[Commercial et marketing]]|Marché, campagnes, contenu, référencement, déclinaison de la marque.|
-|[[Succès client et support]]|Réponses aux clients, base de connaissances, suivi de l'adoption.|
-|[[Opérations et fonctions support]]|Juridique, administration, finance, RH, automatisations internes.|
+| Métier                              | Pour                                                                         |
+| ----------------------------------- | ---------------------------------------------------------------------------- |
+| [[Direction et gouvernance]]        | Stratégie, décision, finances, organisation des processus.                   |
+| [[Ingénierie et développement]]     | Concevoir, coder, tester, sécuriser, déployer et maintenir les applications. |
+| [[Produit et design]]               | Besoins utilisateurs, prototypes, cohérence de l'interface.                  |
+| [[Commercial et marketing]]         | Marché, campagnes, contenu, référencement, déclinaison de la marque.         |
+| [[Succès client et support]]        | Réponses aux clients, base de connaissances, suivi de l'adoption.            |
+| [[Opérations et fonctions support]] | Juridique, administration, finance, RH, automatisations internes.            |
 
 ## Par famille
 

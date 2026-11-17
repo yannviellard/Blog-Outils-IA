@@ -12,9 +12,9 @@ depot: "https://github.com/smtg-ai/claude-squad"
 licence: "AGPL-3.0"
 statut: disponible
 derniere_maj: 2026-08-20
-etoiles: 8782
-forks: 627
-etoiles_releve: 2026-11-11
+etoiles: 8817
+forks: 636
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 4
 note_maturite: 3
@@ -34,7 +34,7 @@ Voir aussi : la section [[#Avis indépendants|Avis indépendants]] pour une synt
 
 Claude Squad fournit la couche minimale absente de tmux : une liste de tâches, un état par agent, un aperçu de sa sortie et un diff. Chaque nouvelle session obtient un worktree et une branche construits à partir de l'état Git de départ. L'agent continue en arrière-plan dans tmux et peut être réattaché à tout moment.
 
-Malgré son nom, le programme accepte Codex, Gemini, OpenCode, Aider et toute commande compatible. Il est particulièrement adapté aux serveurs, à SSH et aux utilisateurs clavier. Il n'offre pas le niveau de revue graphique, navigateur ou configuration d'environnement de [[Superset]] et [[Conductor]].
+Malgré son nom, le programme accepte Codex, Gemini, OpenCode, Aider et toute commande compatible. Il est particulièrement adapté aux serveurs, à SSH et aux utilisateurs clavier. Il n'offre pas le niveau de revue graphique, navigateur ou configuration d'environnement de [[Paradev]] et [[Conductor]].
 
 ## Fonctionnalités
 
@@ -55,7 +55,7 @@ Malgré son nom, le programme accepte Codex, Gemini, OpenCode, Aider et toute co
 |Maturité|★★★☆☆|
 |Popularité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 8 782 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 8 817 au 16 novembre 2026._
 
 ### Points forts
 
@@ -80,7 +80,7 @@ Malgré son nom, le programme accepte Codex, Gemini, OpenCode, Aider et toute co
 
 ## Relations
 
-- **Alternative à :** [[Parallel Code]], [[Superset]], tmux manuel
+- **Alternative à :** [[Parallel Code]], [[Paradev]], tmux manuel
 - **S'intègre avec :** [[Claude Code]], [[OpenAI Codex]], [[OpenCode]], Gemini, Aider, GitHub
 - **Utilise :** tmux, Git worktrees, GitHub CLI
 
@@ -112,7 +112,7 @@ D'autres le trouvent instable ou encore trop abstrait : la TUI ne suffit pas tou
 
 ### Verdict
 
-Très pertinent sur une station Unix ou un serveur distant. Pour un utilisateur qui veut une revue visuelle, des previews et une fusion guidée, [[Parallel Code]] ou [[Superset]] sont plus appropriés.
+Très pertinent sur une station Unix ou un serveur distant. Pour un utilisateur qui veut une revue visuelle, des previews et une fusion guidée, [[Parallel Code]] ou [[Paradev]] sont plus appropriés.
 
 ## Sources
 

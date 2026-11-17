@@ -14,9 +14,9 @@ depot: "https://github.com/bmad-code-org/BMAD-METHOD"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-08
-etoiles: 55261
-forks: 6161
-etoiles_releve: 2026-11-11
+etoiles: 55411
+forks: 6176
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 4
@@ -77,7 +77,7 @@ La version 6.12.0, publiée en septembre 2026, poursuit une évolution vers une 
 |Simplicité|★★★☆☆|
 |Écosystème|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 55 261 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 55 411 au 16 novembre 2026._
 
 **Commentaire :** BMAD est aujourd'hui un framework très complet et particulièrement structuré pour relier **product discovery → spécifications → architecture → développement**. Sa documentation est abondante et organisée par tutoriels, guides pratiques, explications et références.
 

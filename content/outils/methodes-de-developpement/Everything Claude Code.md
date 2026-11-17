@@ -15,9 +15,9 @@ depot: "https://github.com/affaan-m/ECC"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-06
-etoiles: 301154
-forks: 44433
-etoiles_releve: 2026-11-11
+etoiles: 304071
+forks: 44807
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -80,7 +80,7 @@ Le projet fonctionne surtout avec Claude Code, dispose d'une synchronisation Cod
 |Maintenance|★★★★☆|
 |Intégration Claude Code|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 301 154 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 304 071 au 16 novembre 2026._
 
 **Commentaire :** ECC est l'un des projets les plus suivis de l'écosystème Claude Code, avec un rythme de publication hebdomadaire et plusieurs centaines de contributeurs. Sa force vient de la combinaison agents + skills + règles + hooks + vérification, et d'une vraie réflexion sur le coût en contexte (skills à la demande, plafonds d'injection, `/context-budget`). Il reste très opinionated (TDD, couverture de 80 %, délégation aux agents) et son volume impose de sélectionner les composants plutôt que de tout activer.
 

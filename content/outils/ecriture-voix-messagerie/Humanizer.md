@@ -13,9 +13,9 @@ depot: "https://github.com/blader/humanizer"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-10
-etoiles: 67852
-forks: 5331
-etoiles_releve: 2026-11-11
+etoiles: 69658
+forks: 5482
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -72,7 +72,7 @@ Humanizer analyse le texte, produit un premier brouillon, contrôle les faits et
 |Maturité|★★★☆☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 67 852 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 69 658 au 16 novembre 2026._
 
 ### Points forts
 

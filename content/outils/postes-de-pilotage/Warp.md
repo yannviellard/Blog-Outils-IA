@@ -12,9 +12,9 @@ depot: "https://github.com/warpdotdev/warp"
 licence: "AGPL-3.0 ; composants UI MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 65981
-forks: 5773
-etoiles_releve: 2026-11-11
+etoiles: 66026
+forks: 5788
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 4
@@ -55,7 +55,7 @@ Warp accepte aussi des agents tiers comme Codex et Claude Code. Il est donc à l
 |Maturité|★★★★☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 65 981 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 66 026 au 16 novembre 2026._
 
 ### Points forts
 
@@ -106,7 +106,7 @@ Une partie des anciens utilisateurs estime toutefois que le produit a perdu la s
 - Interface perçue comme chargée et changeante.
 - Crédits, compute et options payantes difficiles à comparer à un abonnement CLI direct.
 - Certains utilisateurs préfèrent Claude Code ou Codex pour le code et Warp seulement comme terminal.
-- Moins opinionated sur les worktrees et la revue locale que [[Superset]] ou [[Conductor]].
+- Moins opinionated sur les worktrees et la revue locale que [[Paradev]] ou [[Conductor]].
 - Un terminal cloud plus puissant élargit aussi la surface de permissions et de secrets à gouverner.
 
 ### Interprétation
@@ -115,7 +115,7 @@ Les critiques ne signifient pas que Warp est un mauvais produit ; elles révèle
 
 ### Verdict
 
-À privilégier pour les équipes multiplateformes et les agents cloud. Pour deux ou trois agents locaux sur Mac, [[cmux]] ou [[Superset]] seront souvent plus directs.
+À privilégier pour les équipes multiplateformes et les agents cloud. Pour deux ou trois agents locaux sur Mac, [[cmux]] ou [[Paradev]] seront souvent plus directs.
 
 ## Sources
 

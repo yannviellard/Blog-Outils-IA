@@ -13,9 +13,9 @@ depot: "https://github.com/remotion-dev/remotion"
 licence: "Custom / Commercial"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 72450
-forks: 6045
-etoiles_releve: 2026-11-11
+etoiles: 73543
+forks: 6198
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 5
@@ -72,7 +72,7 @@ Remotion fournit également les briques nécessaires pour construire des applica
 |Workflow agentique|★★★★☆|
 |Édition vidéo traditionnelle|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 72 450 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 73 543 au 16 novembre 2026._
 
 **Commentaire :** projet mature et fortement structuré, avec une documentation de plus de 1 000 pages et un dépôt très actif. Son positionnement évolue d'un framework de génération vidéo React vers une plateforme couvrant la création programmatique, l'édition interactive et la création assistée par agents. Le dépôt contient désormais des répertoires dédiés aux Agent Skills et aux intégrations Claude/Codex ; sa popularité mesure l'attention portée au projet. Le workflow agentique est plus récent que le cœur du framework (Agent Skills et plugins), d'où une note de ★★★★☆ ; HyperFrames a été conçu plus directement pour être piloté par des agents, mais dispose de beaucoup moins d'historique.
 

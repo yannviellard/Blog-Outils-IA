@@ -13,9 +13,9 @@ depot: "https://github.com/higgsfield-ai/skills"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-05
-etoiles: 1956
-forks: 358
-etoiles_releve: 2026-11-11
+etoiles: 1992
+forks: 360
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 2
@@ -69,7 +69,7 @@ Le projet couvre l'installation via plusieurs canaux (`npx skills`, `gh skill in
 |Étendue fonctionnelle|★★★★☆|
 |Interopérabilité (multi-agents)|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 1 956 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 1 992 au 16 novembre 2026._
 
 ### Points forts
 

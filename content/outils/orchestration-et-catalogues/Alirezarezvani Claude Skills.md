@@ -12,9 +12,9 @@ depot: "https://github.com/alirezarezvani/claude-skills"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 29634
-forks: 4114
-etoiles_releve: 2026-11-11
+etoiles: 29874
+forks: 4146
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -69,7 +69,7 @@ L'approche privilégie des skills relativement indépendants et installables ind
 |Modularité|★★★★★|
 |Cohérence globale|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 29 634 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 29 874 au 16 novembre 2026._
 
 **Commentaire :** le projet est très riche et dispose d'une documentation et de conventions de contribution particulièrement structurées. La quantité de composants est toutefois devenue importante : les 20 domaines et centaines de skills rendent la sélection pertinente plus importante que l'installation globale. La documentation elle-même recommande une installation individuelle des skills, et les conventions imposent des structures et contrôles précis pour les contributions.
 

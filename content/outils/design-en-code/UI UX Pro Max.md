@@ -14,9 +14,9 @@ depot: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-10
-etoiles: 148098
-forks: 15670
-etoiles_releve: 2026-11-11
+etoiles: 150164
+forks: 15877
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -76,7 +76,7 @@ Il ne s'agit donc pas d'un simple prompt de génération d'interfaces : le cœur
 |Maintenabilité|★★★★☆|
 |Intégration coding agents|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 148 098 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 150 164 au 16 novembre 2026._
 
 **Commentaire :** projet particulièrement intéressant parce qu'il dépasse le simple prompt engineering : il combine **skill, données structurées, moteur de recherche local et templates spécifiques aux agents**. L'architecture permet de maintenir une base de connaissances relativement volumineuse sans injecter l'intégralité du contenu dans le contexte de l'agent. Le projet reste néanmoins en évolution rapide : le dépôt affiche encore plusieurs dizaines d'issues et de pull requests ouvertes, dont certaines concernent l'installation, le packaging et la synchronisation des métadonnées.
 

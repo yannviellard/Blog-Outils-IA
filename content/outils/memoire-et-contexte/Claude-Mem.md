@@ -13,9 +13,9 @@ depot: "https://github.com/thedotmack/claude-mem"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 116105
-forks: 10075
-etoiles_releve: 2026-11-11
+etoiles: 117508
+forks: 10209
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -82,7 +82,7 @@ Le projet a fortement évolué et supporte désormais plusieurs environnements d
 |Stabilité|★★★☆☆|
 |Pertinence multi-agent|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 116 105 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 117 508 au 16 novembre 2026._
 
 **Commentaire :** Claude-Mem répond à un problème réel des coding agents : la perte de contexte entre les sessions. Son architecture est désormais relativement riche et son adoption rapide, mais le projet évolue très rapidement et les retours vérifiables restent moins nombreux que sa popularité ne le suggère (voir [[#Avis indépendants|les avis indépendants]]). Le volume important de correctifs récents concerne notamment le worker, les hooks, la synchronisation, les quotas, Chroma et la récupération de contexte.
 

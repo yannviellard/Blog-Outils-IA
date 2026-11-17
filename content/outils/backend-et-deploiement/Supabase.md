@@ -14,9 +14,9 @@ depot: "https://github.com/supabase/supabase"
 licence: "Apache 2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 114831
-forks: 15093
-etoiles_releve: 2026-11-11
+etoiles: 115077
+forks: 15139
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 4
@@ -75,7 +75,7 @@ Supabase propose également des SDK pour plusieurs environnements, dont **Swift*
 |Portabilité|★★★★☆|
 |Risque de complexité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 114 831 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 115 077 au 16 novembre 2026._
 
 **Commentaire :** Supabase est particulièrement intéressant lorsqu'une application a besoin d'un backend rapidement opérationnel sans vouloir construire séparément la base de données, l'authentification, les APIs et le stockage. L'utilisation d'un véritable PostgreSQL constitue un avantage important pour les applications ayant un modèle de données relationnel.
 

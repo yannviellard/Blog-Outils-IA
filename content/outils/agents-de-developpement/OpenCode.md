@@ -13,9 +13,9 @@ depot: "https://github.com/anomalyco/opencode"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 226085
-forks: 30555
-etoiles_releve: 2026-11-11
+etoiles: 227159
+forks: 30768
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 4
@@ -75,7 +75,7 @@ Le projet connaît une croissance rapide : le dépôt officiel comptait plus de 
 |Popularité|★★★★★|
 |Multi-modèles|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 226 085 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 227 159 au 16 novembre 2026._
 
 ### Points forts
 

@@ -1,6 +1,6 @@
 # Proposition d'architecture — AI Tools Wiki
 
-_Proposition du 10 novembre 2026, établie après une passe complète sur `content/`. Mise à jour le 11 novembre 2026 avec les décisions prises (§ 14) et le bilan des phases 2 et 3, puis le 12 novembre 2026 avec le bilan de la phase 4 (§ 13)._
+_Proposition du 10 novembre 2026, établie après une passe complète sur `content/`. Mise à jour le 11 novembre 2026 avec les décisions prises (§ 14) et le bilan des phases 2 et 3, puis le 12 novembre 2026 avec le bilan des phases 4 et 6 (§ 13)._
 
 ## 1. Bilan de la passe
 
@@ -222,7 +222,7 @@ content/
 - **Mémos** : `Nom_cheatsheet.md` devient `Nom mémo.md` ; les liens sont réécrits par script.
 - **Avis** : les fichiers disparaissent (voir § 8) ; l'exception historique `Hermes Agent_avis.md` disparaît avec eux.
 - **Liens vers une famille** : plusieurs fichiers s'appelant `index.md`, le lien doit donner le chemin : `[[outils/agents-de-developpement/index|Agents de développement]]`.
-- **Ordre des familles** dans l'explorateur : alphabétique par défaut ; l'ordre des zones demande un tri personnalisé (option `sortFn` de l'explorateur, à tester).
+- **Ordre des familles** dans l'explorateur : celui des zones, par un tri personnalisé (option `sortFn` de l'explorateur, dans `quartz.ts`, phase 6) ; les rubriques suivent l'ordre Outils, Mémos, Métiers, Concepts, Guides, Méthode.
 - **Changer un outil de famille change son URL** : à éviter après la mise en ligne.
 
 ## 7. La fiche outil
@@ -263,19 +263,19 @@ Posés en phase 2 sur les 70 fiches : tous les champs sauf `editeur`, `statut` e
 
 1. Titre et résumé d'une phrase.
 2. Encadré **Verdict** : deux lignes reprises de la section Avis, pour le lecteur pressé.
-3. Ligne d'accès : « Mémo : consulter · télécharger le PDF · Avis indépendants : plus bas ».
+3. Ligne d'accès : « Mémo : consulter · télécharger le PDF · Avis indépendants : plus bas ». Assurée depuis le 12 novembre 2026 par l'encadré « Fiche » (lignes Mémo, avec le lien PDF, et Avis).
 4. `## Résumé`
 5. `## Fonctionnalités`
 6. `## Analyse` : les quatre notes ★, points forts, limites.
 7. `## Relations`
-8. `## Mémo pratique` : aperçu (image de la page du mémo) et lien de téléchargement.
+8. `## Mémo pratique` : aperçu (image de la page du mémo) et lien de téléchargement. Insérée par le plugin `wiki-fiche` à la construction du site, sans être écrite dans le fichier (§ 9).
 9. `## Avis indépendants` (voir § 8).
 10. `## Sources` : sources officielles, puis sources des avis avec leur fiabilité.
 11. `_Dernière analyse : …_`
 
 ### Ce qui change par rapport au gabarit actuel
 
-- Le tableau d'en-tête anglais (Website, Repository, Stars…) est remplacé par le panneau de propriétés de Quartz (plugin NoteProperties), alimenté par le frontmatter, avec des libellés français.
+- Le tableau d'en-tête anglais (Website, Repository, Stars…) est remplacé par un encadré « Fiche » alimenté par le frontmatter, avec des libellés français (plugin local `plugins/wiki-fiche/`, phase 6). Le panneau de propriétés de Quartz (NoteProperties) est masqué : il affiche les clés brutes (`note_documentation`) sous un titre « Properties » non traduit.
 - **Étoiles conservées** et affichées avec leur date de relevé (« 148 k au 10 octobre 2026 ») ; elles alimentent le critère Popularité ci-dessous.
 - Le tableau « Domains / Skills / Agents / MCP tools » disparaît (redondant avec familles et tags) ; une ligne « Composition » subsiste pour les collections et plugins (nombre de skills, agents, commandes, outils MCP).
 
@@ -361,7 +361,13 @@ Les sources de l'avis rejoignent `## Sources`, sous « Sources des avis », avec
 
 **Pilote** : trois mémos (Claude Code, Playwright, Supabase) produits selon les deux approches, puis choix sur pièces.
 
+**Pilote PDF fait le 12 novembre 2026**, sur le modèle des aide-mémoire de référence fournis par l'auteur (DataCamp pour l'essentiel, aussi Docker, Enthought, PyCharm) : A4 paysage, trois colonnes de blocs à bandeau de couleur, commandes à gauche et description à droite, couleur selon la zone de la famille. Script `scripts/memos_pdf/generer.py` (Python sans dépendance, impression par Chrome) ; résultats dans un dossier provisoire `pilote-memos/`, mis à la corbeille le 12 novembre 2026 une fois les PDF publiés. Playwright tient sur une page en 9 pt, Supabase en 10,5 pt ; Claude Code (292 lignes) demande trois pages. NotebookLM n'a pas été essayé : il se pilote depuis le compte Google de l'auteur.
+
+**Style validé et 60 mémos générés le 12 novembre 2026** (en une minute environ). 56 tiennent sur une page (de 7 à 10,5 pt) ; GStack (9 pt) et Jev (7 pt) sur deux, Claude Code sur trois (7,5 pt), OpenAI Codex sur quatre (8 pt). La relecture des 60 aperçus a fait corriger la mise en page : en-tête de tableau répété dans la suite (et jamais seul en bas de colonne), numérotation reprise dans une liste coupée, phrase d'annonce (« … : ») gardée avec ce qu'elle annonce, commentaire `#` au milieu d'un bloc bash traité comme une description, `## ` dans un bloc de code non pris pour une section, encadré Obsidian (`> [!warning]`) rendu en encadré. Le script signale désormais les blocs coupés, le contenu trop large et le Markdown non converti (aucun sur les 60).
+
 Côté Quartz : tout fichier non Markdown placé dans `content/` (PDF, PNG) est publié tel quel ; une image s'affiche dans la page, un PDF se télécharge par lien. L'affichage d'un PDF directement dans la page n'est pas documenté.
+
+**Publiés dans le site le 12 novembre 2026.** Les PDF et leur aperçu (JPEG de 1 100 px, environ 280 Ko : un PNG pèserait plus que le PDF) sont dans `content/memos/pdf/` (26 Mo pour les 60). Le plugin `wiki-fiche` lit leur présence à la construction : lien « PDF » dans la ligne Mémo de l'encadré, section « Mémo pratique » (aperçu et téléchargement) insérée avant « Avis indépendants » sur la fiche, ligne « PDF » sur la page du mémo. Aucun fichier Markdown n'est modifié, donc aucune date de « Dernière analyse » ne bouge ; dans Obsidian, la section n'apparaît pas. Le script régénère seulement les PDF périmés (`--modifies`) et les signale dans la liste de contrôle (n° 9 de `CLAUDE.md`). Les noms de fichiers sont gardés en Unicode composé : `sips` écrivait « mémo » décomposé, que l'URL n'aurait pas trouvé sur le serveur.
 
 ## 10. Autres gabarits
 
@@ -379,10 +385,10 @@ Côté Quartz : tout fichier non Markdown placé dans `content/` (PDF, PNG) est 
 | Classement « par nature » | ligne manuelle dans l'index | la fiche est créée dans le dossier de sa famille (liste automatique) |
 | Classement « par secteur » | ligne manuelle dans l'index | ligne manuelle dans la page métier |
 | Compteur de l'index | manuel | supprimé (Quartz affiche les listes de dossier et de tag) |
-| Notes ★ | comparatif + recopie dans la fiche | frontmatter seul ; la page de famille les lit (vue Bases) ; Popularité calculée par script depuis les étoiles |
+| Notes ★ | comparatif + recopie dans la fiche | page de famille (référence, avec la justification), recopiées dans le frontmatter de la fiche et le tableau « Toutes les notes » du comparatif, concordance vérifiée par le contrôle n° 5 ; Popularité calculée depuis les étoiles |
 | Justification et critères | comparatif | page de la famille |
 
-**Bases dans Quartz** : Quartz 5 documente un plugin communautaire, BasesPage, qui affiche les fichiers `.base` d'Obsidian sous forme de tableaux triables avec filtres et formules (utile pour le total /15). Il est marqué « nouveau en v5 » : à tester sur une famille avant de généraliser. À défaut, les tableaux de notes restent manuels dans les pages de famille.
+**Bases dans Quartz** : Quartz 5 documente un plugin communautaire, BasesPage, qui affiche les fichiers `.base` d'Obsidian sous forme de tableaux triables avec filtres et formules (utile pour le total /15). Il est marqué « nouveau en v5 ». **Essai du 12 novembre 2026** (sur une copie, famille « Agents de développement ») : un fichier `.base` intégré à la page de famille (`![[Notes agents.base]]`) filtre bien les fiches du dossier, calcule le total /15 par formule et trie par total. Limites : les notes s'affichent en chiffres et non en étoiles (le moteur de formules n'a pas de fonction de répétition) ; la justification, qui n'est pas dans le frontmatter, ne peut pas figurer dans le tableau ; chaque fichier `.base` devient aussi une page du site et de l'explorateur. **Décision du 12 novembre 2026 : les tableaux de notes restent manuels**, sans Bases ; le contrôle n° 5 de `CLAUDE.md` vérifie leur concordance avec les fiches.
 
 ## 12. Contenu à prévoir
 
@@ -398,8 +404,8 @@ Côté Quartz : tout fichier non Markdown placé dans `content/` (PDF, PNG) est 
 | 2. Taxonomie et barème | **Faite le 11 novembre 2026** : page `Taxonomie` ; étoiles, forks et date du dernier commit relevés pour 59 dépôts (API GitHub et flux Atom) ; section « Le critère Popularité » et colonne Popularité dans le comparatif ; frontmatter des 70 fiches (`type: outil`, format, famille, tags en français, description, site, dépôt, licence, notes, étoiles datées, mémo) ; ligne Popularité dans le tableau Analyse ; tableau d'en-tête mis à jour ; gabarit et `CLAUDE.md` (barème, procédure, contrôle n° 4) mis à jour. Tags : 97 → 28. | — |
 | 3. Fusion des avis | **Faite le 11 novembre 2026** : section « Avis indépendants » dans les 70 fiches (sections d'origine conservées), sources des avis sous « Sources des avis », 191 liens réécrits, 70 fichiers d'avis mis à la Corbeille ; champs `editeur`, `statut` et `avis_maj` ; 39 chiffres d'étoiles retirés du texte de 35 fiches (désormais portés par la note Popularité) ; index, gabarit, `Taxonomie` et `CLAUDE.md` mis à jour. Non fait : la colonne « Contributors », que l'API publique de GitHub ne donne pas de façon fiable pour les gros dépôts ; elle disparaîtra avec le tableau d'en-tête en phase 4. | — |
 | 4. Dossiers et pages | **Faite le 12 novembre 2026** : 70 fiches rangées dans `outils/<famille>/` et champ `famille` supprimé ; 60 mémos renommés `memos/Nom mémo.md` (`type: memo`, champ `fiche`), 194 liens réécrits ; tableau d'en-tête supprimé (données dans le frontmatter, `forks` ajouté, colonne Contributors abandonnée) ; tableau « Domains » remplacé par une ligne « Composition » sur 44 fiches ; 16 pages de famille (notes, justifications et critères déplacés du comparatif, points d'attention de l'ancien index, absents notables) ; `outils/index.md` ; 6 pages métier (tableaux de l'ancien index) ; 8 concepts ; accueil réécrit ; `methode/` (À propos, comparatif réduit au barème et au tableau « Toutes les notes », Taxonomie avec les types de pages) ; `guides/` ; 31 pages de tags ; gabarits de mémo, de famille et de concept dans `_modeles/` ; `CLAUDE.md` (procédure, contrôles n° 2, 5 et 6) ; script `scripts/verifier_liens.py`. Non fait : encadré Verdict, ligne d'accès et section « Mémo pratique » du § 7 (avec le dédoublonnage et la phase 5). | — |
-| 5. Mémos téléchargeables | Pilote sur 3 outils (gabarit PDF et NotebookLM), choix, puis génération des 60. | Faible |
-| 6. Quartz | Configuration (explorateur, exclusions `_modeles/` et `.obsidian/`, BasesPage sur une famille pilote, notes récentes, propriétés, table des matières), build local, contrôle des liens. | Faible |
+| 5. Mémos téléchargeables | Pilote sur 3 outils (gabarit PDF et NotebookLM), choix, puis génération des 60. **Faite le 12 novembre 2026** (§ 9) : pilote, style validé, 60 PDF générés et publiés dans `content/memos/pdf/`, avec aperçu et lien dans la fiche et la page du mémo. À décider : traitement des mémos longs (Claude Code, OpenAI Codex, Jev, GStack), NotebookLM. | Faible |
+| 6. Quartz | **Faite le 12 novembre 2026** : Quartz 5.0.0 installé à la racine depuis `quartz-5.zip` (moteur seul, sans sa documentation ni ses workflows) ; `quartz.config.yaml` partie du modèle « obsidian » : titre « AI Tools Wiki », `fr-FR`, `baseUrl` `aitoolswiki.viellard.fr`, exclusions `_modeles`, `.obsidian` et du canvas vide, LaTeX désactivé (les prix en `$` étaient lus comme des formules), aucune mesure d'audience, pages chiffrées désactivées, liens sans cible grisés, fil d'Ariane « Accueil » ; plugin local `plugins/wiki-fiche/` (encadré « Fiche » en français, retrait du `# Titre` en double) ; `title` aligné sur le `# Titre` dans 79 pages (18 fiches corrigées, 60 mémos et le guide complétés) ; explorateur dans l'ordre des zones (`quartz.ts`) ; essai Bases (§ 11) ; contrôles n° 7 (titres) et n° 8 (build) dans `CLAUDE.md`. Build : 201 pages, environ 20 s ; 1 807 liens internes, dont 205 grisés vers 122 fiches à écrire, comme le relève `verifier_liens.py`. Non fait : notes récentes (toutes les pages ont la date du 12 novembre 2026, la liste serait arbitraire), workflow de déploiement (avec la publication). | — |
 | 7. Documentation | `CLAUDE.md` (procédure, liste de contrôle) et `projet.md` (décisions). | Faible |
 
 ## 14. Décisions
@@ -419,11 +425,14 @@ Côté Quartz : tout fichier non Markdown placé dans `content/` (PDF, PNG) est 
 - étoiles comme critère de notation « Popularité », calculé (§ 7) ;
 - total maintenu sur /15, Popularité affichée à côté.
 
+**Prise le 12 novembre 2026** :
+
+- tableaux de notes manuels dans les pages de famille et le comparatif, sans Bases, après essai (§ 11).
+
 **À prendre** :
 
-1. Mémos : PDF généré depuis le Markdown, NotebookLM en complément, après pilote (recommandé, § 9).
-2. Tableaux de notes générés par Bases ou manuels (après essai, phase 6).
-3. Superset, renommé Paradev : mettre à jour la fiche (nom, licence, liens) et décider du renommage du fichier (qui change son URL).
-4. Perplexity MCP, dont le dépôt a disparu : remplacer la fiche par le serveur MCP officiel de Perplexity, ou la conserver avec son avertissement.
-5. Encadré « Verdict » et ligne d'accès en tête de fiche (§ 7) : à rédiger fiche par fiche, avec le dédoublonnage des avis.
-6. Titre en double : Quartz affiche le `title` du frontmatter en titre de page, et les fiches ont aussi un titre `# …` (parfois différent, par exemple « # Google Opal ») ; à régler en phase 6 (composant de titre ou suppression du `# …`).
+1. ~~Mémos : PDF généré depuis le Markdown~~ : fait le 12 novembre 2026 (§ 9). Restent ouverts : mémos longs (section « L'essentiel » ou plusieurs pages), NotebookLM en complément.
+2. ~~Superset, renommé Paradev~~ : fait le 15 novembre 2026. Fiche et mémo renommés (`Paradev.md`, `Paradev mémo.md`, URL `/outils/postes-de-pilotage/paradev`) avant la mise en ligne ; licence MIT depuis le 4 novembre 2026, nouvelles adresses du site, du dépôt et de la CLI.
+3. ~~Perplexity MCP, dont le dépôt a disparu~~ : fait le 15 novembre 2026. La fiche (même fichier, même URL) décrit désormais le serveur officiel `perplexityai/modelcontextprotocol` ; une note y rappelle l'ancien sujet.
+4. Encadré « Verdict » en tête de fiche (§ 7) : à rédiger fiche par fiche, avec le dédoublonnage des avis. La ligne d'accès est assurée par l'encadré « Fiche ».
+5. ~~Titre en double~~ : réglé en phase 6. Le `title` reprend le `# Titre` (nom exact du produit), et le plugin local masque le `# Titre` à l'affichage ; les fichiers le gardent pour Obsidian (contrôle n° 7).

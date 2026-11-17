@@ -15,8 +15,8 @@ Constituer une base de connaissance au format Markdown recensant les outils, fra
 
 ## Publication
 
-- Génération du site statique via Quartz à partir de ce contenu Markdown.
-- Repo GitHub comme source du site (déploiement type GitHub Pages).
+- Génération du site statique via Quartz 5 à partir de ce contenu Markdown : moteur installé à la racine le 12 novembre 2026 (version 5.0.0 du 20 septembre 2026), configuration dans `quartz.config.yaml`, construction locale avec `npx quartz build --serve` (voir [CLAUDE.md](CLAUDE.md)).
+- Repo GitHub comme source du site : `yannviellard/Blog-Outils-IA`, publié sur GitHub Pages par le workflow `.github/workflows/deploy.yml` à chaque push sur `main`.
 - Les wikilinks `[[...]]` entre fiches sont nativement supportés par Quartz et alimentent le graphe de connaissances.
 
 ## Décisions (23 septembre 2026)
@@ -32,10 +32,12 @@ Constituer une base de connaissance au format Markdown recensant les outils, fra
 - **Exclus du site** : le dossier `_modeles/` (gabarits), `.obsidian/` et toute page avec `draft: true`.
 - **Logos** : pas affichés pour l'instant.
 - **Publication** : commit + push git manuel.
+- **Titre d'onglet** (12 novembre 2026) : le titre de la page seul, sans suffixe « · AI Tools Wiki », qui aurait doublé le titre de l'accueil.
+- **Mesure d'audience** : aucune pour l'instant (`analytics: null`).
+- **Propriétés des fiches** : affichées par l'encadré « Fiche » du plugin local `plugins/wiki-fiche/`, en français.
+- **Mise en ligne** (16 novembre 2026) : dépôt GitHub public, GitHub Pages (gratuit pour un dépôt public) et sous-domaine `aitoolswiki.viellard.fr`, déclaré chez BookMyName, qui gère les DNS de viellard.fr, par un enregistrement CNAME vers `yannviellard.github.io`. Écarté : garder le dépôt privé avec Cloudflare Pages.
 
 ## À faire
 
-- Initialiser le repo Quartz et le configurer pour pointer sur le dossier `content/`.
-- Vérifier/homogénéiser le frontmatter et les noms de fichiers (espaces, guillemets) en vue de la génération des slugs/URLs.
-- Exclure `.obsidian/` de la publication.
+- Mettre en ligne : rendre le dépôt public, activer GitHub Pages (source « GitHub Actions », domaine `aitoolswiki.viellard.fr`), ajouter l'enregistrement CNAME `aitoolswiki` → `yannviellard.github.io.` chez BookMyName, puis cocher « Enforce HTTPS ». Le workflow est écrit et testé sur une copie propre (16 novembre 2026).
 - Compléter les logos manquants dans `images/logos/`.

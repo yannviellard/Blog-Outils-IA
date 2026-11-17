@@ -1,10 +1,11 @@
 ---
+title: "Nom du projet — Mémo"
 type: memo
 fiche: "[[Nom du projet]]"
 date:
 ---
 
-<!-- Fichier à créer dans memos/ sous le nom « Nom du projet mémo.md ». date : jour de la vérification des commandes (AAAA-MM-JJ). Chaque commande vient de la documentation officielle, vérifiée sur le web ; ne rien inventer. -->
+<!-- Fichier à créer dans memos/ sous le nom « Nom du projet mémo.md ». title : identique au titre « # Nom du projet — Mémo ». date : jour de la vérification des commandes (AAAA-MM-JJ). Chaque commande vient de la documentation officielle, vérifiée sur le web ; ne rien inventer. -->
 
 # Nom du projet — Mémo
 

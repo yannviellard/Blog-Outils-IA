@@ -13,9 +13,9 @@ depot: "https://github.com/better-auth/better-auth"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 30711
-forks: 3067
-etoiles_releve: 2026-11-11
+etoiles: 30757
+forks: 3086
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 4
@@ -75,7 +75,7 @@ Le projet est distribué sous licence MIT et son dépôt principal compte 398 co
 |Couverture fonctionnelle|★★★★★|
 |Intégration native mobile|★★☆☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 30 711 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 30 757 au 16 novembre 2026._
 
 **Commentaire :** Better Auth est devenu un framework d'authentification très complet, avec une architecture particulièrement extensible grâce aux plugins et une forte maîtrise des données puisqu'il s'intègre directement au backend et à la base de données de l'application. Le projet est très actif : le dépôt principal compte 398 contributeurs et des mises à jour encore publiées en septembre 2026.
 

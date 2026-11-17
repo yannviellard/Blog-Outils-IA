@@ -13,9 +13,9 @@ depot: "https://github.com/Leonxlnx/taste-skill"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-07
-etoiles: 113367
-forks: 7633
-etoiles_releve: 2026-11-11
+etoiles: 116490
+forks: 7806
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 3
 note_maturite: 2
@@ -76,7 +76,7 @@ La version actuelle introduit **Taste Skill v2**, une réécriture substantielle
 |Originalité|★★★★☆|
 |Stabilité de la v2|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 113 367 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 116 490 au 16 novembre 2026._
 
 **Commentaire :** l'idée de transformer des principes de design en instructions portables pour agents est claire et le repo est bien structuré autour de skills indépendants. L'activité autour du dépôt est importante (161 commits, plusieurs dizaines d'issues et de pull requests au moment de l'analyse) ; sa popularité mesure l'attention plus que la qualité visuelle réelle, qu'aucune évaluation indépendante citée ici ne chiffre. Une interface originale n'est pas forcément claire, accessible ni adaptée au produit (voir [[#Avis indépendants|les avis indépendants]]).
 

@@ -2,77 +2,97 @@
 title: "Perplexity MCP — Mémo"
 type: memo
 fiche: "[[Perplexity MCP]]"
-date: 2026-09-25
+date: 2026-11-15
 ---
 
 # Perplexity MCP — Mémo
 
-> L'essentiel pour utiliser [[Perplexity MCP]] (perplexity-control-mcp), le serveur MCP communautaire qui expose toute l'API Perplexity à Claude Code : réponses sourcées depuis le web, recherche brute, recherche approfondie, embeddings, estimation des coûts.
-
-> [!warning] Dépôt introuvable
-> Au 11 novembre 2026, le dépôt GitHub `itsablabla/perplexity-control-mcp` renvoie une erreur 404 : il a été supprimé ou rendu privé, et aucun paquet npm ne porte ce nom. Les commandes ci-dessous, qui partent d'un clone du dépôt, ne fonctionnent plus en l'état.
+> L'essentiel pour utiliser [[Perplexity MCP]], le serveur MCP officiel de Perplexity : recherche web, réponses sourcées, raisonnement et recherche approfondie depuis Claude Code ou Codex, facturés à l'usage sur l'API Perplexity.
 
 ## Installation
 
 ```bash
-git clone https://github.com/itsablabla/perplexity-control-mcp
-cd perplexity-control-mcp
-npm install
-cp .env.example .env        # renseigner PERPLEXITY_API_KEY
-npm run build
+# Serveur hébergé par Perplexity (recommandé) : connexion OAuth au premier /mcp
+claude mcp add --transport http perplexity https://api.perplexity.ai/mcp
 
-# Ajouter à Claude Code (chemin absolu vers dist/index.js)
-claude mcp add perplexity-control -e PERPLEXITY_API_KEY=pplx-... -- node /chemin/absolu/perplexity-control-mcp/dist/index.js
+# Même serveur hébergé, avec une clé d'API au lieu d'OAuth
+claude mcp add --transport http perplexity https://api.perplexity.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
+
+# Serveur local (stdio) : la clé est lue dans l'environnement qui lance Claude Code
+claude mcp add perplexity --env 'PERPLEXITY_API_KEY=${PERPLEXITY_API_KEY}' -- npx -y @perplexity-ai/mcp-server
+
+# Codex, serveur local
+codex mcp add perplexity --env PERPLEXITY_API_KEY="your_key_here" -- npx -y @perplexity-ai/mcp-server
+
+# Ou en plugin Claude Code
+claude plugin marketplace add perplexityai/modelcontextprotocol
+claude plugin install perplexity@perplexity-mcp-server
 ```
 
-Mode HTTP (pour un client distant) : `MCP_TRANSPORT=http MCP_PORT=3001 PERPLEXITY_API_KEY=pplx-... npm start`, puis `http://localhost:3001/mcp`.
+La clé d'API se crée dans le [portail de l'API](https://console.perplexity.ai), qui demande un moyen de paiement. La connexion OAuth demande d'être administrateur d'une organisation API qui peut payer ; elle ne permet ni de créer des clés, ni de voir le solde.
+
+Autres clients (Cursor, Claude Desktop, VS Code, Windsurf, Kiro) : même bloc `mcpServers` avec `"command": "npx"`, `"args": ["-y", "@perplexity-ai/mcp-server"]` et la clé dans `"env"`.
 
 ## Outils MCP
 
-Claude les appelle lui-même ; les nommer dans la demande aide à choisir le bon.
+L'agent les appelle lui-même ; les nommer dans la demande aide à choisir le bon.
 
 |Outil|Ce qu'il fait|À demander par exemple|
 |---|---|---|
-|`sonar_chat`|Réponse rédigée et sourcée depuis le web.|« Avec Perplexity, quelles sont les nouveautés de Next.js ce mois-ci ? »|
-|`web_search`|Résultats de recherche bruts avec le contenu des pages (jusqu'à 5 requêtes à la fois).|« Récupère les 10 meilleures sources sur … »|
-|`sonar_async_submit` / `sonar_async_get` / `sonar_async_list`|Recherche approfondie en tâche de fond : soumettre, puis récupérer le résultat.|« Lance une deep research sur … et récupère le rapport. »|
-|`agent_create`|API Agent de Perplexity : raisonnement en plusieurs étapes avec outils. Presets : `fast-search`, `pro-search`, `deep-research`, `advanced-deep-research`.|—|
-|`embeddings_create` / `embeddings_contextualized`|Vecteurs d'embedding (pour une base RAG).|—|
-|`estimate_cost`|Estime le coût en dollars **avant** d'envoyer la requête.|« Combien coûterait cette recherche ? »|
-|`list_models`|Catalogue des modèles disponibles.|—|
-|`health_check`|Vérifie que l'API répond.|—|
-|`api_key_generate` / `api_key_revoke` / `api_key_rotate`|Gère les clés API. **La révocation est irréversible.**|—|
+|`perplexity_search`|Résultats classés (titre, URL, extrait, dates) via la Search API.|« Avec Perplexity, trouve les sources officielles sur … »|
+|`perplexity_ask`|Réponse rédigée et sourcée (preset `fast` de l'Agent API).|« Demande à Perplexity quelle est la dernière version de … »|
+|`perplexity_reason`|Raisonnement en plusieurs étapes (preset `medium`).|« Compare les deux approches avec Perplexity. »|
+|`perplexity_research`|Recherche approfondie avec citations (preset `high`), plusieurs minutes.|« Lance une recherche approfondie Perplexity sur … »|
 
-## Choisir le modèle Sonar
+## Paramètres utiles
 
-|Modèle|Usage|
+|Paramètre|Outil|Effet|
+|---|---|---|
+|`search_recency_filter`|`perplexity_search`|Limite aux sources récentes.|
+|`search_domain_filter`|`perplexity_search`|Restreint à certains domaines.|
+|`search_type: "fast"`|`perplexity_search`|Recherche plus rapide et moins chère (serveur local 1.3.0 ou plus).|
+|`max_tokens`|`perplexity_ask`, `perplexity_reason`|Budget total de contexte de recherche, jusqu'à 120 000.|
+|`max_tokens_per_page`|`perplexity_ask`, `perplexity_reason`|Budget par page de résultats, jusqu'à 20 000.|
+
+Ces budgets règlent le contenu récupéré, pas la longueur de la réponse. L'ancien paramètre `search_context_size` (`low`, `medium`, `high`) est encore accepté et converti en budgets.
+
+## Variables d'environnement (serveur local)
+
+|Variable|Rôle|Défaut|
+|---|---|---|
+|`PERPLEXITY_API_KEY`|Clé d'API.|Obligatoire|
+|`PERPLEXITY_TIMEOUT_MS`|Délai maximal d'une requête.|300 000 (5 minutes)|
+|`PERPLEXITY_BASE_URL`|Adresse de l'API.|`https://api.perplexity.ai`|
+|`PERPLEXITY_LOG_LEVEL`|`DEBUG`, `INFO`, `WARN` ou `ERROR`.|`ERROR`|
+|`PERPLEXITY_PROXY`|Proxy d'entreprise, puis `HTTPS_PROXY` et `HTTP_PROXY`.|Connexion directe|
+
+## Auto-hébergement en HTTP
+
+```bash
+docker build -t perplexity-mcp-server .
+docker run -p 8080:8080 -e PERPLEXITY_API_KEY=your_key_here perplexity-mcp-server
+```
+
+Ou, depuis le dépôt cloné : `npm install && npm run build && npm run start:http`. Le serveur répond sur `http://localhost:8080/mcp`. Il n'écoute que l'interface locale (`BIND_ADDRESS=127.0.0.1`) ; pour l'ouvrir, régler aussi `ALLOWED_HOSTS` et `ALLOWED_ORIGINS`.
+
+## Coûts (au 15 novembre 2026)
+
+|Appel|Tarif|
 |---|---|
-|`sonar`|Question factuelle simple, rapide et peu chère.|
-|`sonar-pro`|Bon équilibre, pour la plupart des questions.|
-|`sonar-reasoning-pro`|Analyse complexe qui demande un raisonnement.|
-|`sonar-deep-research`|Recherche exhaustive multi-sources (plusieurs minutes, nettement plus cher). À lancer en asynchrone.|
-
-## Filtres utiles
-
-|Paramètre|Effet|
-|---|---|
-|`search_recency_filter`|`day`, `week`, `month`, `year` : limite aux sources récentes.|
-|`search_domain_filter`|Liste de domaines à inclure, ou à exclure avec le préfixe `-` (ex. `-pinterest.com`).|
-|`search_after_date_filter` / `search_before_date_filter`|Plage de dates précise.|
-|`search_mode`|`academic` (sources académiques) ou `sec` (documents financiers américains).|
+|`perplexity_search`|5 $ pour 1 000 requêtes ; 1 $ en mode `fast`.|
+|`perplexity_ask`, `perplexity_reason`, `perplexity_research`|Agent API : jetons au tarif du modèle, plus des frais d'outils (recherche web : 2,50 $ pour 1 000 ; 1 $ en mode rapide).|
 
 ## Conseils d'utilisation
 
-- **Choisir le modèle le moins cher qui suffit** : `sonar` pour un fait, `sonar-pro` par défaut, la deep research seulement pour un vrai dossier.
-- **Passer par `estimate_cost`** avant une recherche lourde : une deep research coûte plusieurs fois une requête simple.
-- **Filtrer par date** pour tout sujet qui évolue vite (frameworks, versions, actualité), et par domaine pour s'en tenir à la documentation officielle.
-- **Lancer les recherches longues en asynchrone** (`sonar_async_submit`) pour ne pas bloquer la session.
-- **Ne jamais laisser l'agent révoquer ou faire tourner les clés sans confirmation** : une clé révoquée casse immédiatement toutes les intégrations qui l'utilisent.
-- **Serveur communautaire** : pour un besoin simple (chercher, demander, rechercher, raisonner), le serveur MCP officiel de Perplexity suffit et est maintenu par l'éditeur.
+- **Choisir l'outil le moins cher qui suffit** : `perplexity_search` pour des sources, `perplexity_ask` pour un fait, `perplexity_reason` pour une analyse, `perplexity_research` seulement pour un vrai dossier.
+- **Relever les délais pour la recherche approfondie** : `PERPLEXITY_TIMEOUT_MS` côté serveur, et le délai du client MCP, souvent de 60 secondes.
+- **Erreurs EOF ou d'initialisation** avec un client strict : remplacer `npx -y` par `npx -yq`.
+- **Ne jamais écrire la clé dans un fichier versionné** : utiliser une variable d'environnement, comme dans `'PERPLEXITY_API_KEY=${PERPLEXITY_API_KEY}'`.
+- **Vérifier les sources primaires** : `perplexity_ask`, `perplexity_reason` et `perplexity_research` renvoient une synthèse.
+- **Traiter le contenu web comme non fiable** : une page peut contenir des consignes destinées à l'agent.
 
 ## Sources
 
-- [README perplexity-control-mcp](https://github.com/itsablabla/perplexity-control-mcp)
-- [Serveur MCP officiel Perplexity](https://github.com/perplexityai/modelcontextprotocol)
-- [Your AI Coding Agent Is Only as Good as Its Search Engine — Medium](https://medium.com/@haberlah/your-ai-coding-agent-is-only-as-good-as-its-search-engine-fba1d34c1f0c)
-- [Perplexity API Search Configuration Best Practices](https://www.neura.market/directories/perplexity/rules/perplexity-api-search-configuration-best-practices)
+- [README du serveur officiel](https://github.com/perplexityai/modelcontextprotocol)
+- [Documentation : serveur MCP](https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server)
+- [Tarifs de l'API](https://docs.perplexity.ai/docs/getting-started/pricing)

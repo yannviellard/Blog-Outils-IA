@@ -43,7 +43,7 @@ La Popularité mesure l'audience d'un outil, pas la fiabilité de l'information 
 
 **Règles d'application**
 - **Dépôt compté** : le dépôt public consacré à l'outil. Ne comptent pas un dépôt annexe (SDK, skill d'accompagnement, exemples) ni un dépôt partagé dont l'outil n'est qu'un sous-dossier, car ses étoiles mesurent l'ensemble.
-- **Non noté (« — »)** : outil sans dépôt public, dépôt annexe ou partagé, dépôt introuvable. C'est le cas de 19 outils sur 70 au 11 novembre 2026.
+- **Non noté (« — »)** : outil sans dépôt public, dépôt annexe ou partagé, dépôt introuvable. C'est le cas de 18 outils sur 70 au 15 novembre 2026.
 - **Total inchangé** : le total reste sur /15 avec les trois critères éditoriaux, pour que les outils non notés en popularité restent comparables aux autres.
 - **Relevé daté** : les étoiles sont relevées par l'API publique de GitHub, datées dans la fiche, puis relevées à nouveau avant chaque publication. Dernier relevé : 11 novembre 2026.
 - **Fausses étoiles** : des étoiles s'achètent. L'étude StarScout ([arXiv 2412.13459](https://arxiv.org/abs/2412.13459)) estime à environ 4,5 millions les étoiles suspectes sur GitHub entre 2019 et 2024. Une hausse brutale, sans hausse comparable des forks ni de l'activité du dépôt, est vérifiée avant d'être reportée.
@@ -62,7 +62,7 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 
 |Outil|Famille|Total /15|Popularité|
 |---|---|:-:|:-:|
-|[[Playwright]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|15|★★★★☆|
+|[[Playwright]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|15|★★★★★|
 |[[Remotion]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|14|★★★★☆|
 |[[shadcn-ui]]|[[outils/design-en-code/index\|Design en code]]|14|★★★★★|
 |[[Vercel]]|[[outils/backend-et-deploiement/index\|Backend, authentification et déploiement]]|14|★★★★☆|
@@ -78,7 +78,7 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Agent Browser]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|11|★★★★☆|
 |[[Claude Code Review]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|11|—|
 |[[Claude for Financial Services]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|★★★★☆|
-|[[Claude for Legal]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|★★★☆☆|
+|[[Claude for Legal]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|★★★★☆|
 |[[cmux]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|★★★★☆|
 |[[Conductor]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|—|
 |[[Hermes Agent]]|[[outils/agents-de-developpement/index\|Agents de développement]]|11|★★★★★|
@@ -86,12 +86,13 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Impeccable]]|[[outils/design-en-code/index\|Design en code]]|11|★★★★★|
 |[[Marketing Skills from Corey Haines]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|11|★★★★☆|
 |[[OpenCode]]|[[outils/agents-de-developpement/index\|Agents de développement]]|11|★★★★★|
+|[[Paradev]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|★★★★☆|
+|[[Perplexity MCP]]|[[outils/recherche-et-veille/index\|Recherche et veille]]|11|★★★☆☆|
 |[[Planning with Files]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|11|★★★★☆|
 |[[Security Guidance]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|11|—|
 |[[Skill Creator]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|11|—|
 |[[Small Business]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|—|
 |[[Superpowers]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|11|★★★★★|
-|[[Superset]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|★★★★☆|
 |[[Web Design Guidelines]]|[[outils/design-en-code/index\|Design en code]]|11|—|
 |[[Wshobson Agents]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|11|★★★★☆|
 |[[Agentic Inbox]]|[[outils/ecriture-voix-messagerie/index\|Écriture, voix et messagerie]]|10|★★★☆☆|
@@ -119,7 +120,6 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[HyperFrames]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|9|★★★★☆|
 |[[Jev]]|[[outils/modeles/index\|Modèles]]|9|—|
 |[[OpenCLI]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|9|★★★★☆|
-|[[Perplexity MCP]]|[[outils/recherche-et-veille/index\|Recherche et veille]]|9|—|
 |[[Pomelli]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|9|—|
 |[[Stitch by Google]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|9|—|
 |[[Claude Design]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|8|—|
@@ -139,7 +139,7 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 - **Les skills et frameworks de 2026 plafonnent à ★★★ en maturité** : même très populaires, ils ont moins d'un an d'existence et évoluent vite.
 - **Les produits Google Labs et Anthropic en préversion** (Claude Design, Stitch, Opal, Pomelli) sont limités à ★★ en maturité tant qu'ils sont expérimentaux.
 - **Les outils de pilotage multi-agent** ([[outils/postes-de-pilotage/index|Postes de pilotage]]) ont des documentations solides mais une maturité d'un an au plus, hors Warp ; leurs avis mêlent réponses de fondateurs et de concurrents.
-- **La popularité ne dit rien de la fiabilité** : sur les 17 outils à ★★★★★ de popularité, 11 ont une maturité de ★★★ ou moins, et leur total moyen (10,8/15) n'est pas supérieur à celui des outils à ★★★★ (11,0/15).
+- **La popularité ne dit rien de la fiabilité** : sur les 18 outils à ★★★★★ de popularité au 16 novembre 2026, 11 ont une maturité de ★★★ ou moins, et leur total moyen (11,1/15) dépasse à peine celui des outils à ★★★★ (10,8/15).
 - **Les plus faibles précisions** concernent des projets dont le discours a été contredit par des audits ou des tests tiers (Ruflo, MemPalace, Open Higgsfield AI).
 
 ## Comment cette page évolue

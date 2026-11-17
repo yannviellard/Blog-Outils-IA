@@ -1,29 +1,29 @@
 ---
-title: "Superset — Mémo"
+title: "Paradev — Mémo"
 type: memo
-fiche: "[[Superset]]"
-date: 2026-10-10
+fiche: "[[Paradev]]"
+date: 2026-11-15
 ---
 
-# Superset — Mémo
+# Paradev — Mémo
 
-> Démarrage, commandes et garde-fous pour [[Superset]]. Voir aussi [[Superset#Avis indépendants|les avis sur Superset]]. La CLI est encore annoncée en bêta : vérifier `superset --help` après une mise à jour.
+> Démarrage, commandes et garde-fous pour [[Paradev]] (anciennement Superset). Voir aussi [[Paradev#Avis indépendants|les avis sur Paradev]]. La CLI s'appelle toujours `superset` ; `paradev` en est un alias.
 
 ## Installation
 
 ```bash
-# CLI autonome : macOS ou Linux
-curl -fsSL https://superset.sh/cli/install.sh | sh
+# CLI autonome : macOS ou Linux (x64, arm64)
+curl -fsSL https://paradev.com/cli/install.sh | sh
 
 # Alternative Homebrew
-brew install superset-sh/tap/superset
+brew install paradevai/tap/superset
 
-# Vérifier
-superset --version
-superset --help
+# Se connecter, puis vérifier la session
+superset auth login
+superset auth whoami
 ```
 
-L'application de bureau inclut aussi la CLI dans `~/.superset/bin`. Ajouter ce dossier au `PATH` pour l'utiliser depuis un terminal externe.
+L'application de bureau inclut aussi la CLI dans `~/.paradev/bin`. Ajouter ce dossier au `PATH` pour l'utiliser depuis un terminal externe : `export PATH="$HOME/.paradev/bin:$PATH"`. En CI, utiliser une clé d'API : `superset auth login --api-key …` ou la variable `SUPERSET_API_KEY`.
 
 ## Cycle minimal
 
@@ -57,7 +57,7 @@ superset workspaces create --session --local --agent claude --prompt "Explore ce
 
 ## Configuration d'un projet
 
-Créer `.superset/config.json` :
+Créer `.paradev/config.json` (un dépôt configuré avant le renommage garde `.superset/config.json`, que Paradev continue de lire) :
 
 ```json
 {
@@ -66,7 +66,7 @@ Créer `.superset/config.json` :
     "cp \"$SUPERSET_ROOT_PATH/.env\" .env"
   ],
   "teardown": ["docker compose down"],
-  "run": ["./.superset/run.sh"]
+  "run": ["./.paradev/run.sh"]
 }
 ```
 
@@ -77,19 +77,21 @@ Créer `.superset/config.json` :
 |`teardown`|Arrêter conteneurs, watchers et ressources temporaires.|
 |Secrets|Ne jamais les committer ; les copier depuis le checkout racine ou un gestionnaire.|
 
+Variables disponibles dans les scripts : `SUPERSET_ROOT_PATH` (checkout racine), `SUPERSET_WORKSPACE_NAME`, `SUPERSET_WORKSPACE_PATH`.
+
 ## Commandes pratiques
 
 ```bash
 superset workspaces list --json
 superset workspaces list --quiet
-superset tasks list --status in_progress --json
+superset tasks list --assignee-me
 superset automations list
 superset automations run AUTOMATION_ID
 superset automations logs AUTOMATION_ID
 superset config check
 ```
 
-`--json` convient aux scripts et `--quiet` renvoie seulement les identifiants lorsque cela est possible.
+`--json` convient aux scripts et `--quiet` renvoie seulement les identifiants lorsque cela est possible. `superset` seul ouvre un navigateur interactif des commandes ; `superset --help` en donne la liste.
 
 ## Choisir le bon mode
 
@@ -97,7 +99,7 @@ superset config check
 |---|---|
 |Deux fonctionnalités indépendantes|Deux worktrees et deux branches.|
 |Implémentation puis revue du même diff|Même workspace, sessions distinctes.|
-|Exploration jetable|Session sans projet.|
+|Exploration jetable|Session sans projet (`--session`).|
 |Petite correction dans le checkout courant|`--checkout local`, avec prudence.|
 |Agents modifiant les mêmes fichiers|Séquentiel, ou branches puis fusion explicite.|
 
@@ -112,6 +114,6 @@ superset config check
 
 ## Sources
 
-- [Premiers pas avec la CLI](https://docs.superset.sh/cli/getting-started)
-- [Référence CLI](https://docs.superset.sh/cli/cli-reference)
-- [Scripts de cycle de vie](https://docs.superset.sh/setup-teardown-scripts)
+- [Premiers pas avec la CLI](https://docs.paradev.com/cli/getting-started)
+- [Référence CLI](https://docs.paradev.com/cli/cli-reference)
+- [Scripts de cycle de vie](https://docs.paradev.com/setup-teardown-scripts)

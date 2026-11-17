@@ -16,9 +16,9 @@ depot: "https://github.com/NousResearch/hermes-agent"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 262644
-forks: 58851
-etoiles_releve: 2026-11-11
+etoiles: 263766
+forks: 59467
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 3
 note_maturite: 3
@@ -87,7 +87,7 @@ Hermes n'impose pas de modèle unique. Il fonctionne avec Nous Portal, OpenRoute
 |Maturité|★★★☆☆|
 |Popularité|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 262 644 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 263 766 au 16 novembre 2026._
 
 ### Points forts
 

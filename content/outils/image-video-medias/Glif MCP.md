@@ -14,9 +14,9 @@ depot: "https://github.com/glifxyz/glif-mcp-server"
 licence: "MIT (dépôt de métadonnées ; serveur hébergé propriétaire)"
 statut: disponible
 derniere_maj: 2026-10-08
-etoiles: 217
+etoiles: 218
 forks: 32
-etoiles_releve: 2026-11-11
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
@@ -72,7 +72,7 @@ Le serveur MCP permet d'utiliser Glif depuis Claude, Claude Code, Codex, Cursor,
 |Intérêt pour les agents|★★★★☆|
 |Pérennité du repository MCP|★★☆☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 217 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 218 au 16 novembre 2026._
 
 **Commentaire :** Glif présente une proposition particulièrement intéressante comme couche d'exécution créative pour des agents : un seul MCP donne accès à un ensemble évolutif de modèles et d'outils multimédias. La principale réserve concerne le niveau d'abstraction et de contrôle : l'utilisateur délègue à Glif une partie importante du choix des modèles et de l'orchestration. Par ailleurs, le repository `glif-mcp-server` n'est plus le serveur MCP lui-même : il sert désormais principalement de métadonnées pour le serveur hébergé, le code du serveur étant propriétaire.
 

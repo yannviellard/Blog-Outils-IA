@@ -14,9 +14,9 @@ depot: "https://github.com/jackwener/opencli"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-07
-etoiles: 31022
-forks: 3038
-etoiles_releve: 2026-11-11
+etoiles: 31110
+forks: 3044
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -77,7 +77,7 @@ L'argument central est le coût : une fois un adaptateur écrit, son exécution 
 |Maturité|★★☆☆☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 31 022 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 31 110 au 16 novembre 2026._
 
 ### Points forts
 

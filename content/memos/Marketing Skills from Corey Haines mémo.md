@@ -34,13 +34,13 @@ La skill `product-marketing` crée `.agents/product-marketing.md` : produit, pub
 
 En langage naturel (la bonne skill se déclenche) ou directement par son nom :
 
-|Demande|Skill utilisée|
-|---|---|
-|« Optimise cette landing page pour la conversion »|`/cro`|
-|« Écris le texte de la page d'accueil de mon SaaS »|`/copywriting`|
-|« Configure le suivi GA4 des inscriptions »|`/analytics`|
-|« Crée une séquence de bienvenue en 5 e-mails »|`/emails`|
-|« Fais un audit SEO de mon site »|`/seo-audit`|
+| Demande                                             | Skill utilisée |
+| --------------------------------------------------- | -------------- |
+| « Optimise cette landing page pour la conversion »  | `/cro`         |
+| « Écris le texte de la page d'accueil de mon SaaS » | `/copywriting` |
+| « Configure le suivi GA4 des inscriptions »         | `/analytics`   |
+| « Crée une séquence de bienvenue en 5 e-mails »     | `/emails`      |
+| « Fais un audit SEO de mon site »                   | `/seo-audit`   |
 
 ## Les skills par catégorie
 

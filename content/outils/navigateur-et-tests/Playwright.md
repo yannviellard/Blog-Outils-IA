@@ -14,13 +14,13 @@ depot: "https://github.com/microsoft/playwright"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 99864
-forks: 6849
-etoiles_releve: 2026-11-11
+etoiles: 100300
+forks: 6890
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 5
 note_maturite: 5
-note_popularite: 4
+note_popularite: 5
 memo: "[[Playwright mémo]]"
 avis_maj: 2026-09-24
 modified: 2026-11-12
@@ -74,7 +74,7 @@ Cette évolution fait de Playwright non seulement une infrastructure de test, ma
 |Documentation|★★★★★|
 |Précision des descriptions|★★★★★|
 |Maturité|★★★★★|
-|Popularité|★★★★☆|
+|Popularité|★★★★★|
 |Cross-browser|★★★★★|
 |Tests E2E|★★★★★|
 |Browser automation|★★★★★|
@@ -83,7 +83,7 @@ Cette évolution fait de Playwright non seulement une infrastructure de test, ma
 |MCP|★★★★☆|
 |Simplicité initiale|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 99 864 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 100 300 au 16 novembre 2026._
 
 **Commentaire :** projet extrêmement mature, largement adopté et activement maintenu. L'architecture couvre désormais à la fois le testing traditionnel et les nouveaux usages agentiques. La release v1.63.0 est sortie le 4 septembre 2026 et le dépôt continue d'évoluer rapidement en septembre, notamment autour du Trace Viewer, du test runner et du MCP.
 

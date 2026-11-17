@@ -12,13 +12,13 @@ depot: "https://github.com/anthropics/claude-for-legal"
 licence: "Apache-2.0"
 statut: disponible
 derniere_maj: 2026-07-23
-etoiles: 9975
-forks: 1957
-etoiles_releve: 2026-11-11
+etoiles: 10018
+forks: 1971
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
-note_popularite: 3
+note_popularite: 4
 memo: "[[Claude for Legal mémo]]"
 avis_maj: 2026-09-24
 modified: 2026-11-12
@@ -78,10 +78,10 @@ Le projet est également conçu comme une référence architecturale : l'ensembl
 |Architecture Skills/Agents|★★★★★|
 |Intégration MCP|★★★★★|
 |Maturité|★★★☆☆|
-|Popularité|★★★☆☆|
+|Popularité|★★★★☆|
 |Portabilité juridique internationale|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 9 975 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 10 018 au 16 novembre 2026._
 
 **Commentaire :** projet riche et structuré pour une collection récente ; la maturité est notée ★★★☆☆ car le recul d'usage est court et les comparatifs externes sérieux restent moins nombreux que pour des plateformes comme Harvey ou CoCounsel (voir [[#Avis indépendants|les avis indépendants]]). La séparation entre practice profiles, skills, agents et connecteurs constitue une architecture claire et réutilisable. Le projet dispose également de mécanismes de personnalisation, de scheduled agents et d'un système de contrôle des skills communautaires.
 

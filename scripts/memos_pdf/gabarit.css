@@ -1,0 +1,304 @@
+/* Gabarit des mémos PDF de AI Tools Wiki : A4 paysage, trois colonnes de blocs.
+   Les couleurs (--fort, --moyen, --clair) dépendent de la zone de la famille de l'outil.
+   Toutes les tailles sont en rem : le script de mise en page ajuste la taille de base. */
+
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+:root {
+  --encre: #22262b;
+  --gris: #5b636b;
+  --chaine: #8a3a99;
+  --titre: "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --texte: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --code: Menlo, "SF Mono", Monaco, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 9pt;
+}
+
+html,
+body {
+  background: #fff;
+}
+body {
+  margin: 0;
+  color: var(--encre);
+  font-family: var(--texte);
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+#source {
+  display: none;
+}
+
+/* Page et colonnes */
+.page {
+  position: relative;
+  background: #fff;
+  width: 297mm;
+  height: 210mm;
+  padding: 7mm 7mm 0 7mm;
+  overflow: hidden;
+  break-after: page;
+}
+.page:last-child {
+  break-after: auto;
+}
+.colonnes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.5mm;
+}
+.colonne {
+  height: calc(210mm - 7mm - 9mm);
+  overflow: hidden;
+}
+/* Pendant la mesure : 4 % de marge, car le texte se coupe un peu autrement à l'impression. */
+.mesure .colonne {
+  height: calc((210mm - 7mm - 9mm) * 0.96);
+}
+.pied {
+  position: absolute;
+  left: 7mm;
+  right: 7mm;
+  bottom: 2.5mm;
+  height: 5mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3mm;
+  border-radius: 1.5mm;
+  background: var(--fort);
+  color: #fff;
+  font-size: 7pt;
+}
+.pied a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* En-tête du mémo */
+.entete {
+  break-inside: avoid;
+  margin-bottom: 0.9rem;
+}
+.surtitre {
+  font-family: var(--titre);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+.entete h1 {
+  margin: 0.05rem 0 0.25rem;
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.05;
+  color: var(--fort);
+}
+.entete h1 em {
+  font-weight: 500;
+  color: var(--encre);
+}
+.resume {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+.meta {
+  margin: 0;
+  padding: 0.35rem 0.5rem;
+  border-left: 0.7mm solid var(--fort);
+  background: var(--clair);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.meta b {
+  color: var(--fort);
+}
+
+/* Blocs */
+.bloc {
+  margin-bottom: 0.8rem;
+  border-radius: 1.6mm;
+  background: var(--clair);
+  overflow: hidden;
+}
+.bloc h2 {
+  margin: 0;
+  padding: 0.18rem 0.55rem 0.12rem;
+  background: var(--fort);
+  color: #fff;
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+.corps {
+  padding: 0.4rem 0.45rem 0.45rem;
+}
+.corps > * + * {
+  margin-top: 0.35rem;
+}
+.corps p {
+  margin: 0;
+}
+.corps ul,
+.corps ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.corps li + li {
+  margin-top: 0.15rem;
+}
+.corps strong {
+  color: var(--fort);
+}
+.pastille {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+  padding: 0.08rem 0.5rem;
+  border-radius: 99px;
+  background: var(--moyen);
+  color: var(--encre);
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.corps > .pastille:first-child {
+  margin-top: 0;
+}
+/* Citation ou encadré Obsidian (« > [!warning] ») */
+.note {
+  padding: 0.3rem 0.45rem;
+  border-left: 0.7mm solid var(--fort);
+  background: #fff;
+}
+.entete .note {
+  margin: 0 0 0.45rem;
+}
+.intertitre {
+  margin: 0.3rem 0 0.1rem;
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--fort);
+}
+
+/* Tableaux de commandes : code à gauche, description à droite */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 0.25mm solid var(--moyen);
+}
+td,
+th {
+  padding: 0.12rem 0.3rem;
+  vertical-align: top;
+  text-align: left;
+}
+tr + tr td {
+  border-top: 0.15mm solid var(--clair);
+}
+td + td,
+th + th {
+  border-left: 0.25mm solid var(--moyen);
+}
+th {
+  background: var(--moyen);
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.cmd td.c {
+  width: 56%;
+}
+.cmd td.d {
+  color: var(--encre);
+}
+td.groupe {
+  padding-top: 0.25rem;
+  color: var(--gris);
+  font-style: italic;
+}
+
+code,
+pre {
+  font-family: var(--code);
+  font-size: 0.86rem;
+}
+td.c code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+p code,
+li code,
+td.d code,
+th code {
+  padding: 0 0.15rem;
+  border-radius: 0.6mm;
+  background: rgba(255, 255, 255, 0.75);
+  word-break: break-word;
+}
+pre {
+  margin: 0;
+  padding: 0.3rem 0.4rem;
+  background: #fff;
+  border: 0.25mm solid var(--moyen);
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+/* Coloration minimale */
+.k {
+  font-weight: 700;
+}
+.o {
+  color: var(--fort);
+}
+.insecable {
+  white-space: nowrap;
+}
+.s {
+  color: var(--chaine);
+}
+.p {
+  color: var(--chaine);
+  font-style: italic;
+}
+.cm {
+  color: var(--gris);
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+}
+.lien-wiki {
+  font-weight: 600;
+}
+
+/* Sources : en petit, à la fin */
+.bloc.sources .corps {
+  font-size: 0.8rem;
+}
+.bloc.sources a {
+  color: var(--fort);
+  text-decoration: none;
+}

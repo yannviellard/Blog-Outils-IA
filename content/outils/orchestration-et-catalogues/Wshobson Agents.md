@@ -13,9 +13,9 @@ depot: "https://github.com/wshobson/agents"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-08
-etoiles: 42413
-forks: 4485
-etoiles_releve: 2026-11-11
+etoiles: 42566
+forks: 4500
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -74,7 +74,7 @@ L'installation est granulaire : installer un plugin ne charge que ses propres ag
 |Portabilité|★★★★☆|
 |Évaluation / QA|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 42 413 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 42 566 au 16 novembre 2026._
 
 **Commentaire :** projet très structuré pour sa taille, avec une documentation organisée par plugins, agents, skills, architecture et harnesses. La séparation entre source `plugins/` et artefacts spécifiques aux environnements est particulièrement robuste. La présence de `plugin-eval`, de tests de génération et de contrôles de dérive apporte une vraie démarche de qualité.
 

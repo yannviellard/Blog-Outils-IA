@@ -10,7 +10,7 @@ modified: 2026-11-12
 Un mémo résume ce qu'il faut retenir pour utiliser un outil : installation, commandes principales, configuration et conseils. Chaque commande vient de la documentation officielle de l'outil. Les applications en ligne sans commandes à retenir n'ont pas de mémo : leur fiche suffit.
 
 - **[[outils/agents-de-developpement/index|Agents de développement]]** : [[Claude Code mémo|Claude Code]] · [[Hermes Agent mémo|Hermes Agent]] · [[OpenAI Codex mémo|OpenAI Codex]] · [[OpenCode mémo|OpenCode]]
-- **[[outils/postes-de-pilotage/index|Postes de pilotage multi-agent]]** : [[Claude Squad mémo|Claude Squad]] · [[cmux mémo|cmux]] · [[Conductor mémo|Conductor]] · [[Parallel Code mémo|Parallel Code]] · [[Superset mémo|Superset]] · [[Warp mémo|Warp]]
+- **[[outils/postes-de-pilotage/index|Postes de pilotage multi-agent]]** : [[Claude Squad mémo|Claude Squad]] · [[cmux mémo|cmux]] · [[Conductor mémo|Conductor]] · [[Paradev mémo|Paradev]] · [[Parallel Code mémo|Parallel Code]] · [[Warp mémo|Warp]]
 - **[[outils/methodes-de-developpement/index|Méthodes de développement]]** : [[BMAD Method mémo|BMAD Method]] · [[Everything Claude Code mémo|Everything Claude Code]] · [[GStack mémo|GStack]] · [[Planning with Files mémo|Planning with Files]] · [[Superpowers mémo|Superpowers]]
 - **[[outils/orchestration-et-catalogues/index|Orchestration et catalogues d'agents]]** : [[Agency Agents mémo|Agency Agents]] · [[Alirezarezvani Claude Skills mémo|Alirezarezvani Claude Skills]] · [[Oh My Claude mémo|Oh My Claude]] · [[Ruflo mémo|Ruflo]] · [[Wshobson Agents mémo|Wshobson Agents]]
 - **[[outils/memoire-et-contexte/index|Mémoire et contexte]]** : [[Claude-Mem mémo|Claude-Mem]] · [[Graphify mémo|Graphify]] · [[MemPalace mémo|MemPalace]]

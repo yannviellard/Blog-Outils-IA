@@ -14,9 +14,9 @@ depot: "https://github.com/alchaincyf/huashu-design"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-10
-etoiles: 29234
-forks: 3141
-etoiles_releve: 2026-11-11
+etoiles: 29629
+forks: 3178
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 3
 note_maturite: 2
@@ -81,7 +81,7 @@ Le dépôt a été relicencié sous **MIT le 14 mai 2026**, supprimant les restr
 |Intégration avec les agents|★★★★☆|
 |Remplacement de Figma|★★☆☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 29 234 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 29 629 au 16 novembre 2026._
 
 **Commentaire :** les notes tiennent compte du fait que le projet est jeune et que plusieurs articles à son sujet reposent sur des démonstrations ou des comparaisons promotionnelles : aucune évaluation indépendante ne confirme encore la qualité des sorties. Une skill reproduit un processus, pas le modèle visuel ni l'interface collaborative d'un outil de design (voir [[#Avis indépendants|les avis indépendants]]). Huashu Design est intéressant par son approche **process-first** : le Skill ne demande pas simplement à l'agent de « faire une belle interface », mais impose une phase d'exploration, plusieurs directions visuelles, une sélection puis une production et une critique. Son périmètre est cependant volontairement centré sur les productions visuelles HTML plutôt que sur la conception graphique collaborative traditionnelle ou le développement d'applications de production.
 

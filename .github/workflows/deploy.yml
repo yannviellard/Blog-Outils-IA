@@ -1,0 +1,59 @@
+# Construit le site Quartz et le publie sur GitHub Pages (aitoolswiki.viellard.fr)
+# à chaque push sur main. Lancement manuel possible depuis l'onglet Actions.
+# Les mémos PDF ne sont pas générés ici : ils sont produits sur le Mac
+# (scripts/memos_pdf/generer.py) et committés dans content/memos/pdf/.
+
+name: Déployer le site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un seul déploiement à la fois ; celui en cours va jusqu'au bout.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # historique complet : dates de git en dernier recours, après le frontmatter
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      # --from-config relie le plugin local plugins/wiki-fiche à partir de quartz.config.yaml :
+      # le chemin enregistré dans quartz.lock.json n'existe que sur le Mac.
+      - name: Installer les plugins Quartz
+        run: npx quartz plugin install --from-config
+
+      - name: Construire le site
+        run: npx quartz build
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: public
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v5

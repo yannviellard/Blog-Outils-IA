@@ -15,9 +15,9 @@ depot: "https://github.com/openai/codex"
 licence: "Apache-2.0 (CLI) · application propriétaire"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 134897
-forks: 21366
-etoiles_releve: 2026-11-11
+etoiles: 135486
+forks: 21483
+etoiles_releve: 2026-11-16
 note_documentation: 5
 note_precision: 4
 note_maturite: 4
@@ -90,7 +90,7 @@ Codex est inclus dans tous les forfaits ChatGPT, avec des quotas croissants. Le 
 |Maturité|★★★★☆|
 |Popularité|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 134 897 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 135 486 au 16 novembre 2026._
 
 ### Points forts
 

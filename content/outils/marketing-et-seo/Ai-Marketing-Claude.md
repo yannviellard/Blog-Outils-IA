@@ -14,9 +14,9 @@ depot: "https://github.com/zubair-trabzada/ai-marketing-claude"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-03-02
-etoiles: 2894
-forks: 734
-etoiles_releve: 2026-11-11
+etoiles: 2917
+forks: 735
+etoiles_releve: 2026-11-16
 note_documentation: 3
 note_precision: 4
 note_maturite: 2
@@ -73,7 +73,7 @@ Le projet est particulièrement orienté **audit et production de livrables mark
 |Maturité|★★☆☆☆|
 |Popularité|★★★☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 2 894 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 2 917 au 16 novembre 2026._
 
 **Commentaire :** suite Claude Code orientée marketing, avec une architecture claire et une couverture fonctionnelle importante. Sa principale faiblesse est l'écart entre la richesse des workflows et la profondeur de l'automatisation : l'essentiel repose sur les instructions données à Claude et quelques scripts Python plutôt que sur des intégrations marketing natives. La popularité, notée à part à partir des étoiles, ne mesure pas la qualité. Le site renvoie vers la communauté Skool de l'auteur (AI Workshop) : le dépôt sert aussi de vitrine à cette offre, ce qui invite à distinguer ce qui est gratuit de ce qui ne l'est pas. Voir [[#Avis indépendants|les avis indépendants]].
 

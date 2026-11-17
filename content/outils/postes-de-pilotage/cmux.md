@@ -13,9 +13,9 @@ depot: "https://github.com/manaflow-ai/cmux"
 licence: "GPL-3.0-or-later"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 28760
-forks: 2651
-etoiles_releve: 2026-11-11
+etoiles: 28795
+forks: 2674
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 4
 note_maturite: 3
@@ -35,7 +35,7 @@ Voir aussi : la section [[#Avis indépendants|Avis indépendants]] pour une synt
 
 cmux part du constat qu'un développeur n'a pas nécessairement besoin d'un orchestrateur complet : il lui faut parfois surtout voir quelle session travaille, laquelle attend une permission et laquelle vient de terminer. L'application ajoute à un terminal Ghostty des onglets verticaux, splits, statuts Git/PR, notifications, navigateur scriptable et API d'automatisation.
 
-Contrairement à [[Superset]] ou [[Conductor]], cmux n'impose pas un modèle « une tâche = un worktree ». Cette liberté préserve les habitudes de shell, SSH et tmux, mais laisse à l'utilisateur la responsabilité de l'isolation Git et du parcours de fusion.
+Contrairement à [[Paradev]] ou [[Conductor]], cmux n'impose pas un modèle « une tâche = un worktree ». Cette liberté préserve les habitudes de shell, SSH et tmux, mais laisse à l'utilisateur la responsabilité de l'isolation Git et du parcours de fusion.
 
 ## Fonctionnalités
 
@@ -57,7 +57,7 @@ Contrairement à [[Superset]] ou [[Conductor]], cmux n'impose pas un modèle « 
 |Maturité|★★★☆☆|
 |Popularité|★★★★☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 28 760 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (11 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 28 795 au 16 novembre 2026._
 
 ### Points forts
 

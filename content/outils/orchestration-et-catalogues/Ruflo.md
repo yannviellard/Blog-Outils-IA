@@ -14,9 +14,9 @@ depot: "https://github.com/ruvnet/ruflo"
 licence: "MIT"
 statut: disponible
 derniere_maj: 2026-11-11
-etoiles: 81478
-forks: 9598
-etoiles_releve: 2026-11-11
+etoiles: 81843
+forks: 9648
+etoiles_releve: 2026-11-16
 note_documentation: 4
 note_precision: 2
 note_maturite: 2
@@ -81,7 +81,7 @@ Le projet a connu une évolution rapide en 2026. Les versions récentes ont corr
 |Sécurité|★★★☆☆|
 |Prévisibilité des coûts|★★☆☆☆|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 81 478 au 11 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 81 843 au 16 novembre 2026._
 
 **Commentaire :** Ruflo est devenu un framework substantiel, et les critiques de « stubs » formulées en avril 2026 portaient sur des versions antérieures. Les releases récentes montrent un travail réel sur swarm, mémoire, fédération, sécurité et fiabilité, mais ce travail est attesté surtout par l'équipe elle-même : l'audit interne du 29 mai 2026 a lui-même constaté que les multiplicateurs de performance annoncés ne tenaient pas (HNSW mesuré à 1,48× au lieu de « 150× à 12 500× »), et des audits automatisés internes corrigeaient encore des benchmarks trompeurs en septembre. La note « Réalité des fonctionnalités » est donc de ★★★☆☆ tant qu'aucune vérification indépendante récente n'existe. Son périmètre extrêmement large introduit par ailleurs une surface technique importante : MCP, hooks, daemon, workers, mémoire, agents et fédération. Un test comparatif de mai 2026 rapportait environ 220 000 tokens et 35 minutes pour une fonctionnalité moyenne.
 
