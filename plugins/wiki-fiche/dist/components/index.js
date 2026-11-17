@@ -281,6 +281,10 @@ function FicheConstructeur() {
     return h("section", { class: classes, "aria-label": "Fiche" }, h("dl", null, ...lignes))
   }
   Fiche.css = style
+  // Thème clair par défaut, quel que soit le réglage du système ; le bouton du plugin
+  // darkmode reste disponible et mémorise le choix du lecteur (clé « theme »).
+  Fiche.beforeDOMLoaded =
+    'try{if(!localStorage.getItem("theme")){localStorage.setItem("theme","light");document.documentElement.setAttribute("saved-theme","light")}}catch(e){}'
   return Fiche
 }
 
