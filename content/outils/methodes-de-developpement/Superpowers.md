@@ -10,6 +10,7 @@ tags:
   - theme/tests
   - theme/revue-de-code
 editeur: "obra"
+logo: "[[superpowers.png]]"
 site: "https://claude.com/plugins/superpowers"
 depot: "https://github.com/obra/superpowers"
 licence: "MIT"

@@ -9,6 +9,7 @@ tags:
   - theme/image
   - theme/video
 editeur: "Glif"
+logo: "[[glif.png]]"
 site: "https://glif.app/"
 depot: "https://github.com/glifxyz/glif-mcp-server"
 licence: "MIT (dépôt de métadonnées ; serveur hébergé propriétaire)"

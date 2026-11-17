@@ -8,6 +8,7 @@ tags:
   - theme/image
   - theme/redaction
 editeur: "Google Labs et Google DeepMind"
+logo: "[[pomelli.png]]"
 site: "https://labs.google.com/pomelli/about"
 licence: "Propriétaire"
 statut: preversion

@@ -10,6 +10,7 @@ tags:
   - theme/revue-de-code
   - theme/tests
 editeur: "Garry Tan"
+logo: "[[gstack.png]]"
 site: "https://github.com/garrytan/gstack"
 depot: "https://github.com/garrytan/gstack"
 licence: "MIT"

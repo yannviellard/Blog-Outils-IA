@@ -9,6 +9,7 @@ tags:
   - theme/mcp
   - theme/recherche
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://claude.com/solutions/financial-services"
 depot: "https://github.com/anthropics/financial-services"
 licence: "Apache-2.0"

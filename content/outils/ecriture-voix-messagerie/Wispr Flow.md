@@ -9,6 +9,7 @@ tags:
   - metier/operations
   - theme/voix
 editeur: "Wispr"
+logo: "[[wispr-flow.png]]"
 site: "https://wisprflow.ai/"
 licence: "Propriétaire"
 statut: disponible

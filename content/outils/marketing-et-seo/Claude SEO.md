@@ -8,6 +8,7 @@ tags:
   - theme/seo
   - theme/recherche
 editeur: "AgriciDaniel"
+logo: "[[claude-seo.svg]]"
 site: "https://claude-seo.md/"
 depot: "https://github.com/AgriciDaniel/claude-seo"
 licence: "MIT"

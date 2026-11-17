@@ -9,6 +9,7 @@ tags:
   - theme/navigateur
   - theme/automatisation
 editeur: "jackwener"
+logo: "[[opencli.svg]]"
 site: "https://opencli.info/"
 depot: "https://github.com/jackwener/opencli"
 licence: "Apache-2.0"

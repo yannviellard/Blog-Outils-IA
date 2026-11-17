@@ -8,6 +8,7 @@ tags:
   - theme/design-system
   - theme/frontend
 editeur: "Leonxlnx"
+logo: "[[taste-skill.png]]"
 site: "https://www.tasteskill.dev/"
 depot: "https://github.com/Leonxlnx/taste-skill"
 licence: "MIT"

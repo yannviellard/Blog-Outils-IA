@@ -1,6 +1,6 @@
 // Composant « Fiche » de AI Tools Wiki : affiche en français les propriétés du
 // frontmatter que le panneau de Quartz montrerait avec leurs clés brutes.
-//   - fiche outil (type: outil) : format, éditeur, statut, licence, site, dépôt,
+//   - fiche outil (type: outil) : logo, format, éditeur, statut, licence, site, dépôt,
 //     notes et total /15, popularité, mémo, avis, métiers et thèmes ;
 //   - mémo (type: memo) : lien vers la fiche de l'outil et vers le PDF ;
 //   - autre page avec des tags : métiers et thèmes.
@@ -204,6 +204,29 @@ const style = `
 .fiche dl {
   margin: 0;
 }
+/* Logo à gauche des propriétés, sur un carré blanc dans les deux thèmes :
+   beaucoup de logos sont noirs sur fond transparent. */
+.fiche.fiche-avec-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.fiche.fiche-avec-logo dl {
+  flex: 1;
+  min-width: 0;
+}
+.fiche img.fiche-logo {
+  flex: none;
+  box-sizing: border-box;
+  width: 56px;
+  height: 56px;
+  margin: 0.4rem 0 0;
+  padding: 6px;
+  object-fit: contain;
+  background-color: #fff;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+}
 .fiche-ligne {
   display: grid;
   grid-template-columns: 7.5rem 1fr;
@@ -263,6 +286,14 @@ img.memo-apercu {
     grid-template-columns: 1fr;
     gap: 0.1rem;
   }
+  .fiche.fiche-avec-logo {
+    gap: 0.75rem;
+  }
+  .fiche img.fiche-logo {
+    width: 44px;
+    height: 44px;
+    padding: 5px;
+  }
 }
 `
 
@@ -277,8 +308,21 @@ function FicheConstructeur() {
     else lignes = lignesTags(slug, fichiers, fm.tags)
     lignes = lignes.filter(Boolean)
     if (lignes.length === 0) return null
-    const classes = ["fiche", displayClass].filter(Boolean).join(" ")
-    return h("section", { class: classes, "aria-label": "Fiche" }, h("dl", null, ...lignes))
+    // Logo de l'outil (champ `logo`, résolu par le transformateur). Texte alternatif vide :
+    // le titre de la page nomme déjà l'outil, et un logo partagé (Claude) ne le nommerait pas.
+    const logo =
+      fm.type === "outil" && fileData.logo
+        ? h("img", {
+            class: "fiche-logo",
+            src: resolveRelative(slug, fileData.logo),
+            alt: "",
+            width: 56,
+            height: 56,
+            decoding: "async",
+          })
+        : null
+    const classes = ["fiche", logo ? "fiche-avec-logo" : null, displayClass].filter(Boolean).join(" ")
+    return h("section", { class: classes, "aria-label": "Fiche" }, logo, h("dl", null, ...lignes))
   }
   Fiche.css = style
   // Thème clair par défaut, quel que soit le réglage du système ; le bouton du plugin

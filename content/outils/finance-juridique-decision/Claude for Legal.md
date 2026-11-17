@@ -7,6 +7,7 @@ tags:
   - metier/operations
   - theme/mcp
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://claude.com/blog/claude-for-the-legal-industry"
 depot: "https://github.com/anthropics/claude-for-legal"
 licence: "Apache-2.0"

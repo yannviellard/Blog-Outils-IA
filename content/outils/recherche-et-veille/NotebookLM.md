@@ -11,6 +11,7 @@ tags:
   - theme/voix
   - theme/video
 editeur: "Google"
+logo: "[[notebooklm.svg]]"
 site: "https://notebooklm.google.com/"
 licence: "Propriétaire"
 statut: disponible

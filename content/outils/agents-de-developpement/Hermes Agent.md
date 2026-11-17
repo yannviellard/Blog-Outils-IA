@@ -11,6 +11,7 @@ tags:
   - theme/automatisation
   - theme/mcp
 editeur: "Nous Research"
+logo: "[[hermes-agent.png]]"
 site: "https://hermes-agent.nousresearch.com/"
 depot: "https://github.com/NousResearch/hermes-agent"
 licence: "MIT"

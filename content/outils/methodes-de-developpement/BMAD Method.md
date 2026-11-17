@@ -9,6 +9,7 @@ tags:
   - theme/planification
   - theme/tests
 editeur: "BMad Code"
+logo: "[[bmad-method.png]]"
 site: "https://docs.bmad-method.org/"
 depot: "https://github.com/bmad-code-org/BMAD-METHOD"
 licence: "MIT"

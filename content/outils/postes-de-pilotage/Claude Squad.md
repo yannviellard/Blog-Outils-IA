@@ -7,6 +7,7 @@ tags:
   - metier/ingenierie
   - theme/multi-agent
 editeur: "smtg-ai"
+logo: "[[claude-squad.png]]"
 site: "https://smtg-ai.github.io/claude-squad/"
 depot: "https://github.com/smtg-ai/claude-squad"
 licence: "AGPL-3.0"

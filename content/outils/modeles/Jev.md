@@ -9,6 +9,7 @@ tags:
   - theme/extraction-donnees
   - theme/automatisation
 editeur: "TypeSafe AI"
+logo: "[[typesafe-jev.png]]"
 site: "https://typesafe.ai/"
 depot: "https://github.com/typesafe-ai"
 licence: "Propriétaire (modèle) · MIT (SDK, skill)"

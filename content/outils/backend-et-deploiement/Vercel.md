@@ -8,6 +8,7 @@ tags:
   - theme/deploiement
   - theme/frontend
 editeur: "Vercel"
+logo: "[[vercel.png]]"
 site: "https://vercel.com/"
 depot: "https://github.com/vercel/vercel"
 licence: "Apache-2.0"

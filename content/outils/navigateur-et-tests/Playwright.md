@@ -9,6 +9,7 @@ tags:
   - theme/navigateur
   - theme/mcp
 editeur: "Microsoft"
+logo: "[[playwright.svg]]"
 site: "https://playwright.dev/"
 depot: "https://github.com/microsoft/playwright"
 licence: "Apache-2.0"

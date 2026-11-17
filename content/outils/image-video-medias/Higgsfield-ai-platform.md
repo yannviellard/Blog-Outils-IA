@@ -8,6 +8,7 @@ tags:
   - theme/image
   - theme/video
 editeur: "Higgsfield AI"
+logo: "[[higgsfield.png]]"
 site: "https://higgsfield.ai/"
 licence: "Propriétaire"
 statut: disponible

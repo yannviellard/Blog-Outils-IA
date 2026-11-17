@@ -8,6 +8,7 @@ tags:
   - theme/seo
   - theme/redaction
 editeur: "Corey Haines"
+logo: "[[marketing-skills.svg]]"
 site: "https://marketing-skills.com/"
 depot: "https://github.com/coreyhaines31/marketingskills"
 licence: "MIT"

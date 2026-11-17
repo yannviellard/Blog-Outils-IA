@@ -9,6 +9,7 @@ tags:
   - theme/mcp
   - theme/multi-agent
 editeur: "Anthropic"
+logo: "[[claude-code.png]]"
 site: "https://code.claude.com/"
 depot: "https://github.com/anthropics/claude-code"
 licence: "Propriétaire (Anthropic Commercial Terms)"

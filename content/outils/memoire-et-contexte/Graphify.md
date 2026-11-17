@@ -8,6 +8,7 @@ tags:
   - theme/contexte
   - theme/memoire
 editeur: "Graphify Labs"
+logo: "[[graphify.svg]]"
 site: "https://www.graphify.com"
 depot: "https://github.com/Graphify-Labs/graphify"
 licence: "Apache-2.0 / MIT"

@@ -14,6 +14,7 @@ Base de connaissances en Markdown (coffre Obsidian + site Quartz) qui recense le
 | `outils/index.md` | Vue d'ensemble : les 16 familles par zone, avec leurs outils |
 | `memos/Nom mémo.md`, `memos/index.md` | Mémos pratiques et leur bibliothèque |
 | `memos/pdf/` | Mémos en PDF et leur aperçu JPEG, générés par `scripts/memos_pdf/generer.py` : ne pas modifier à la main |
+| `logos/` | Logos des outils (PNG, SVG ou WebP, 256 px au plus), désignés par le champ `logo` des fiches |
 | `metiers/` | Six pages métier : besoins, outils recommandés, points d'attention |
 | `concepts/` | Notions de base (MCP, skill, plugin, hook, sous-agents, harnais, worktree, mémoire) |
 | `guides/` | Guides transversaux |
@@ -21,7 +22,7 @@ Base de connaissances en Markdown (coffre Obsidian + site Quartz) qui recense le
 | `tags/` | Pages de description des tags, une par tag de la Taxonomie |
 | `_modeles/` | Gabarits de fiche, de mémo, de famille et de concept (exclus du site, comme `.obsidian/` et toute page `draft: true`) |
 
-Hors de `content/` : le moteur Quartz 5 (`quartz/`, `package.json`, `quartz.config.yaml`, `quartz.ts`), le plugin local `plugins/wiki-fiche/` (encadré « Fiche » et titre unique), `images/logos/` (logos, non affichés pour l'instant), `scripts/verifier_liens.py` (contrôle des liens), `scripts/memos_pdf/` (génération des mémos PDF) et `.github/workflows/deploy.yml` (mise en ligne). Le site construit va dans `public/`, non versionné.
+Hors de `content/` : le moteur Quartz 5 (`quartz/`, `package.json`, `quartz.config.yaml`, `quartz.ts`), le plugin local `plugins/wiki-fiche/` (encadré « Fiche » et titre unique), `scripts/verifier_liens.py` (contrôle des liens), `scripts/memos_pdf/` (génération des mémos PDF) et `.github/workflows/deploy.yml` (mise en ligne). Le site construit va dans `public/`, non versionné.
 
 - **Liens** : Obsidian et Quartz résolvent `[[Nom]]` par nom de fichier. Chaque nom de fichier doit donc rester unique (hors `index.md`), y compris sans tenir compte des majuscules. Vers une page de dossier, donner le chemin : `[[outils/agents-de-developpement/index|Agents de développement]]`.
 - **URLs** : elles sont générées depuis les chemins, en minuscules (`/outils/agents-de-developpement/claude-code`). Ne pas renommer ni déplacer les fichiers existants ; changer un outil de famille change son URL. Ne pas toucher à `.obsidian/`.
@@ -37,7 +38,7 @@ npx quartz build --serve    # site sur http://localhost:8080, reconstruit à cha
 
 - **Configuration** : `quartz.config.yaml` (titre, langue `fr-FR`, exclusions `_modeles`, `.obsidian`, plugins) ; ordre de l'explorateur dans `quartz.ts`. Relancer le serveur après une modification de la configuration ou du plugin local.
 - **Titre** : le site affiche le `title` du frontmatter en tête de page et masque le `# Titre` qui ouvre le corps (gardé pour Obsidian). Les deux doivent être identiques (contrôle n° 7).
-- **Encadré « Fiche »** : sur une fiche, le plugin `plugins/wiki-fiche/` affiche le format, l'éditeur, le statut, la licence, le site, le dépôt, les notes et le total /15, la Popularité, le mémo, la date des avis et les tags, à partir du frontmatter. Rien n'est à recopier dans le corps.
+- **Encadré « Fiche »** : sur une fiche, le plugin `plugins/wiki-fiche/` affiche le logo, le format, l'éditeur, le statut, la licence, le site, le dépôt, les notes et le total /15, la Popularité, le mémo, la date des avis et les tags, à partir du frontmatter. Rien n'est à recopier dans le corps.
 - **Mémos PDF** : sur une fiche dont le mémo a un PDF dans `memos/pdf/`, le plugin ajoute le lien « PDF » dans l'encadré et insère une section « Mémo pratique » (aperçu et téléchargement) avant « Avis indépendants » ; la page du mémo reçoit le lien de téléchargement. Rien n'est à écrire dans les fichiers.
 - **Liens sans cible** : affichés grisés, ils mènent à la page 404 ; ils servent de liste des fiches à écrire.
 - **LaTeX désactivé** : le `$` des prix s'écrit sans précaution.
@@ -47,7 +48,7 @@ npx quartz build --serve    # site sur http://localhost:8080, reconstruit à cha
 
 | Fichier | Rôle | Frontmatter |
 |---|---|---|
-| `outils/<famille>/Nom.md` | Fiche, basée sur le gabarit ; elle contient la synthèse des avis (section `## Avis indépendants`) | `type: outil`, `format`, `tags`, `editeur`, `statut`, notes, étoiles, forks, `avis_maj` (voir le gabarit) ; pas de champ `famille` : c'est le dossier |
+| `outils/<famille>/Nom.md` | Fiche, basée sur le gabarit ; elle contient la synthèse des avis (section `## Avis indépendants`) | `type: outil`, `format`, `tags`, `editeur`, `logo`, `statut`, notes, étoiles, forks, `avis_maj` (voir le gabarit) ; pas de champ `famille` : c'est le dossier |
 | `memos/Nom mémo.md` | Mémo pratique (sauf outils de `SANS_MEMO`) | `title: "Nom — Mémo"`, `type: memo`, `fiche: "[[Nom]]"`, `date` |
 
 Historique : le 11 novembre 2026, les fichiers d'avis séparés ont été fusionnés dans les fiches ; le 12 novembre 2026, les fiches ont été rangées par famille, les mémos renommés (`Nom_cheatsheet.md` → `memos/Nom mémo.md`) et le tableau d'en-tête remplacé par les propriétés du frontmatter, puis le `title` aligné sur le `# Titre` (79 pages) pour le site Quartz, et les 60 mémos publiés aussi en PDF (`memos/pdf/`).
@@ -57,10 +58,11 @@ Historique : le 11 novembre 2026, les fichiers d'avis séparés ont été fusion
 Faire **toutes** les étapes ; un outil n'est terminé que lorsque la liste de contrôle en bas passe.
 
 1. **Recherche** : documentation officielle, dépôt (étoiles, forks, contributeurs, licence, dernier commit/release, issues), puis **au moins trois sources indépendantes** (tests, discussions, études). Vérifier les chiffres par le web ; ne jamais inventer une valeur (utiliser « — »).
-2. **Fiche `outils/<famille>/Nom.md`** à partir de `_modeles/Template Article "Nom du projet".md` : frontmatter (`title` = nom exact du produit, identique au `# Titre` ; `type: outil` ; `format` unique, `tags` : 1 à 3 `metier/…` et 0 à 4 `theme/…`, tous pris dans `Taxonomie.md` ; `description` = phrase « En bref » de la page de famille ; notes identiques à la page de famille ; `etoiles`, `forks` et `etoiles_releve` relevés par l'API GitHub le jour même ; `modified` = date du jour) ; titre et résumé ; ligne **Composition** pour une collection, un plugin ou un serveur MCP ; ligne « Voir aussi » (`[[#Avis indépendants|Avis indépendants]]` et `[[Nom mémo]]`) ; résumé ; fonctionnalités ; analyse ; points forts ; limites ; relations (`[[wikilinks]]`, alternatives réelles, complémentaires) ; sources ; `_Dernière analyse : <date du jour>_`.
+2. **Fiche `outils/<famille>/Nom.md`** à partir de `_modeles/Template Article "Nom du projet".md` : frontmatter (`title` = nom exact du produit, identique au `# Titre` ; `type: outil` ; `format` unique, `tags` : 1 à 3 `metier/…` et 0 à 4 `theme/…`, tous pris dans `Taxonomie.md` ; `description` = phrase « En bref » de la page de famille ; notes identiques à la page de famille ; `etoiles`, `forks` et `etoiles_releve` relevés par l'API GitHub le jour même ; `logo` (voir ci-dessous) ; `modified` = date du jour) ; titre et résumé ; ligne **Composition** pour une collection, un plugin ou un serveur MCP ; ligne « Voir aussi » (`[[#Avis indépendants|Avis indépendants]]` et `[[Nom mémo]]`) ; résumé ; fonctionnalités ; analyse ; points forts ; limites ; relations (`[[wikilinks]]`, alternatives réelles, complémentaires) ; sources ; `_Dernière analyse : <date du jour>_`.
    - Pas de tableau d'en-tête : site, dépôt, licence, étoiles et date de mise à jour sont des propriétés du frontmatter.
    - `derniere_maj` = date du dernier commit ou release du dépôt, jamais la date du jour. Produit sans dépôt : supprimer le champ.
    - Ne laisser aucun commentaire `<!-- … -->` du gabarit ni artefact de citation (`contentReference`, `oaicite`).
+   - `logo: "[[nom.png]]"` : logo officiel, sans retouche (icône du site, avatar GitHub de l'organisation, image du dépôt), rangé dans `logos/` sous un nom en minuscules avec tirets et ramené à 256 px au plus (`sips -Z 256`). Jamais la photo d'une personne. Un logo partagé (Claude, Vercel, Gemini) sert à plusieurs fiches. Sans logo officiel identifiable, supprimer la ligne.
 3. **Section `## Avis indépendants`** de la fiche, juste avant `## Sources` : ligne datée (« Synthèse des retours publiés, mise à jour le … », même date que `avis_maj`), puis `### Ce qui est apprécié`, `### Ce qui est critiqué`, `### Ce qui n'est pas établi`, `### Comparaison` (face aux alternatives réelles), `### Verdict`. Les sources des avis vont dans `## Sources`, sous `### Sources des avis`, avec leur nature et leur fiabilité. Tableau « En bref » des tendances quand la matière est abondante (comme dans `Claude Code.md`). Indiquer la partialité d'une source (éditeur, concurrent, affilié) et les chiffres non reproduits. Les avis fusionnés le 11 novembre 2026 gardent leurs sections d'origine (Synthèse, Comparaison, Verdict…) jusqu'à leur révision.
 4. **Mémo `memos/Nom mémo.md`**, à partir de `_modeles/Template Mémo.md`, seulement si l'outil a des commandes, une configuration ou une API à retenir (CLI, SDK, raccourcis, déploiement). Pour une application en ligne sans commandes à retenir, ne pas créer de mémo : l'ajouter à la liste `SANS_MEMO` ci-dessous, supprimer le champ `memo` de la fiche et mettre « — » dans la colonne Mémo de la page de famille. Frontmatter : `title: "Nom — Mémo"`, identique au titre `# Nom — Mémo`. Structure : `# Nom — Mémo`, citation d'une phrase, `## Installation`, `## Commandes principales` (tableaux), sections propres à l'outil, `## Conseils d'utilisation`, `## Sources`. Chaque commande doit venir de la documentation officielle (vérifiée sur le web) ; ne rien inventer. Ajouter le mémo dans `memos/index.md`, sur la ligne de sa famille. Générer ensuite son PDF depuis la racine du projet : `python3 scripts/memos_pdf/generer.py "Nom mémo"` (à refaire après chaque modification du mémo ou de sa fiche : `--modifies` régénère tous les PDF périmés) ; relire l'aperçu `memos/pdf/Nom mémo.jpg` et corriger tout point « À REVOIR ».
 5. **Pages de classement** :
@@ -111,7 +113,7 @@ for f in outils/*/*.md; do [ "$(basename "$f")" = index.md ] && continue; grep -
 # 5. Notes : la fiche, sa page de famille et le tableau « Toutes les notes » concordent
 for f in outils/*/*.md; do b=$(basename "$f" .md); [ "$b" = index ] && continue; v=$(sed -n 's/^note_documentation: //p; s/^note_precision: //p; s/^note_maturite: //p' "$f" | tr '\n' ' '); r=$(grep -F "|[[$b]]|" "$(dirname "$f")/index.md" | grep "★" | awk -F'|' '{for(i=3;i<=5;i++){s=$i; printf "%d ", gsub(/★/,"",s)}}'); [ "$v" = "$r" ] || echo "NOTES : $b (fiche $v, famille $r)"; t=$(grep -F "|[[$b]]|" "methode/Comparatif global des outils.md" | awk -F'|' '{print $(NF-2)}'); [ "$t" = "$(echo "$v" | awk '{print $1+$2+$3}')" ] || echo "TOTAL : $b (comparatif $t, fiche $v)"; done
 
-# 6. Liens : doublons de noms, liens ambigus, chemins et ancres introuvables
+# 6. Liens : doublons de noms, liens ambigus, chemins, ancres et images introuvables (champ `logo`)
 python3 ../scripts/verifier_liens.py
 
 # 7. Titres : le « # Titre » qui ouvre une page reprend exactement son `title` (le site affiche le `title` et masque le « # Titre »)

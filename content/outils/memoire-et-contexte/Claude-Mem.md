@@ -8,6 +8,7 @@ tags:
   - theme/memoire
   - theme/contexte
 editeur: "thedotmack"
+logo: "[[claude-mem.webp]]"
 site: "https://docs.claude-mem.ai/"
 depot: "https://github.com/thedotmack/claude-mem"
 licence: "Apache-2.0"

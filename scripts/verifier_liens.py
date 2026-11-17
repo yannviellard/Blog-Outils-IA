@@ -1,7 +1,8 @@
 """Contrôle des wikilinks de content/, résolus comme Obsidian et Quartz (markdownLinkResolution: shortest).
 
 Signale les noms de fichiers en double (hors index.md, sans tenir compte de la casse), les liens ambigus,
-les chemins introuvables, les ancres #Titre absentes et les noms de fichiers non normalisés (NFD).
+les chemins introuvables, les ancres #Titre absentes, les images ou PDF introuvables (champ `logo` des
+fiches : [[claude.svg]]) et les noms de fichiers non normalisés (NFD).
 Les liens vers une page qui n'existe pas encore sont comptés à part : ce sont les fiches à écrire (option -v pour les lister).
 Usage : python3 scripts/verifier_liens.py [-v]
 """
@@ -9,13 +10,16 @@ import os, re, sys, unicodedata, collections
 N = lambda s: unicodedata.normalize("NFC", s)
 C = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content")
 files = {}
+pieces = collections.defaultdict(list)  # fichiers non Markdown (logos, PDF) : [[claude.svg]]
 for r, ds, fs in os.walk(C):
     if ".obsidian" in r: continue
     for f in fs:
+        rel = os.path.relpath(os.path.join(r, f), C)
         if f.endswith(".md"):
-            rel = os.path.relpath(os.path.join(r, f), C)
             if N(rel) != rel: print("NFD :", rel)
             files[N(rel)[:-3]] = open(os.path.join(r, f), encoding="utf-8").read()
+        elif not f.startswith("."):
+            pieces[N(f).lower()].append(N(rel))
 base = collections.defaultdict(list)
 for k in files: base[k.split("/")[-1].lower()].append(k)
 dups = {b: v for b, v in base.items() if len(v) > 1 and b != "index"}
@@ -32,6 +36,11 @@ for k, t in files.items():
         n += 1
         raw = m.group(1).replace("\\|", "|").split("|")[0]
         tg, _, anc = raw.partition("#"); tg = N(tg.strip())
+        if re.search(r"\.(png|svg|webp|jpe?g|gif|pdf)$", tg, re.I):
+            c = pieces.get(tg.split("/")[-1].lower(), [])
+            if "/" in tg: c = [p for p in c if p == tg]
+            if len(c) != 1: prob[f"fichier {'ambigu' if c else 'introuvable'} : {k} -> {raw}"] += 1
+            continue
         if not tg: dest = k
         elif "/" in tg:
             dest = tg if tg in files else None

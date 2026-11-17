@@ -8,6 +8,7 @@ tags:
   - metier/operations
   - theme/tests
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://code.claude.com/docs/en/plugins"
 depot: "https://github.com/anthropics/claude-plugins-official/blob/main/plugins/skill-creator/skills/skill-creator/SKILL.md"
 licence: "Apache-2.0"

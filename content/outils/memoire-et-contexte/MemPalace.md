@@ -9,6 +9,7 @@ tags:
   - theme/memoire
   - theme/mcp
 editeur: "MemPalace"
+logo: "[[mempalace.png]]"
 site: "https://mempalaceofficial.com/"
 depot: "https://github.com/MemPalace/mempalace"
 licence: "MIT"

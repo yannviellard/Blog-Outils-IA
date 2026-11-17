@@ -8,6 +8,7 @@ tags:
   - theme/frontend
   - theme/accessibilite
 editeur: "Vercel"
+logo: "[[vercel.png]]"
 site: "https://skills.sh/vercel-labs/agent-skills"
 depot: "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md"
 licence: "MIT"

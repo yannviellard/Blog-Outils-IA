@@ -9,6 +9,7 @@ tags:
   - theme/securite
   - theme/deploiement
 editeur: "Supabase"
+logo: "[[supabase.png]]"
 site: "https://supabase.com/"
 depot: "https://github.com/supabase/supabase"
 licence: "Apache 2.0"

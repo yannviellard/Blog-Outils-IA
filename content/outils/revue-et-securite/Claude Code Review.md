@@ -8,6 +8,7 @@ tags:
   - theme/revue-de-code
   - theme/multi-agent
 editeur: "Anthropic"
+logo: "[[claude-code.png]]"
 site: "https://code.claude.com/docs/en/code-review"
 depot: "https://github.com/anthropics/claude-code"
 licence: "Propriétaire"

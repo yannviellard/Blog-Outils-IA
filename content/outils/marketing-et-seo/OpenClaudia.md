@@ -7,6 +7,7 @@ tags:
   - metier/marketing-ventes
   - theme/seo
 editeur: "OpenClaudia"
+logo: "[[openclaudia.png]]"
 site: "https://openclaudia.com/"
 depot: "https://github.com/OpenClaudia/openclaudia-skills"
 licence: "MIT"

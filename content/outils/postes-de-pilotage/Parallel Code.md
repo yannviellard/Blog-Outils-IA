@@ -8,6 +8,7 @@ tags:
   - theme/multi-agent
   - theme/revue-de-code
 editeur: "johannesjo"
+logo: "[[parallel-code.png]]"
 site: "https://parallelcode.app"
 depot: "https://github.com/johannesjo/parallel-code"
 licence: "MIT"

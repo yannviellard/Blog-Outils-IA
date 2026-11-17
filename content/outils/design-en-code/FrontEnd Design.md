@@ -8,6 +8,7 @@ tags:
   - theme/frontend
   - theme/design-system
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://github.com/anthropics/skills"
 depot: "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
 licence: "Apache-2.0"

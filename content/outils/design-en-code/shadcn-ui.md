@@ -8,6 +8,7 @@ tags:
   - theme/frontend
   - theme/design-system
 editeur: "shadcn"
+logo: "[[shadcn-ui.png]]"
 site: "https://ui.shadcn.com/"
 depot: "https://github.com/shadcn-ui/ui"
 licence: "MIT"

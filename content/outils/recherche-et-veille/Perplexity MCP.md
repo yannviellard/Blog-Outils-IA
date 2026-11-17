@@ -9,6 +9,7 @@ tags:
   - theme/mcp
   - theme/recherche
 editeur: "Perplexity AI"
+logo: "[[perplexity.svg]]"
 site: "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server"
 depot: "https://github.com/perplexityai/modelcontextprotocol"
 licence: "MIT"

@@ -9,6 +9,7 @@ tags:
   - theme/memoire
   - theme/mcp
 editeur: "ruvnet"
+logo: "[[ruflo.svg]]"
 site: "https://cognitum.one/"
 depot: "https://github.com/ruvnet/ruflo"
 licence: "MIT"

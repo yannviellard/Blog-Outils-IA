@@ -8,6 +8,7 @@ tags:
   - theme/contexte
   - theme/mcp
 editeur: "Anomaly"
+logo: "[[opencode.svg]]"
 site: "https://opencode.ai/"
 depot: "https://github.com/anomalyco/opencode"
 licence: "MIT"

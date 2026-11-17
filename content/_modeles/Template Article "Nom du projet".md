@@ -7,6 +7,7 @@ tags:
   - metier/...
   - theme/...
 editeur: ""
+logo: "[[nom-du-projet.png]]"
 site: ""
 depot: ""
 licence: ""
@@ -36,6 +37,7 @@ derniere_maj : date du dernier commit ou release du dépôt, jamais la date de r
 etoiles_releve et modified : date du jour au format AAAA-MM-JJ ; « Dernière analyse » en pied de page porte la même date.
 memo : supprimer la ligne si l'outil n'a pas de mémo (liste SANS_MEMO de CLAUDE.md).
 editeur : organisation ou personne nommée par le site ou le dépôt officiel ; à défaut, le compte GitHub ; sinon supprimer la ligne.
+logo : logo officiel sans retouche, rangé dans content/logos/ (nom en minuscules avec tirets, 256 px au plus) et affiché par l'encadré « Fiche » ; jamais la photo d'une personne ; supprimer la ligne si l'outil n'a pas de logo officiel identifiable.
 statut : disponible, preversion (préversion, bêta, Labs ou expérimental selon l'éditeur) ou retire (produit arrêté, dépôt archivé ou introuvable).
 avis_maj : date de la dernière mise à jour de la section « Avis indépendants » (AAAA-MM-JJ). -->
 

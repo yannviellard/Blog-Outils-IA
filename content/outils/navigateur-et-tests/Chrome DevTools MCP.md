@@ -9,6 +9,7 @@ tags:
   - theme/navigateur
   - theme/tests
 editeur: "Google (équipe Chrome DevTools)"
+logo: "[[chrome-devtools-mcp.png]]"
 site: "https://developer.chrome.com/docs/devtools/agents"
 depot: "https://github.com/ChromeDevTools/chrome-devtools-mcp"
 licence: "Apache-2.0"

@@ -7,6 +7,7 @@ tags:
   - metier/marketing-ventes
   - theme/image
   - theme/video
+logo: "[[banana-prompts.png]]"
 site: "https://www.bananaprompts.xyz/"
 licence: "Propriétaire"
 statut: disponible

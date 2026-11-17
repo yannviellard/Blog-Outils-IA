@@ -9,6 +9,7 @@ tags:
   - metier/operations
   - theme/mcp
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://claude.com/solutions/small-business"
 depot: "https://github.com/anthropics/knowledge-work-plugins/tree/main/small-business"
 statut: disponible

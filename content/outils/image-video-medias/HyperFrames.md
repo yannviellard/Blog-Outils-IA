@@ -8,6 +8,7 @@ tags:
   - theme/video
   - theme/frontend
 editeur: "HeyGen"
+logo: "[[hyperframes.png]]"
 site: "https://hyperframes.heygen.com/"
 depot: "https://github.com/heygen-com/hyperframes"
 licence: "Apache-2.0"

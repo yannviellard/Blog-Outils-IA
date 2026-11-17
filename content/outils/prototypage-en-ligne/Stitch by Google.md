@@ -9,6 +9,7 @@ tags:
   - theme/frontend
   - theme/mcp
 editeur: "Google Labs"
+logo: "[[stitch.png]]"
 site: "https://stitch.withgoogle.com/"
 depot: "https://github.com/google-labs-code/stitch-sdk"
 licence: "Apache-2.0"

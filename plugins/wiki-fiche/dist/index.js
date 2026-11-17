@@ -8,7 +8,9 @@
 // 2. mémo PDF : si content/memos/pdf/<Nom mémo>.pdf existe (généré par
 //    scripts/memos_pdf/generer.py), note ses caractéristiques dans file.data.memoPdf
 //    (lues par l'encadré « Fiche ») et, sur une fiche outil, insère une section
-//    « Mémo pratique » (aperçu et lien de téléchargement) avant « Avis indépendants ».
+//    « Mémo pratique » (aperçu et lien de téléchargement) avant « Avis indépendants » ;
+// 3. logo : résout le champ `logo` du frontmatter vers une image de content/logos/
+//    (file.data.logo, affiché par l'encadré « Fiche »).
 
 import fs from "fs"
 import path from "path"
@@ -108,11 +110,26 @@ function memoPdf(ctx) {
   }
 }
 
+// Logo d'une fiche : le champ `logo: "[[fichier.png]]"` désigne une image de content/logos/.
+// Son chemin publié est noté dans file.data.logo, lu par l'encadré « Fiche ».
+function logo(ctx) {
+  const contenu = path.resolve(ctx?.argv?.directory ?? "content")
+  return () => (_tree, file) => {
+    const nom = cibleWikilink(file.data?.frontmatter?.logo)
+    if (!nom) return
+    if (!fs.existsSync(path.join(contenu, "logos", nom))) {
+      console.warn(`[wiki-fiche] logo introuvable : logos/${nom} (${file.data?.slug ?? file.path})`)
+      return
+    }
+    file.data.logo = slugifyFilePath(`logos/${nom}`)
+  }
+}
+
 export default function WikiFiche() {
   return {
     name: "WikiFiche",
     markdownPlugins(ctx) {
-      return [retirerTitreInitial, memoPdf(ctx)]
+      return [retirerTitreInitial, memoPdf(ctx), logo(ctx)]
     },
   }
 }

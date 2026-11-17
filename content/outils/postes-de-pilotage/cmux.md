@@ -8,6 +8,7 @@ tags:
   - theme/multi-agent
   - theme/navigateur
 editeur: "Manaflow"
+logo: "[[cmux.png]]"
 site: "https://cmux.com"
 depot: "https://github.com/manaflow-ai/cmux"
 licence: "GPL-3.0-or-later"

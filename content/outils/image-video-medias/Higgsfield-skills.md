@@ -8,6 +8,7 @@ tags:
   - theme/image
   - theme/video
 editeur: "Higgsfield AI"
+logo: "[[higgsfield.png]]"
 site: "https://higgsfield.ai/"
 depot: "https://github.com/higgsfield-ai/skills"
 licence: "MIT"

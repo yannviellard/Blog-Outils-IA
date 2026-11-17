@@ -7,6 +7,7 @@ tags:
   - metier/produit-design
   - theme/design-system
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://claude.com/product/design"
 licence: "Proprietary"
 statut: preversion

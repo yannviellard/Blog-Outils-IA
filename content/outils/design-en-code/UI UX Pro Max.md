@@ -9,6 +9,7 @@ tags:
   - theme/accessibilite
   - theme/frontend
 editeur: "nextlevelbuilder"
+logo: "[[ui-ux-pro-max.svg]]"
 site: "https://uupm.cc/"
 depot: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
 licence: "MIT"

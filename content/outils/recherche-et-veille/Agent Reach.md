@@ -9,6 +9,7 @@ tags:
   - theme/recherche
   - theme/extraction-donnees
 editeur: "Panniantong"
+logo: "[[agent-reach.png]]"
 site: "https://github.com/Panniantong/Agent-Reach"
 depot: "https://github.com/Panniantong/Agent-Reach"
 licence: "MIT"

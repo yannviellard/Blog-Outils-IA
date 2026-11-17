@@ -9,6 +9,7 @@ tags:
   - theme/redaction
   - theme/mcp
 editeur: "Cloudflare"
+logo: "[[cloudflare.png]]"
 depot: "https://github.com/cloudflare/agentic-inbox"
 licence: "Apache-2.0"
 statut: disponible

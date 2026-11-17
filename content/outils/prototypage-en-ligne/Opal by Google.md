@@ -9,6 +9,7 @@ tags:
   - metier/operations
   - theme/automatisation
 editeur: "Google Labs"
+logo: "[[opal.png]]"
 site: "https://opal.google/landing/"
 licence: "Propriétaire (Google Labs)"
 statut: preversion

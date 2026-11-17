@@ -9,6 +9,7 @@ tags:
   - theme/accessibilite
   - theme/frontend
 editeur: "pbakaus"
+logo: "[[impeccable.svg]]"
 site: "https://impeccable.style/"
 depot: "https://github.com/pbakaus/impeccable"
 licence: "Apache-2.0"

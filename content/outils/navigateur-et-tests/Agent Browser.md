@@ -8,6 +8,7 @@ tags:
   - theme/navigateur
   - theme/tests
 editeur: "Vercel Labs"
+logo: "[[vercel.png]]"
 site: "https://vercel.com/"
 depot: "https://github.com/vercel-labs/agent-browser"
 licence: "Apache-2.0"

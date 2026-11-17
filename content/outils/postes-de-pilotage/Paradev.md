@@ -8,6 +8,7 @@ tags:
   - theme/multi-agent
   - theme/revue-de-code
 editeur: "Paradev (anciennement Superset)"
+logo: "[[paradev.png]]"
 site: "https://paradev.com"
 depot: "https://github.com/ParadevAI/Paradev"
 licence: "MIT"

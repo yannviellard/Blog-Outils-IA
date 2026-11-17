@@ -9,6 +9,7 @@ tags:
   - theme/securite
   - theme/revue-de-code
 editeur: "Anthropic"
+logo: "[[claude.svg]]"
 site: "https://code.claude.com/"
 depot: "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance"
 licence: "Anthropic Commercial Terms"

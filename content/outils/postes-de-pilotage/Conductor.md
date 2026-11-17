@@ -8,6 +8,7 @@ tags:
   - theme/multi-agent
   - theme/revue-de-code
 editeur: "Melty Labs"
+logo: "[[conductor.png]]"
 site: "https://www.conductor.build"
 licence: "Propriétaire"
 statut: disponible

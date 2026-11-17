@@ -10,6 +10,7 @@ tags:
   - theme/tests
   - theme/revue-de-code
 editeur: "Affaan Mustafa"
+logo: "[[everything-claude-code.svg]]"
 site: "https://ecc.tools"
 depot: "https://github.com/affaan-m/ECC"
 licence: "MIT"

@@ -8,6 +8,7 @@ tags:
   - theme/multi-agent
   - theme/planification
 editeur: "Yeachan-Heo"
+logo: "[[oh-my-claude-code.svg]]"
 site: "https://ohmyclaudecode.com/"
 depot: "https://github.com/Yeachan-Heo/oh-my-claudecode"
 licence: "MIT"

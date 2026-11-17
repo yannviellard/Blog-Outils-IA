@@ -10,6 +10,7 @@ tags:
   - theme/multi-agent
   - theme/revue-de-code
 editeur: "OpenAI"
+logo: "[[openai-codex.png]]"
 site: "https://openai.com/codex/"
 depot: "https://github.com/openai/codex"
 licence: "Apache-2.0 (CLI) · application propriétaire"

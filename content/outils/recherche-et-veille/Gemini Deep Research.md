@@ -8,6 +8,7 @@ tags:
   - metier/operations
   - theme/recherche
 editeur: "Google"
+logo: "[[gemini.png]]"
 site: "https://gemini.google/overview/deep-research"
 licence: "Propriétaire"
 statut: disponible

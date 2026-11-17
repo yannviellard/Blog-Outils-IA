@@ -7,6 +7,7 @@ tags:
   - metier/marketing-ventes
   - theme/image
 editeur: "Google DeepMind"
+logo: "[[gemini.png]]"
 site: "https://gemini.google/fr/overview/image-generation/?hl=fr-FR"
 statut: disponible
 derniere_maj: 2026-06-30

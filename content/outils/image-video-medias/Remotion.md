@@ -8,6 +8,7 @@ tags:
   - theme/video
   - theme/frontend
 editeur: "Remotion"
+logo: "[[remotion.svg]]"
 site: "https://www.remotion.dev/"
 depot: "https://github.com/remotion-dev/remotion"
 licence: "Custom / Commercial"

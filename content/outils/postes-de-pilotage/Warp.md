@@ -7,6 +7,7 @@ tags:
   - metier/ingenierie
   - theme/multi-agent
 editeur: "Warp"
+logo: "[[warp.png]]"
 site: "https://www.warp.dev"
 depot: "https://github.com/warpdotdev/warp"
 licence: "AGPL-3.0 ; composants UI MIT"

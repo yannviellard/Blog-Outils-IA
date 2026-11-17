@@ -10,6 +10,7 @@ tags:
   - theme/navigateur
   - theme/mcp
 editeur: "Firecrawl"
+logo: "[[firecrawl.svg]]"
 site: "https://www.firecrawl.dev/"
 depot: "https://github.com/firecrawl/firecrawl"
 licence: "AGPL-3.0"

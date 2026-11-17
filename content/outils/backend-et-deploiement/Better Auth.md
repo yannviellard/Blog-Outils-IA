@@ -8,6 +8,7 @@ tags:
   - theme/securite
   - theme/backend
 editeur: "Better Auth"
+logo: "[[better-auth.png]]"
 site: "https://better-auth.com/"
 depot: "https://github.com/better-auth/better-auth"
 licence: "MIT"
