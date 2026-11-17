@@ -72,7 +72,7 @@ Décidé le 11 novembre 2026 : « Design et UI » est scindée en deux familles,
 |---|---|
 | Recherche et veille | Firecrawl, Agent Reach, Perplexity MCP, Gemini Deep Research, NotebookLM |
 | Marketing et SEO | Ai-Marketing-Claude, Marketing Skills from Corey Haines, Claude SEO, OpenClaudia, Pomelli |
-| Image, vidéo et médias | Banana Prompts, Glif MCP, Higgsfield-ai-platform, Higgsfield-skills, Open Higgsfield AI, Remotion, HyperFrames |
+| Image, vidéo et médias | Banana Prompts, Glif MCP, Higgsfield-ai-platform, Higgsfield-skills, Open Generative AI, Remotion, HyperFrames |
 | Écriture, voix et messagerie | Humanizer, Wispr Flow, Agentic Inbox |
 | Finance, juridique et décision | Claude for Financial Services, Claude for Legal, Small Business, AI Berkshire, LLM Council |
 

@@ -95,7 +95,7 @@ Higgsfield cible à la fois les créateurs individuels (communauté, contests, f
 
 ## Relations
 
-- **Alternative à :** Kling (rapport qualité/prix et mouvement), Veo (réalisme et audio), Runway (interface d'édition et contrôle), ComfyUI (maîtrise locale)
+- **Alternative à :** Kling (rapport qualité/prix et mouvement), Veo (réalisme et audio), Runway (interface d'édition et contrôle), ComfyUI (maîtrise locale), [[Open Generative AI]] (interface open source inspirée de Higgsfield, qui génère via l'API Muapi.ai)
 
 - **Complémentaire de :** [[Remotion]], [[HyperFrames]] (ils composent une vidéo de façon reproductible, alors que Higgsfield génère des pixels)
 

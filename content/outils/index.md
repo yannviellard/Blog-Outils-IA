@@ -97,7 +97,7 @@ Skills et applications pour la stratégie marketing, le contenu et le référenc
 
 Génération d'images et de vidéos, et production vidéo programmable.
 
-[[Banana Prompts]] · [[Glif MCP]] · [[Higgsfield-ai-platform]] · [[Higgsfield-skills]] · [[HyperFrames]] · [[Open Higgsfield AI]] · [[Remotion]]
+[[Banana Prompts]] · [[Glif MCP]] · [[Higgsfield-ai-platform]] · [[Higgsfield-skills]] · [[HyperFrames]] · [[Open Generative AI]] · [[Remotion]]
 
 ### [[outils/ecriture-voix-messagerie/index|Écriture, voix et messagerie]]
 

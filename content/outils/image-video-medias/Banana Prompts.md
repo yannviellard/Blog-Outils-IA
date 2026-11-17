@@ -103,7 +103,7 @@ Parcourir et partager des prompts reste gratuit. Une image coûte 1 à 2 crédit
 
 - **Utilise :** modèles Gemini image, GPT Image 2 / 2.5, Gemini Omni, Veo 3.1
 
-- **Voir aussi :** [[Higgsfield-ai-platform]], [[Open Higgsfield AI]]
+- **Voir aussi :** [[Higgsfield-ai-platform]], [[Open Generative AI]]
 
 ## Avis indépendants
 

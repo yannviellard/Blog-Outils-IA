@@ -94,7 +94,7 @@ Trois critères communs, notés sur 5 : **Documentation**, **Précision des desc
 
 ```bash
 # 1. Fiches sans section d'avis ou sans mémo (SANS_MEMO : outils en ligne sans commandes à retenir)
-SANS_MEMO="Banana Prompts|Claude Design|Gemini Deep Research|Higgsfield-ai-platform|NotebookLM|Opal by Google|Open Higgsfield AI|Pomelli|Stitch by Google|Wispr Flow"
+SANS_MEMO="Banana Prompts|Claude Design|Gemini Deep Research|Higgsfield-ai-platform|NotebookLM|Opal by Google|Open Generative AI|Pomelli|Stitch by Google|Wispr Flow"
 for f in outils/*/*.md; do b=$(basename "$f" .md); [ "$b" = index ] && continue; grep -q "^## Avis indépendants$" "$f" && grep -q "^### Sources des avis$" "$f" || echo "SANS AVIS : $b"; [ -f "memos/$b mémo.md" ] || echo "$b" | grep -qxE "$SANS_MEMO" || echo "SANS MÉMO : $b"; done
 
 # 2. Fiches absentes de leur page de famille, de la vue d'ensemble, des pages métier ou du comparatif ; mémos absents de la bibliothèque

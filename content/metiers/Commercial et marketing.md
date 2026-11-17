@@ -2,7 +2,7 @@
 title: "Commercial et marketing"
 type: metier
 description: "Pour comprendre un marché, produire des campagnes, générer des leads et décliner la marque sur les canaux."
-modified: 2026-11-12
+modified: 2026-11-17
 ---
 
 # Commercial et marketing
@@ -16,9 +16,9 @@ Pour comprendre un marché, produire des campagnes, générer des leads et décl
 | Campagnes pour TPE/PME             | [[Pomelli]], [[Small Business]]                                                  | Valider les messages et mesurer la performance avant généralisation.                    |
 | Rédaction et révision              | [[Humanizer]], [[Wispr Flow]]                                                    | Conserver une relecture factuelle et une voix éditoriale propre.                        |
 | Inspiration et génération visuelle | [[Banana Prompts]], [[Nano Banana]], [[Glif MCP]]                                | Contrôler les droits, le texte généré et la cohérence de marque.                        |
-| Image et vidéo de campagne         | [[Higgsfield-ai-platform]], [[Higgsfield-skills]], [[Open Higgsfield AI]]        | Tester crédits, files d'attente, licence et coût réel des variantes.                    |
+| Image et vidéo de campagne         | [[Higgsfield-ai-platform]], [[Higgsfield-skills]], [[Open Generative AI]]        | Tester crédits, files d'attente, licence et coût réel des variantes ; Open Generative AI se dit « sans filtre de contenu » : prévoir sa propre validation. |
 | Vidéo programmable                 | [[Remotion]], [[HyperFrames]]                                                    | Pertinent pour la production répétable ; excessif pour un montage ponctuel.             |
 
 Toutes les fiches utiles à ce métier : [[tags/metier/marketing-ventes|métier « Commercial et marketing »]]. Les autres métiers : [[metiers/index|Métiers]].
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 17 novembre 2026_

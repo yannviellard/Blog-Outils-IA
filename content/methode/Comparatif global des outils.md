@@ -2,7 +2,7 @@
 title: Comparatif global des outils
 type: guide
 description: "Le barème unique des notes ★ (documentation, précision, maturité, popularité) et toutes les notes des outils."
-modified: 2026-11-12
+modified: 2026-11-17
 ---
 
 # Comparatif global des outils
@@ -127,11 +127,11 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[LLM Council]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|8|★★★☆☆|
 |[[MemPalace]]|[[outils/memoire-et-contexte/index\|Mémoire et contexte]]|8|★★★★☆|
 |[[Opal by Google]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|8|—|
+|[[Open Generative AI]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|8|★★★★☆|
 |[[OpenClaudia]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|8|★★☆☆☆|
 |[[Parallel Code]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|8|★★★☆☆|
 |[[Ruflo]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|8|★★★★☆|
 |[[Taste Skill]]|[[outils/design-en-code/index\|Design en code]]|8|★★★★★|
-|[[Open Higgsfield AI]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|7|★★★☆☆|
 
 ## Lecture transversale
 
@@ -139,11 +139,11 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 - **Les skills et frameworks de 2026 plafonnent à ★★★ en maturité** : même très populaires, ils ont moins d'un an d'existence et évoluent vite.
 - **Les produits Google Labs et Anthropic en préversion** (Claude Design, Stitch, Opal, Pomelli) sont limités à ★★ en maturité tant qu'ils sont expérimentaux.
 - **Les outils de pilotage multi-agent** ([[outils/postes-de-pilotage/index|Postes de pilotage]]) ont des documentations solides mais une maturité d'un an au plus, hors Warp ; leurs avis mêlent réponses de fondateurs et de concurrents.
-- **La popularité ne dit rien de la fiabilité** : sur les 18 outils à ★★★★★ de popularité au 16 novembre 2026, 11 ont une maturité de ★★★ ou moins, et leur total moyen (11,1/15) dépasse à peine celui des outils à ★★★★ (10,8/15).
-- **Les plus faibles précisions** concernent des projets dont le discours a été contredit par des audits ou des tests tiers (Ruflo, MemPalace, Open Higgsfield AI).
+- **La popularité ne dit rien de la fiabilité** : sur les 18 outils à ★★★★★ de popularité au 17 novembre 2026, 11 ont une maturité de ★★★ ou moins, et leur total moyen (11,1/15) dépasse à peine celui des outils à ★★★★ (10,7/15).
+- **Les plus faibles précisions** concernent des projets dont le discours a été contredit par des audits, des tests ou des analyses tiers (Ruflo, MemPalace, Open Generative AI).
 
 ## Comment cette page évolue
 
 Les notes sont fixées dans la page de chaque famille, avec leur justification ; la fiche de l'outil reprend les quatre mêmes notes et le tableau « Toutes les notes » en reprend le total et la Popularité. À chaque mise à jour d'une fiche, relire d'abord sa ligne dans la page de famille : si une note change, la justification change avec elle, puis la fiche et ce tableau. La Popularité est recalculée à chaque relevé des étoiles.
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 17 novembre 2026_
