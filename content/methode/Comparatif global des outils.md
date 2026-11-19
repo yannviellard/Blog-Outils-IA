@@ -2,7 +2,7 @@
 title: Comparatif global des outils
 type: guide
 description: "Le barème unique des notes ★ (documentation, précision, maturité, popularité) et toutes les notes des outils."
-modified: 2026-11-17
+modified: 2026-11-19
 ---
 
 # Comparatif global des outils
@@ -58,7 +58,7 @@ Chaque page de famille applique ce barème : notes et justification ligne à lig
 
 ## Toutes les notes
 
-Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
+Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
 
 |Outil|Famille|Total /15|Popularité|
 |---|---|:-:|:-:|
@@ -86,6 +86,7 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Impeccable]]|[[outils/design-en-code/index\|Design en code]]|11|★★★★★|
 |[[Marketing Skills from Corey Haines]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|11|★★★★☆|
 |[[OpenCode]]|[[outils/agents-de-developpement/index\|Agents de développement]]|11|★★★★★|
+|[[Paperclip]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|11|★★★★★|
 |[[Paradev]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|★★★★☆|
 |[[Perplexity MCP]]|[[outils/recherche-et-veille/index\|Recherche et veille]]|11|★★★☆☆|
 |[[Planning with Files]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|11|★★★★☆|
@@ -122,6 +123,7 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[OpenCLI]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|9|★★★★☆|
 |[[Pomelli]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|9|—|
 |[[Stitch by Google]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|9|—|
+|[[Unlimited-OCR]]|[[outils/modeles/index\|Modèles]]|9|★★★★☆|
 |[[Claude Design]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|8|—|
 |[[Higgsfield-ai-platform]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|8|—|
 |[[LLM Council]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|8|★★★☆☆|
@@ -146,4 +148,4 @@ Les 70 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 
 Les notes sont fixées dans la page de chaque famille, avec leur justification ; la fiche de l'outil reprend les quatre mêmes notes et le tableau « Toutes les notes » en reprend le total et la Popularité. À chaque mise à jour d'une fiche, relire d'abord sa ligne dans la page de famille : si une note change, la justification change avec elle, puis la fiche et ce tableau. La Popularité est recalculée à chaque relevé des étoiles.
 
-_Dernière analyse : 17 novembre 2026_
+_Dernière analyse : 19 novembre 2026_

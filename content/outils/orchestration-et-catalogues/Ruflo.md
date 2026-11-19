@@ -24,7 +24,7 @@ note_maturite: 2
 note_popularite: 4
 memo: "[[Ruflo mémo]]"
 avis_maj: 2026-09-25
-modified: 2026-11-12
+modified: 2026-11-19
 ---
 
 # Ruflo
@@ -125,6 +125,7 @@ Le projet a connu une évolution rapide en 2026. Les versions récentes ont corr
 ## Relations
 
 - **Alternative à :** [[CrewAI]], [[LangGraph]], [[AutoGen]], autres frameworks d'orchestration multi-agent
+- **Alternative pour le suivi opérationnel :** [[Paperclip]] centralise l'affectation, les journaux, les budgets et les validations d'une équipe d'agents.
     
 - **S'intègre avec :** Claude Code · Codex · Hermes · MCP
     

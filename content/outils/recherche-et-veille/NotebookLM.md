@@ -20,7 +20,7 @@ note_documentation: 3
 note_precision: 3
 note_maturite: 4
 avis_maj: 2026-09-24
-modified: 2026-11-12
+modified: 2026-11-19
 ---
 
 # NotebookLM (Gemini Notebook)
@@ -105,6 +105,8 @@ NotebookLM cible aussi bien les particuliers (révision, recherche personnelle, 
 - **Alternative à :** ChatGPT Projects (conversation, fichiers et mémoire de projet), Claude (synthèse et rédaction à partir de documents), Perplexity (exploration du web plutôt que d'un corpus propre)
 
 - **Complémentaire de :** [[Gemini Deep Research]] pour l'exploration du web avant d'ancrer un corpus choisi
+
+- **Complémentaire de :** [[Unlimited-OCR]] pour extraire et structurer des documents numérisés avant leur import dans un corpus.
 
 - **S'intègre avec :** Google Docs, Google Slides, Google Drive, YouTube, Google Workspace, Google Workspace for Education, Google Cloud
 

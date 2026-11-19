@@ -1,8 +1,8 @@
 ---
 title: "Tous les outils"
 type: index
-description: "Les 70 outils du wiki, rangés en 16 familles et trois zones."
-modified: 2026-11-12
+description: "Les 72 outils du wiki, rangés en 16 familles et trois zones."
+modified: 2026-11-19
 ---
 
 # Tous les outils
@@ -33,7 +33,7 @@ Processus prêts à l'emploi (clarification, plan, tests, revue) qui encadrent l
 
 Couches qui coordonnent plusieurs agents, et bibliothèques de rôles, d'agents ou de skills où piocher.
 
-[[Agency Agents]] · [[Alirezarezvani Claude Skills]] · [[Oh My Claude]] · [[Ruflo]] · [[Wshobson Agents]]
+[[Agency Agents]] · [[Alirezarezvani Claude Skills]] · [[Oh My Claude]] · [[Paperclip]] · [[Ruflo]] · [[Wshobson Agents]]
 
 ### [[outils/memoire-et-contexte/index|Mémoire et contexte]]
 
@@ -75,9 +75,9 @@ Skills et bibliothèques qui guident l'agent vers une interface soignée, direct
 
 ### [[outils/modeles/index|Modèles]]
 
-Modèles d'IA propriétaires consommés par API.
+Modèles d'IA spécialisés, accessibles par API ou à déployer à partir de poids téléchargeables.
 
-[[Jev]] · [[Nano Banana]]
+[[Jev]] · [[Nano Banana]] · [[Unlimited-OCR]]
 
 ## Produire et décider
 
@@ -111,4 +111,4 @@ Workflows métier spécialisés et aides à la décision.
 
 [[AI Berkshire]] · [[Claude for Financial Services]] · [[Claude for Legal]] · [[LLM Council]] · [[Small Business]]
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 19 novembre 2026_

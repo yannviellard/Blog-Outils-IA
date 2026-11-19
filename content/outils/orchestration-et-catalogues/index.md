@@ -2,7 +2,7 @@
 title: "Orchestration et catalogues d'agents"
 type: famille
 description: "Couches qui coordonnent plusieurs agents, et bibliothèques de rôles, d'agents ou de skills où piocher."
-modified: 2026-11-12
+modified: 2026-11-19
 ---
 
 # Orchestration et catalogues d'agents
@@ -13,7 +13,7 @@ Zone : [[outils/index#Le poste de travail de l'agent|Le poste de travail de l'ag
 
 ## En bref
 
-Plus de composants ne signifie pas de meilleurs résultats : les avis convergent vers « installer peu, épingler, mesurer ». Ruflo est le seul dont le discours a dû être corrigé après des audits.
+Paperclip suit les tâches, les coûts et les validations d'une équipe d'agents. Ruflo et Oh My Claude structurent leur exécution. Les catalogues fournissent des rôles ou des skills à sélectionner selon le besoin.
 
 ## Les outils
 
@@ -24,6 +24,7 @@ Plus de composants ne signifie pas de meilleurs résultats : les avis convergent
 |[[Wshobson Agents]]|Marketplace modulaire et multi-harnais d'agents, skills, commandes et orchestrateurs.|Collection|[[Wshobson Agents mémo\|Mémo]]|
 |[[Agency Agents]]|Plus de 230 définitions de rôles réparties en une quinzaine de divisions d'entreprise ; plus de rôles ne garantit pas de meilleurs résultats.|Collection|[[Agency Agents mémo\|Mémo]]|
 |[[Alirezarezvani Claude Skills]]|Très vaste bibliothèque transversale de skills, agents, plugins et commandes.|Collection|[[Alirezarezvani Claude Skills mémo\|Mémo]]|
+|[[Paperclip]]|Application auto-hébergeable pour coordonner des équipes d'agents IA, leurs tâches, leurs budgets et leurs validations.|Application|[[Paperclip mémo\|Mémo]]|
 
 ## Points d'attention
 
@@ -31,6 +32,7 @@ Plus de composants ne signifie pas de meilleurs résultats : les avis convergent
 - Installer peu de composants, épingler les versions et mesurer leur apport.
 - Sélectionner et tester quelques rôles plutôt qu'un catalogue entier.
 - Auditer les instructions et scripts comme toute dépendance logicielle.
+- Pour [[Paperclip]], vérifier les droits et les coûts remontés par chaque adaptateur avant d'activer les routines.
 
 ## Notes
 
@@ -43,6 +45,7 @@ Notes sur le barème du [[Comparatif global des outils]] : Documentation, Préci
 |[[Wshobson Agents]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★★☆|Doc par plugin ; auto-évaluation interne seulement ; catalogue récent à maintenir.|
 |[[Agency Agents]]|★★★☆☆|★★★☆☆|★★★☆☆|**9**|★★★★★|Fichiers simples ; provenance des profils discutée ; pas de releases formelles.|
 |[[Alirezarezvani Claude Skills]]|★★★★☆|★★★☆☆|★★★☆☆|**10**|★★★★☆|Doc structurée ; compteurs variables, qualité hétérogène ; évolution rapide.|
+|[[Paperclip]]|★★★★☆|★★★★☆|★★★☆☆|**11**|★★★★★|Guides, CLI et API détaillés, avec des écarts sur les valeurs par défaut. Essais tiers concordants sur la gestion des tâches, fiabilité variable selon l'adaptateur. Dépôt public depuis mars 2026.|
 
 ## Critères propres à la famille
 
@@ -53,9 +56,10 @@ Notes sur le barème du [[Comparatif global des outils]] : Documentation, Préci
 |[[Wshobson Agents]]|94 plugins, 202 agents, 183 skills|Marketplace modulaire multi-harnais|Chaque plugin est une dépendance à auditer|
 |[[Agency Agents]]|230+ rôles|Catalogue de personas en Markdown|Plus de rôles ne garantit pas de meilleurs résultats|
 |[[Alirezarezvani Claude Skills]]|380 skills, 114 agents|Bibliothèque de skills et scripts|Qualité hétérogène, bruit de contexte|
+|[[Paperclip]]|Équipe configurée via des adaptateurs|Application de gestion de tâches, d'exécutions et de budgets|Droits d'exécution, fiabilité et mesure des coûts selon l'adaptateur|
 
 ## Absents notables
 
 Outils cités comme alternatives dans ces fiches, sans fiche dans le wiki pour l'instant : [[CrewAI]], [[LangGraph]], [[AutoGen]].
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 19 novembre 2026_
