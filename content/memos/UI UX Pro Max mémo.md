@@ -34,6 +34,8 @@ Dans Claude Code, Codex ou Cursor, la skill se déclenche seule dès qu'on deman
 
 Préciser la stack dans la demande (React, Next.js, shadcn/ui, Vue, SwiftUI, Flutter…), sinon HTML + Tailwind par défaut.
 
+Pour le périmètre des six skills du dépôt amont, voir [[UI UX Pro Max#Skills complémentaires|Skills complémentaires]].
+
 ## Commandes du CLI
 
 |Commande|Ce qu'elle fait|

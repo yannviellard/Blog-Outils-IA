@@ -2,7 +2,7 @@
 title: "Mémos"
 type: index
 description: "Les mémos pratiques des outils : installation, commandes principales et conseils, vérifiés dans la documentation officielle."
-modified: 2026-11-19
+modified: 2026-11-20
 ---
 
 # Mémos
@@ -14,10 +14,10 @@ Un mémo résume ce qu'il faut retenir pour utiliser un outil : installation, co
 - **[[outils/methodes-de-developpement/index|Méthodes de développement]]** : [[BMAD Method mémo|BMAD Method]] · [[Everything Claude Code mémo|Everything Claude Code]] · [[GStack mémo|GStack]] · [[Planning with Files mémo|Planning with Files]] · [[Superpowers mémo|Superpowers]]
 - **[[outils/orchestration-et-catalogues/index|Orchestration et catalogues d'agents]]** : [[Agency Agents mémo|Agency Agents]] · [[Alirezarezvani Claude Skills mémo|Alirezarezvani Claude Skills]] · [[Oh My Claude mémo|Oh My Claude]] · [[Paperclip mémo|Paperclip]] · [[Ruflo mémo|Ruflo]] · [[Wshobson Agents mémo|Wshobson Agents]]
 - **[[outils/memoire-et-contexte/index|Mémoire et contexte]]** : [[Claude-Mem mémo|Claude-Mem]] · [[Graphify mémo|Graphify]] · [[MemPalace mémo|MemPalace]]
-- **[[outils/revue-et-securite/index|Revue, sécurité et création de skills]]** : [[Claude Code Review mémo|Claude Code Review]] · [[Security Guidance mémo|Security Guidance]] · [[Skill Creator mémo|Skill Creator]]
-- **[[outils/navigateur-et-tests/index|Navigateur et tests]]** : [[Agent Browser mémo|Agent Browser]] · [[Chrome DevTools MCP mémo|Chrome DevTools MCP]] · [[OpenCLI mémo|OpenCLI]] · [[Playwright mémo|Playwright]]
+- **[[outils/revue-et-securite/index|Revue, sécurité et création de skills]]** : [[Claude Code Review mémo|Claude Code Review]] · [[Security Guidance mémo|Security Guidance]] · [[Skill Creator mémo|Skill Creator]] · [[SwiftUI Pro mémo|SwiftUI Pro]] · [[Swift Concurrency Agent Skill mémo|Swift Concurrency Agent Skill]] · [[Swift Testing Pro mémo|Swift Testing Pro]]
+- **[[outils/navigateur-et-tests/index|Navigateur et tests]]** : [[Agent Browser mémo|Agent Browser]] · [[Chrome DevTools MCP mémo|Chrome DevTools MCP]] · [[OpenCLI mémo|OpenCLI]] · [[Playwright mémo|Playwright]] · [[MobileBuildMCP mémo|MobileBuildMCP]] · [[Xcode MCP mémo|Xcode MCP]]
 - **[[outils/backend-et-deploiement/index|Backend, authentification et déploiement]]** : [[Better Auth mémo|Better Auth]] · [[Supabase mémo|Supabase]] · [[Vercel mémo|Vercel]]
-- **[[outils/design-en-code/index|Design en code]]** : [[FrontEnd Design mémo|FrontEnd Design]] · [[Huashu Design mémo|Huashu Design]] · [[Impeccable mémo|Impeccable]] · [[shadcn-ui mémo|shadcn-ui]] · [[Taste Skill mémo|Taste Skill]] · [[UI UX Pro Max mémo|UI UX Pro Max]] · [[Web Design Guidelines mémo|Web Design Guidelines]]
+- **[[outils/design-en-code/index|Design en code]]** : [[FrontEnd Design mémo|FrontEnd Design]] · [[Huashu Design mémo|Huashu Design]] · [[Impeccable mémo|Impeccable]] · [[shadcn-ui mémo|shadcn-ui]] · [[Taste Skill mémo|Taste Skill]] · [[UI UX Pro Max mémo|UI UX Pro Max]] · [[Web Design Guidelines mémo|Web Design Guidelines]] · [[Figma MCP mémo|Figma MCP]] · [[Figma Use mémo|Figma Use]] · [[Figma Generate Library mémo|Figma Generate Library]]
 - **[[outils/modeles/index|Modèles]]** : [[Jev mémo|Jev]] · [[Nano Banana mémo|Nano Banana]] · [[Unlimited-OCR mémo|Unlimited-OCR]]
 - **[[outils/recherche-et-veille/index|Recherche et veille]]** : [[Agent Reach mémo|Agent Reach]] · [[Firecrawl mémo|Firecrawl]] · [[Perplexity MCP mémo|Perplexity MCP]]
 - **[[outils/marketing-et-seo/index|Marketing et SEO]]** : [[Ai-Marketing-Claude mémo|Ai-Marketing-Claude]] · [[Claude SEO mémo|Claude SEO]] · [[Marketing Skills from Corey Haines mémo|Marketing Skills from Corey Haines]] · [[OpenClaudia mémo|OpenClaudia]]
@@ -25,4 +25,4 @@ Un mémo résume ce qu'il faut retenir pour utiliser un outil : installation, co
 - **[[outils/ecriture-voix-messagerie/index|Écriture, voix et messagerie]]** : [[Agentic Inbox mémo|Agentic Inbox]] · [[Humanizer mémo|Humanizer]]
 - **[[outils/finance-juridique-decision/index|Finance, juridique et décision]]** : [[AI Berkshire mémo|AI Berkshire]] · [[Claude for Financial Services mémo|Claude for Financial Services]] · [[Claude for Legal mémo|Claude for Legal]] · [[LLM Council mémo|LLM Council]] · [[Small Business mémo|Small Business]]
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

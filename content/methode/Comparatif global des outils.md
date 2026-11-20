@@ -2,7 +2,7 @@
 title: Comparatif global des outils
 type: guide
 description: "Le barème unique des notes ★ (documentation, précision, maturité, popularité) et toutes les notes des outils."
-modified: 2026-11-19
+modified: 2026-11-20
 ---
 
 # Comparatif global des outils
@@ -58,7 +58,7 @@ Chaque page de famille applique ce barème : notes et justification ligne à lig
 
 ## Toutes les notes
 
-Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
+Les 80 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
 
 |Outil|Famille|Total /15|Popularité|
 |---|---|:-:|:-:|
@@ -68,6 +68,8 @@ Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Vercel]]|[[outils/backend-et-deploiement/index\|Backend, authentification et déploiement]]|14|★★★★☆|
 |[[BMAD Method]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|13|★★★★☆|
 |[[Claude Code]]|[[outils/agents-de-developpement/index\|Agents de développement]]|13|★★★★★|
+|[[Figma MCP]]|[[outils/design-en-code/index\|Design en code]]|13|—|
+|[[MobileBuildMCP]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|13|★★★☆☆|
 |[[OpenAI Codex]]|[[outils/agents-de-developpement/index\|Agents de développement]]|13|★★★★★|
 |[[Supabase]]|[[outils/backend-et-deploiement/index\|Backend, authentification et déploiement]]|13|★★★★★|
 |[[Warp]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|13|★★★★☆|
@@ -81,6 +83,7 @@ Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Claude for Legal]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|★★★★☆|
 |[[cmux]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|★★★★☆|
 |[[Conductor]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|11|—|
+|[[Figma Use]]|[[outils/design-en-code/index\|Design en code]]|11|—|
 |[[Hermes Agent]]|[[outils/agents-de-developpement/index\|Agents de développement]]|11|★★★★★|
 |[[Humanizer]]|[[outils/ecriture-voix-messagerie/index\|Écriture, voix et messagerie]]|11|★★★★☆|
 |[[Impeccable]]|[[outils/design-en-code/index\|Design en code]]|11|★★★★★|
@@ -94,14 +97,17 @@ Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Skill Creator]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|11|—|
 |[[Small Business]]|[[outils/finance-juridique-decision/index\|Finance, juridique et décision]]|11|—|
 |[[Superpowers]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|11|★★★★★|
+|[[SwiftUI Pro]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|11|★★★☆☆|
 |[[Web Design Guidelines]]|[[outils/design-en-code/index\|Design en code]]|11|—|
 |[[Wshobson Agents]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|11|★★★★☆|
+|[[Xcode MCP]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|11|—|
 |[[Agentic Inbox]]|[[outils/ecriture-voix-messagerie/index\|Écriture, voix et messagerie]]|10|★★★☆☆|
 |[[Alirezarezvani Claude Skills]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|10|★★★★☆|
 |[[Claude SEO]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|10|★★★★☆|
 |[[Claude Squad]]|[[outils/postes-de-pilotage/index\|Postes de pilotage multi-agent]]|10|★★★☆☆|
 |[[Claude-Mem]]|[[outils/memoire-et-contexte/index\|Mémoire et contexte]]|10|★★★★★|
 |[[Everything Claude Code]]|[[outils/methodes-de-developpement/index\|Méthodes de développement]]|10|★★★★★|
+|[[Figma Generate Library]]|[[outils/design-en-code/index\|Design en code]]|10|—|
 |[[FrontEnd Design]]|[[outils/design-en-code/index\|Design en code]]|10|—|
 |[[Gemini Deep Research]]|[[outils/recherche-et-veille/index\|Recherche et veille]]|10|—|
 |[[Glif MCP]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|10|★★☆☆☆|
@@ -109,6 +115,8 @@ Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Higgsfield-skills]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|10|★★★☆☆|
 |[[NotebookLM]]|[[outils/recherche-et-veille/index\|Recherche et veille]]|10|—|
 |[[Oh My Claude]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|10|★★★★☆|
+|[[Swift Concurrency Agent Skill]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|10|★★★☆☆|
+|[[Swift Testing Pro]]|[[outils/revue-et-securite/index\|Revue, sécurité et création de skills]]|10|★★☆☆☆|
 |[[UI UX Pro Max]]|[[outils/design-en-code/index\|Design en code]]|10|★★★★★|
 |[[Wispr Flow]]|[[outils/ecriture-voix-messagerie/index\|Écriture, voix et messagerie]]|10|—|
 |[[Agency Agents]]|[[outils/orchestration-et-catalogues/index\|Orchestration et catalogues d'agents]]|9|★★★★★|
@@ -148,4 +156,4 @@ Les 72 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 
 Les notes sont fixées dans la page de chaque famille, avec leur justification ; la fiche de l'outil reprend les quatre mêmes notes et le tableau « Toutes les notes » en reprend le total et la Popularité. À chaque mise à jour d'une fiche, relire d'abord sa ligne dans la page de famille : si une note change, la justification change avec elle, puis la fiche et ce tableau. La Popularité est recalculée à chaque relevé des étoiles.
 
-_Dernière analyse : 19 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

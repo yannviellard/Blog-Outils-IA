@@ -1,8 +1,8 @@
 ---
 title: "Tous les outils"
 type: index
-description: "Les 72 outils du wiki, rangés en 16 familles et trois zones."
-modified: 2026-11-19
+description: "Les 80 outils du wiki, rangés en 16 familles et trois zones."
+modified: 2026-11-20
 ---
 
 # Tous les outils
@@ -47,13 +47,13 @@ Outils qui conservent ou structurent ce que l'agent sait d'un projet, d'une sess
 
 Contrôle de la qualité du code et des extensions produits avec un agent.
 
-[[Claude Code Review]] · [[Security Guidance]] · [[Skill Creator]]
+[[Claude Code Review]] · [[Security Guidance]] · [[Skill Creator]] · [[SwiftUI Pro]] · [[Swift Concurrency Agent Skill]] · [[Swift Testing Pro]]
 
 ### [[outils/navigateur-et-tests/index|Navigateur et tests]]
 
 Pilotage d'un navigateur ou d'une application par l'agent, pour tester, diagnostiquer ou automatiser.
 
-[[Agent Browser]] · [[Chrome DevTools MCP]] · [[OpenCLI]] · [[Playwright]]
+[[Agent Browser]] · [[Chrome DevTools MCP]] · [[OpenCLI]] · [[Playwright]] · [[MobileBuildMCP]] · [[Xcode MCP]]
 
 ### [[outils/backend-et-deploiement/index|Backend, authentification et déploiement]]
 
@@ -69,9 +69,9 @@ Applications web qui génèrent une interface ou une mini-application à partir 
 
 ### [[outils/design-en-code/index|Design en code]]
 
-Skills et bibliothèques qui guident l'agent vers une interface soignée, directement dans le code.
+Outils pour concevoir des interfaces dans le code et relier leur implémentation aux maquettes et bibliothèques de design.
 
-[[FrontEnd Design]] · [[Huashu Design]] · [[Impeccable]] · [[shadcn-ui]] · [[Taste Skill]] · [[UI UX Pro Max]] · [[Web Design Guidelines]]
+[[FrontEnd Design]] · [[Huashu Design]] · [[Impeccable]] · [[shadcn-ui]] · [[Taste Skill]] · [[UI UX Pro Max]] · [[Web Design Guidelines]] · [[Figma MCP]] · [[Figma Use]] · [[Figma Generate Library]]
 
 ### [[outils/modeles/index|Modèles]]
 
@@ -111,4 +111,4 @@ Workflows métier spécialisés et aides à la décision.
 
 [[AI Berkshire]] · [[Claude for Financial Services]] · [[Claude for Legal]] · [[LLM Council]] · [[Small Business]]
 
-_Dernière analyse : 19 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

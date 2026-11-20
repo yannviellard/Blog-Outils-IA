@@ -2,7 +2,7 @@
 title: "Produit et design"
 type: metier
 description: "Pour transformer les besoins utilisateurs en produit, explorer des directions visuelles et maintenir une expérience cohérente."
-modified: 2026-11-12
+modified: 2026-11-20
 ---
 
 # Produit et design
@@ -16,7 +16,8 @@ Pour transformer les besoins utilisateurs en produit, explorer des directions vi
 | Direction artistique en code    | [[FrontEnd Design]], [[Huashu Design]], [[Taste Skill]]         | Fournir des références de marque et des critères d'acceptation visuels.                                                                       |
 | Audit et finition UI/UX         | [[Impeccable]], [[UI UX Pro Max]], [[Web Design Guidelines]]    | Compléter par accessibilité, captures comparées et tests utilisateurs.                                                                        |
 | Design system frontend          | [[shadcn-ui]]                                                   | Le code est possédé par l'équipe, donc également maintenu par elle.                                                                           |
+| Maquettes et bibliothèques Figma | [[Figma MCP]], [[Figma Use]], [[Figma Generate Library]] | Nommer le fichier et la bibliothèque de référence. Relire les variables et variantes sur le canvas. |
 
 Toutes les fiches utiles à ce métier : [[tags/metier/produit-design|métier « Produit et design »]]. Les autres métiers : [[metiers/index|Métiers]].
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

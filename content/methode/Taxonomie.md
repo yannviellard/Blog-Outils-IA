@@ -2,7 +2,7 @@
 title: Taxonomie
 type: guide
 description: "Les classements du wiki : familles, formats, métiers et thèmes, avec leurs définitions et leurs règles d'attribution."
-modified: 2026-11-19
+modified: 2026-11-20
 ---
 
 # Taxonomie
@@ -41,7 +41,7 @@ La famille regroupe les outils qui se comparent entre eux. Les familles sont ran
 | [[outils/navigateur-et-tests/index\|Navigateur et tests]] | `navigateur-et-tests` | Pilotage d'un navigateur ou d'une application par l'agent, pour tester, diagnostiquer ou automatiser. |
 | [[outils/backend-et-deploiement/index\|Backend, authentification et déploiement]] | `backend-et-deploiement` | Services et bibliothèques sur lesquels on construit et met en ligne une application. |
 | [[outils/prototypage-en-ligne/index\|Prototypage en ligne]] | `prototypage-en-ligne` | Applications web qui génèrent une interface ou une mini-application à partir d'une description. |
-| [[outils/design-en-code/index\|Design en code]] | `design-en-code` | Skills et bibliothèques qui guident l'agent vers une interface soignée, directement dans le code. |
+| [[outils/design-en-code/index\|Design en code]] | `design-en-code` | Outils pour concevoir des interfaces dans le code et relier leur implémentation aux maquettes et bibliothèques de design. |
 | [[outils/modeles/index\|Modèles]] | `modeles` | Modèles d'IA spécialisés, accessibles par API ou à déployer à partir de poids téléchargeables. |
 
 ### Produire et décider
@@ -143,4 +143,4 @@ Chaque métier a sa page, avec les besoins, les outils recommandés et leurs poi
 | `index` | Page d'accueil ou de section | `index.md` de chaque dossier |
 | `tag` | Description d'un tag | `tags/` |
 
-_Dernière analyse : 19 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

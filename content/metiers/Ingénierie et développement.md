@@ -2,7 +2,7 @@
 title: "Ingénierie et développement"
 type: metier
 description: "Pour concevoir, coder, tester, sécuriser, déployer et maintenir les applications."
-modified: 2026-11-19
+modified: 2026-11-20
 ---
 
 # Ingénierie et développement
@@ -21,9 +21,12 @@ Pour concevoir, coder, tester, sécuriser, déployer et maintenir les applicatio
 | Tests et navigateur                      | [[Playwright]], [[Agent Browser]], [[Chrome DevTools MCP]], [[OpenCLI]]                           | Playwright pour le déterminisme, DevTools pour le diagnostic, profils isolés pour les agents.                 |
 | Backend, authentification et déploiement | [[Supabase]], [[Better Auth]], [[Vercel]]                                                         | Modéliser tôt les droits, les coûts et le verrouillage fournisseur.                                           |
 | Extraction et structuration de PDF      | [[Unlimited-OCR]]                                                                                | Mesurer la mémoire GPU et contrôler que la sortie couvre toutes les pages avant indexation.                  |
+| Compilation et simulateur iOS | [[MobileBuildMCP]], [[Xcode MCP]] | Choisir le schéma et la destination. Autoriser le pont Apple dans Xcode pour travailler sur le projet ouvert. |
+| Revue Swift et tests | [[SwiftUI Pro]], [[Swift Concurrency Agent Skill]], [[Swift Testing Pro]] | Vérifier les suggestions avec le SDK cible, compiler sous le mode Swift du projet et relancer la suite. |
+| Intégration Figma et code | [[Figma MCP]], [[Figma Use]], [[Figma Generate Library]] | Cibler le nœud pour la lecture. Pour une bibliothèque, valider les liaisons de variables et les variantes générées. |
 
 Le guide [[Architecture multi-repos et harnais Claude Code]] propose une organisation complète lorsque le produit est réparti entre web, mobile, backend, produit et marketing.
 
 Toutes les fiches utiles à ce métier : [[tags/metier/ingenierie|métier « Ingénierie et développement »]]. Les autres métiers : [[metiers/index|Métiers]].
 
-_Dernière analyse : 19 novembre 2026_
+_Dernière analyse : 20 novembre 2026_

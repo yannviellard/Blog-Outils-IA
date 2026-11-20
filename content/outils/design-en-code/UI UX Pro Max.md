@@ -14,24 +14,24 @@ site: "https://uupm.cc/"
 depot: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
 licence: "MIT"
 statut: disponible
-derniere_maj: 2026-11-10
-etoiles: 150164
-forks: 15877
-etoiles_releve: 2026-11-16
+derniere_maj: 2026-11-19
+etoiles: 152107
+forks: 16057
+etoiles_releve: 2026-11-20
 note_documentation: 4
 note_precision: 3
 note_maturite: 3
 note_popularite: 5
 memo: "[[UI UX Pro Max mémo]]"
 avis_maj: 2026-09-24
-modified: 2026-11-12
+modified: 2026-11-20
 ---
 
 # UI/UX Pro Max
 
 > Skill de **design intelligence** pour les assistants de programmation IA. Il fournit une base de connaissances recherchable couvrant les styles UI, palettes de couleurs, typographies, guidelines UX, icônes, graphiques et bonnes pratiques spécifiques aux stacks, afin d'aider un agent à concevoir, implémenter, auditer et améliorer des interfaces.
 
-**Composition** : 1 skill, compatible avec 20+ plateformes.
+**Composition** : le skill principal `ui-ux-pro-max` et six skills complémentaires dans le dossier `.claude/skills/` du dépôt amont.
 
 Voir aussi : la section [[#Avis indépendants|Avis indépendants]] pour une synthèse des retours et réserves, et [[UI UX Pro Max mémo]] pour le mémo pratique.
 
@@ -62,6 +62,19 @@ Il ne s'agit donc pas d'un simple prompt de génération d'interfaces : le cœur
 - **Démos et exemples visuels** accessibles depuis le site officiel, avec des exemples par secteur, style et mode clair/sombre.
     
 
+## Skills complémentaires
+
+Les six dossiers suivants figurent aux côtés de `ui-ux-pro-max` dans le dépôt amont.
+
+|Skill|Rôle|
+|---|---|
+|[`brand`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/brand)|Définir ou relire l’identité visuelle, la voix et les messages de marque. Sert aussi à vérifier la cohérence des contenus et des assets avec le guide de marque.|
+|[`design`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/design)|Choisir le workflow selon le livrable, de l’identité et des maquettes aux logos, icônes et contenus visuels. Oriente les tâches de marque, de tokens et d’interface vers les skills spécialisés.|
+|[`design-system`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/design-system)|Structurer les tokens en trois niveaux, des primitives aux alias sémantiques puis aux composants. Précise les échelles, les variables CSS et les spécifications des composants et de leurs états.|
+|[`ui-styling`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/ui-styling)|Mettre en forme des interfaces dans le code avec Tailwind CSS et [[shadcn-ui]]. Couvre les composants, les mises en page adaptatives, les thèmes et le mode sombre.|
+|[`banner-design`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/banner-design)|Concevoir des bannières pour le web, les réseaux sociaux ou la publicité. Adapte le format, les zones utiles et la direction visuelle à la destination.|
+|[`slides`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/slides)|Construire des présentations HTML avec des mises en page adaptatives, des tokens de design et des graphiques Chart.js.|
+
 ## Analyse
 
 |Critère|Note|
@@ -77,7 +90,7 @@ Il ne s'agit donc pas d'un simple prompt de génération d'interfaces : le cœur
 |Maintenabilité|★★★★☆|
 |Intégration coding agents|★★★★★|
 
-> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 150 164 au 16 novembre 2026._
+> _Notes Documentation, Précision et Maturité alignées sur le [[Comparatif global des outils|barème global]] (10 octobre 2026). Popularité calculée depuis les étoiles du dépôt GitHub : 152 107 au 20 novembre 2026._
 
 **Commentaire :** projet particulièrement intéressant parce qu'il dépasse le simple prompt engineering : il combine **skill, données structurées, moteur de recherche local et templates spécifiques aux agents**. L'architecture permet de maintenir une base de connaissances relativement volumineuse sans injecter l'intégralité du contenu dans le contexte de l'agent. Le projet reste néanmoins en évolution rapide : le dépôt affiche encore plusieurs dizaines d'issues et de pull requests ouvertes, dont certaines concernent l'installation, le packaging et la synchronisation des métadonnées.
 
@@ -125,6 +138,8 @@ Il ne s'agit donc pas d'un simple prompt de génération d'interfaces : le cœur
     
 - **Utilise :** base de données locale UI/UX · `search.py` · templates spécifiques aux plateformes
     
+
+- **Complémentaire de** [[Figma MCP]] pour consulter les maquettes et de [[Figma Generate Library]] pour matérialiser les tokens et les composants dans Figma.
 
 ## Positionnement
 
@@ -193,4 +208,4 @@ Très bon socle pour rendre les choix UI plus cohérents et explicites ; à asso
 - [Comparaison de skills UI/UX](https://www.softwarethug.com/posts/claude-code-ui-design-skills-compared/)
 - [Analyse sans le discours promotionnel](https://mrkeyoor.com/repos/ui-ux-pro-max-skill/)
 
-_Dernière analyse : 12 novembre 2026_
+_Dernière analyse : 20 novembre 2026_
