@@ -12,7 +12,7 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
       "orchestration-et-catalogues", "memoire-et-contexte",
       "revue-et-securite", "navigateur-et-tests", "backend-et-deploiement",
       "prototypage-en-ligne", "design-en-code", "modeles",
-      "recherche-et-veille", "marketing-et-seo", "image-video-medias",
+      "automatisation-de-workflows", "recherche-et-veille", "marketing-et-seo", "image-video-medias",
       "ecriture-voix-messagerie", "finance-juridique-decision",
     ]
     const ia = a.isFolder ? ordre.indexOf(a.slugSegment) : -1

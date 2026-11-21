@@ -1,7 +1,7 @@
 ---
 title: "Tous les outils"
 type: index
-description: "Les 80 outils du wiki, rangés en 16 familles et trois zones."
+description: "Les 82 outils du wiki, rangés en 17 familles et trois zones."
 modified: 2026-11-20
 ---
 
@@ -80,6 +80,12 @@ Modèles d'IA spécialisés, accessibles par API ou à déployer à partir de po
 [[Jev]] · [[Nano Banana]] · [[Unlimited-OCR]]
 
 ## Produire et décider
+
+### [[outils/automatisation-de-workflows/index|Automatisation de workflows]]
+
+Moteurs d’automatisation visuelle et extensions pour concevoir, tester ou piloter leurs workflows.
+
+[[n8n]] · [[n8n MCP officiel et skills]]
 
 ### [[outils/recherche-et-veille/index|Recherche et veille]]
 

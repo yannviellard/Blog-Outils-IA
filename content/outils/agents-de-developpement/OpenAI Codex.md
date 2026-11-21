@@ -135,7 +135,7 @@ Codex est inclus dans tous les forfaits ChatGPT, avec des quotas croissants. Le 
 
 - **Complémentaire de :** [[Hermes Agent]] qui peut lui déléguer le code ; [[GStack]], dont la skill `/codex` demande un second avis à Codex depuis Claude Code ; frameworks de skills compatibles comme [[Superpowers]], [[BMAD Method]], [[Wshobson Agents]] et [[AI Berkshire]]
 
-- **S'intègre avec :** [[GitHub]], [[VS Code]], Cursor, Windsurf, [[JetBrains]], Xcode, Figma (via MCP), Linear, Amazon Bedrock, LM Studio, Ollama, [[MemPalace]], [[OpenCLI]]
+- **S'intègre avec :** [[GitHub]], [[VS Code]], Cursor, Windsurf, [[JetBrains]], Xcode, Figma (via MCP), Linear, Amazon Bedrock, LM Studio, Ollama, [[MemPalace]], [[OpenCLI]], [[n8n MCP officiel et skills]]
 
 - **Utilise :** GPT-6 Sol, Luna et Astra, [[Model Context Protocol|MCP]], [[Skill|Skills]], [[Subagents]], [[Hook|Hooks]], [[Plugin|Plugins]], `AGENTS.md`, Rust
 

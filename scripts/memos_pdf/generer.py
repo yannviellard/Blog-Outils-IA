@@ -51,7 +51,7 @@ FAMILLES = {
     "construire": ["revue-et-securite", "navigateur-et-tests", "backend-et-deploiement",
                    "prototypage-en-ligne", "design-en-code", "modeles"],
     "produire": ["recherche-et-veille", "marketing-et-seo", "image-video-medias",
-                 "ecriture-voix-messagerie", "finance-juridique-decision"],
+                 "ecriture-voix-messagerie", "finance-juridique-decision", "automatisation-de-workflows"],
 }
 
 

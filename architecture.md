@@ -33,7 +33,7 @@ Remplacer les six classements par **trois axes indépendants**, chacun stocké �
 
 | Axe | Question du lecteur | Valeurs | Où il est stocké | Ce qui l'affiche |
 |---|---|---|---|---|
-| **Famille** | « Que fait cet outil, à quoi le comparer ? » | 16 familles, **une seule** par outil | le **dossier** de la fiche | la page de la famille (`index.md` du dossier) et l'explorateur |
+| **Famille** | « Que fait cet outil, à quoi le comparer ? » | 17 familles, **une seule** par outil | le **dossier** de la fiche | la page de la famille (`index.md` du dossier) et l'explorateur |
 | **Métier** | « Qu'est-ce qui sert à mon équipe ? » | 6 métiers, plusieurs possibles | tags `metier/…` | les pages métier et les pages de tag |
 | **Format** | « Qu'est-ce que j'installe concrètement ? » | 10 formats | champ `format` | une colonne des tableaux, le panneau de propriétés |
 
@@ -43,7 +43,7 @@ Les **thèmes transverses** (sécurité, MCP, vidéo…) restent possibles en ta
 
 Les familles du comparatif sont déjà le classement le plus fin et le mieux justifié : elles deviennent l'unique classement « par nature » et donnent les sous-dossiers de `outils/`. Elles sont regroupées en trois zones pour l'accueil et perdent leurs lettres A à N.
 
-Décidé le 11 novembre 2026 : « Design et UI » est scindée en deux familles, et une famille « Modèles » est créée pour Jev et Nano Banana, deux modèles propriétaires accessibles par API. On passe de 14 à 16 familles.
+Décidé le 11 novembre 2026 : « Design et UI » est scindée en deux familles, et une famille « Modèles » est créée pour Jev et Nano Banana, deux modèles propriétaires accessibles par API. On passe de 14 à 16 familles. Le 20 novembre 2026, la famille « Automatisation de workflows » porte le total à 17.
 
 ### Zone 1 — Le poste de travail de l'agent
 
@@ -151,7 +151,7 @@ content/
 ├── index.md                                  Accueil : 3 zones, 6 métiers, notes récentes
 │
 ├── outils/
-│   ├── index.md                              « Tous les outils » : les 16 familles par zone
+│   ├── index.md                              « Tous les outils » : les 17 familles par zone
 │   ├── agents-de-developpement/
 │   │   ├── index.md                          Page de la famille : lecture, comment choisir, critères, notes ★
 │   │   ├── Claude Code.md                    Fiche complète, avis intégré
@@ -168,6 +168,7 @@ content/
 │   ├── prototypage-en-ligne/                 Claude Design, Stitch by Google, Opal by Google
 │   ├── design-en-code/                       FrontEnd Design, Huashu Design, Impeccable, Taste Skill, UI UX Pro Max, Web Design Guidelines, shadcn-ui
 │   ├── modeles/                              Jev, Nano Banana
+│   ├── automatisation-de-workflows/          n8n, n8n MCP officiel et skills
 │   ├── recherche-et-veille/                  Firecrawl, Agent Reach, Perplexity MCP, Gemini Deep Research, NotebookLM
 │   ├── marketing-et-seo/                     Ai-Marketing-Claude, Marketing Skills…, Claude SEO, OpenClaudia, Pomelli
 │   ├── image-video-medias/                   Banana Prompts, Glif MCP, Higgsfield (×3), Remotion, HyperFrames
@@ -213,7 +214,7 @@ content/
 └── _modeles/                                 Gabarits fiche, mémo, famille, concept (exclus du site)
 ```
 
-**Ce que voit le lecteur** : dans l'explorateur, Outils (16 familles repliées), Mémos, Métiers, Concepts, Guides, Méthode. Une famille ouverte liste directement ses outils : le classement par nature devient la navigation elle-même, sans tableau à maintenir.
+**Ce que voit le lecteur** : dans l'explorateur, Outils (17 familles repliées), Mémos, Métiers, Concepts, Guides, Méthode. Une famille ouverte liste directement ses outils : le classement par nature devient la navigation elle-même, sans tableau à maintenir.
 
 **Conventions** :
 

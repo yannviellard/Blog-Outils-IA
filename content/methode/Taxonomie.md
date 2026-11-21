@@ -11,7 +11,7 @@ Chaque outil du wiki est décrit selon trois axes indépendants, chacun avec une
 
 | Axe | Question du lecteur | Valeurs | Où il est noté |
 |---|---|---|---|
-| **Famille** | Que fait cet outil, à quoi le comparer ? | 16 familles, **une seule** par outil | le dossier de la fiche, `outils/<identifiant>/` |
+| **Famille** | Que fait cet outil, à quoi le comparer ? | 17 familles, **une seule** par outil | le dossier de la fiche, `outils/<identifiant>/` |
 | **Format** | Qu'est-ce que j'installe concrètement ? | 10 formats, un seul par outil | champ `format` |
 | **Métier** | Qu'est-ce qui sert à mon équipe ? | 6 métiers, de 1 à 3 par outil | tags `metier/…` |
 
@@ -48,6 +48,7 @@ La famille regroupe les outils qui se comparent entre eux. Les familles sont ran
 
 | Famille | Identifiant | Ce qu'elle regroupe |
 |---|---|---|
+| [[outils/automatisation-de-workflows/index\|Automatisation de workflows]] | `automatisation-de-workflows` | Moteurs d’automatisation visuelle et extensions pour concevoir, tester ou piloter leurs workflows. |
 | [[outils/recherche-et-veille/index\|Recherche et veille]] | `recherche-et-veille` | Accès au web et synthèse de sources, pour l'agent ou pour l'utilisateur. |
 | [[outils/marketing-et-seo/index\|Marketing et SEO]] | `marketing-et-seo` | Skills et applications pour la stratégie marketing, le contenu et le référencement. |
 | [[outils/image-video-medias/index\|Image, vidéo et médias]] | `image-video-medias` | Génération d'images et de vidéos, et production vidéo programmable. |

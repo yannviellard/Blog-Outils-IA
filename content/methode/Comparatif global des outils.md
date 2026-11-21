@@ -54,15 +54,16 @@ Chaque page de famille applique ce barème : notes et justification ligne à lig
 
 - **Le poste de travail de l'agent** : [[outils/agents-de-developpement/index|Agents de développement]] · [[outils/postes-de-pilotage/index|Postes de pilotage multi-agent]] · [[outils/methodes-de-developpement/index|Méthodes de développement]] · [[outils/orchestration-et-catalogues/index|Orchestration et catalogues d'agents]] · [[outils/memoire-et-contexte/index|Mémoire et contexte]]
 - **Construire et livrer** : [[outils/revue-et-securite/index|Revue, sécurité et création de skills]] · [[outils/navigateur-et-tests/index|Navigateur et tests]] · [[outils/backend-et-deploiement/index|Backend, authentification et déploiement]] · [[outils/prototypage-en-ligne/index|Prototypage en ligne]] · [[outils/design-en-code/index|Design en code]] · [[outils/modeles/index|Modèles]]
-- **Produire et décider** : [[outils/recherche-et-veille/index|Recherche et veille]] · [[outils/marketing-et-seo/index|Marketing et SEO]] · [[outils/image-video-medias/index|Image, vidéo et médias]] · [[outils/ecriture-voix-messagerie/index|Écriture, voix et messagerie]] · [[outils/finance-juridique-decision/index|Finance, juridique et décision]]
+- **Produire et décider** : [[outils/automatisation-de-workflows/index|Automatisation de workflows]] · [[outils/recherche-et-veille/index|Recherche et veille]] · [[outils/marketing-et-seo/index|Marketing et SEO]] · [[outils/image-video-medias/index|Image, vidéo et médias]] · [[outils/ecriture-voix-messagerie/index|Écriture, voix et messagerie]] · [[outils/finance-juridique-decision/index|Finance, juridique et décision]]
 
 ## Toutes les notes
 
-Les 80 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
+Les 82 outils triés par total, puis par nom. Rappel : le total mesure la fiabilité de l'information et le recul disponibles, pas la performance de l'outil ; il se lit d'abord au sein d'une famille.
 
 |Outil|Famille|Total /15|Popularité|
 |---|---|:-:|:-:|
 |[[Playwright]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|15|★★★★★|
+|[[n8n]]|[[outils/automatisation-de-workflows/index\|Automatisation de workflows]]|14|★★★★★|
 |[[Remotion]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|14|★★★★☆|
 |[[shadcn-ui]]|[[outils/design-en-code/index\|Design en code]]|14|★★★★★|
 |[[Vercel]]|[[outils/backend-et-deploiement/index\|Backend, authentification et déploiement]]|14|★★★★☆|
@@ -128,6 +129,7 @@ Les 80 outils triés par total, puis par nom. Rappel : le total mesure la fiabil
 |[[Huashu Design]]|[[outils/design-en-code/index\|Design en code]]|9|★★★★☆|
 |[[HyperFrames]]|[[outils/image-video-medias/index\|Image, vidéo et médias]]|9|★★★★☆|
 |[[Jev]]|[[outils/modeles/index\|Modèles]]|9|—|
+|[[n8n MCP officiel et skills]]|[[outils/automatisation-de-workflows/index\|Automatisation de workflows]]|9|—|
 |[[OpenCLI]]|[[outils/navigateur-et-tests/index\|Navigateur et tests]]|9|★★★★☆|
 |[[Pomelli]]|[[outils/marketing-et-seo/index\|Marketing et SEO]]|9|—|
 |[[Stitch by Google]]|[[outils/prototypage-en-ligne/index\|Prototypage en ligne]]|9|—|

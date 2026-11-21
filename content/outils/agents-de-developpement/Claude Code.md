@@ -136,7 +136,7 @@ Claude Code est inclus dans les abonnements payants Claude (Pro à 20 $/mois, Ma
 
 - **Complémentaire de :** [[Hermes Agent]] qui peut lui déléguer le code ; frameworks bâtis sur Claude Code comme [[GStack]], [[Superpowers]], [[BMAD Method]], [[Everything Claude Code]] et [[Wshobson Agents]]
 
-- **S'intègre avec :** [[GitHub]], GitLab, [[VS Code]], [[JetBrains]], Slack, Chrome, Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, [[Chrome DevTools MCP]], [[Playwright]]
+- **S'intègre avec :** [[GitHub]], GitLab, [[VS Code]], [[JetBrains]], Slack, Chrome, Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry, [[Chrome DevTools MCP]], [[Playwright]], [[n8n MCP officiel et skills]]
 
 - **Utilise :** [[Claude]], [[Model Context Protocol|MCP]], [[Skill|Skills]], [[Subagents]], [[Agent Teams]], [[Hook|Hooks]], [[Plugin|Plugins]], Claude Agent SDK
 

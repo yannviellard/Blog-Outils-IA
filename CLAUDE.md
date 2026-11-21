@@ -11,7 +11,7 @@ Base de connaissances en Markdown (coffre Obsidian + site Quartz) qui recense le
 | `index.md` | Accueil : par métier, par famille, concepts, guides, mémos, méthode |
 | `outils/<famille>/Nom.md` | Fiches, une par outil, rangées dans le dossier de leur famille |
 | `outils/<famille>/index.md` | Page de la famille : outils, points d'attention, **notes justifiées** (référence des notes), critères propres, absents notables |
-| `outils/index.md` | Vue d'ensemble : les 16 familles par zone, avec leurs outils |
+| `outils/index.md` | Vue d'ensemble : les 17 familles par zone, avec leurs outils |
 | `memos/Nom mémo.md`, `memos/index.md` | Mémos pratiques et leur bibliothèque |
 | `memos/pdf/` | Mémos en PDF et leur aperçu JPEG, générés par `scripts/memos_pdf/generer.py` : ne pas modifier à la main |
 | `logos/` | Logos des outils (PNG, SVG ou WebP, 256 px au plus), désignés par le champ `logo` des fiches |
